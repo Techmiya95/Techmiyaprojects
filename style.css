@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+body{
+  width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(2.avif);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+  
+  /* Styles for Navbar */
+  header {
+    background-color: #080808;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff0505;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  .main-content {
+    color:#ffffff;
+    padding: 10px;
+    text-decoration: solid;
+    display: block;
+  }
+  .main-content:hover{
+    color:#ff7200;
+}
+  .content{
+    color:#ffffff;
+    padding: 10px;
+    text-decoration: solid;
+    display: block;
+
+
+  }
+  

@@ -1,1 +1,2 @@
-# Techmiyaprojects
+# TechmiyaProjects
+Techmiya Projects Website 
