@@ -81,25 +81,9 @@
     left: 0; /* Align to the left */
   }
   
-  .content-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-h2 {
-    color: #333;
-    text-align: center;
-}
 
-p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
-}
+  
   
   .main-content {
     color:#110101;
@@ -330,6 +314,8 @@ color: white;
     padding:20px ;
     text-align: center;
   }
+
+  
 
   .footerBottom p{
     color: white;
