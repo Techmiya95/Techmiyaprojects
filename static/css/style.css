@@ -14,11 +14,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .contact-info span {
   margin-right: 20px;
   font-size: 15px;
+  background-color: #ffffff;
 }
 
 .email:before,
@@ -47,19 +49,21 @@
 
 
   header {
-    background-color: #080808;
+    background-color: #000000;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 0px;
+    position:relative;
   }
 
 
   .container {
-    display: flex;
+    display:flex;
     align-items:center;
     justify-content: space-between;
     max-width: 1200px;
     margin: 20 auto;
     padding: 0 10px;
+    color:#000000
 }
 
 .logo img {
@@ -134,6 +138,7 @@
     left: 0; /* Align to the left */
   }
   
+
 
 
   
@@ -334,8 +339,38 @@ color: white;
 }
 
 
+.contact-info {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
 
-  footer {
+.contact-details {
+  display: inline-block;
+  text-align: center;
+}
+
+.phone {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.address {
+  font-size: 30px;
+}
+
+.map {
+  display:block;
+  margin-left: 100px;
+}
+
+.map iframe {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+
+ footer {
     background-color: #080808;
   }
 
@@ -344,6 +379,25 @@ color: white;
     padding: 70px 30px 20px;
 
   }
+
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
   .socialIcons{
     display: flex;
     justify-content:center;
@@ -407,7 +461,7 @@ color: white;
 
   .designer{
     opacity: 0.7;
-    text-transform: uppercase;
+    text-transform:capitalize;
     letter-spacing: 1px;
     font-weight: 400;
     margin:0px 5px;
@@ -421,4 +475,4 @@ color: white;
     width:100%; 
     text-align: center;
     margin: 10px;
-  }
+  } 
