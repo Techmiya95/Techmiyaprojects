@@ -4,19 +4,75 @@
     padding: 0;
     box-sizing: border-box;
   }
-  .topbar {
-    background: #ffffff;
-    position: relative;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.07);
-    color: hsl(0, 0%, 100%);
+  .top-bar {
+    background-color: #ffffff;
+    color: #020202;
+    padding: 0px;
 }
   
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.contact-info span {
+  margin-right: 20px;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+.email:before,
+.phone:before {
+  content: '\f0e0'; /* Font Awesome icon for envelope */
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.phone:before {
+  content: '\f095'; /* Font Awesome icon for phone */
+}
+
+.social-icons a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 17px;
+  margin-right: 0px;
+ 
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+
+
   header {
-    background-color: #080808;
+    background-color: #000000;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 0px;
+    position:relative;
   }
+
+
+  .container {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20 auto;
+    padding: 0 10px;
+    color:#000000
+}
+
+.logo img {
+    height: 120px; /* Adjust the height as needed */
   
+}
+
+
+
   nav ul {
     list-style-type: none;
     text-align: center;
@@ -45,6 +101,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    text-align: left;
   }
   
   .dropbtn {
@@ -83,6 +140,7 @@
   
 
 
+
   
   
   .main-content {
@@ -90,6 +148,7 @@
     padding: 10px;
     text-decoration:solid;
     display: block;
+    text-align: center;
   }
   .main-content:hover{
     color:#ff7200;
@@ -207,7 +266,7 @@ body, html {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/collage.jpg");
 
 /* Set a specific height */
-height: 90%;
+height: 120%;
 
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
@@ -226,43 +285,34 @@ transform: translate(-50%, -50%);
 color: white;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-} */
 
 .image-container {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .round-image {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  margin-right: 20px; /* Adjust the margin to increase or decrease space between images */
-  overflow: hidden;
+  text-align: center;
 }
+
+.round-image img {
+  width: 180px; /* Adjust image size as needed */
+  border-radius: 50%; /* Make the image round */
+}
+
+.round-image p {
+  margin-top: 20px; /* Adjust spacing between image and text */
+}
+
+
+
 
 .round-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.text-below {
-  text-align: center;
-  color: #000;
-}
-
-
-
+} */
 
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -289,8 +339,38 @@ color: white;
 }
 
 
+.contact-info {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
 
-  footer {
+.contact-details {
+  display: inline-block;
+  text-align: center;
+}
+
+.phone {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.address {
+  font-size: 30px;
+}
+
+.map {
+  display:block;
+  margin-left: 100px;
+}
+
+.map iframe {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+
+ footer {
     background-color: #080808;
   }
 
@@ -299,6 +379,25 @@ color: white;
     padding: 70px 30px 20px;
 
   }
+
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
   .socialIcons{
     display: flex;
     justify-content:center;
@@ -362,7 +461,7 @@ color: white;
 
   .designer{
     opacity: 0.7;
-    text-transform: uppercase;
+    text-transform:capitalize;
     letter-spacing: 1px;
     font-weight: 400;
     margin:0px 5px;
@@ -376,4 +475,4 @@ color: white;
     width:100%; 
     text-align: center;
     margin: 10px;
-  }
+  } 
