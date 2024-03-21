@@ -6,7 +6,7 @@
 .top-bar {
   background-color: #ffffff;
   color: #020202;
-  padding: 0px;
+
 }
 
 .contact-info {
@@ -50,7 +50,6 @@ color: #ff6600;
 header {
   background-color: #000000;
   color: #ffffff;
-  padding: 0px;
   position:relative;
 }
 
@@ -60,13 +59,15 @@ header {
   align-items:center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 20 auto;
-  padding: 0 10px;
+  margin: auto;
+  padding: auto;
   color:#000000
 }
 
 .logo img {
-  height: 120px; /* Adjust the height as needed */
+  margin-top: 10px;
+  height: 120px;
+  width: 140px; /* Adjust the height as needed */
 
 }
 
@@ -90,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ff0505;
+  background-color: #ffffff6e;
 }
 
 body {
@@ -184,7 +185,7 @@ border: 1px solid #ccc;
 border-radius: 4px;
 }
 
-button[type="submit"] {
+button[type="button"] {
 padding: 8px 15px;
 margin-left: 5px;
 background-color: #4CAF50;
@@ -337,6 +338,165 @@ color: white;
   padding: 5px;
 }
 
+/* * Testimonial section styles */ */
+
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #53e2d6;
+    margin: 26px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial{
+    background: #fff;
+    padding: 30px;
+}
+
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: #53e2d6;
+    margin-bottom: 20px;
+}
+.stars .half::before {
+  content: "\f089";
+  width: 50%;
+  overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@media screen and (max-width:680px){
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
 
 .contact-info {
   background-color: #f8f8f8;
@@ -426,6 +586,7 @@ color: white;
 
   .footernav{
     margin: 50px 0;;
+    margin-bottom: auto;
   }
 
   .footernav ul{
@@ -448,7 +609,7 @@ color: white;
 
   .footerBottom{
     background-color: #080808;
-    padding:20px ;
+    padding:10px ;
     text-align: center;
   }
 
