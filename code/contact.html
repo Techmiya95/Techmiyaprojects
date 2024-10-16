@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/code/common.js"></script>
     <title>Contact Us - Techmiya Projects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
         }
 
         h1 {
@@ -59,14 +61,12 @@
 </head>
 
 <body>
+    <div id="header"></div>
     <h1>Contact Us</h1>
 
-    <form action="submit_form.php" method="post">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required>
-
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required>
+    <form onsubmit="sendWhatsApp(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
@@ -77,17 +77,44 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit via WhatsApp">
     </form>
 
-    <div class="address">
-        <p><strong>Address:</strong><br>6th block near Bashyam Circle, Rajajinagar, Bengaluru - 560010</p>
+    <script>
+        function sendWhatsApp(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var phonenumber = "+916363760275";
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            var url = "https://wa.me/" + phonenumber + "?text=" +
+                "*Name:* " + name + "%0a" +
+                "*Email:* " + email + "%0a" +
+                "*Subject:* " + subject + "%0a" +
+                "*Message:* " + message + "%0a%0a";
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+    <div class="contact-info">
+        <div class="contact-details">
+            <h1>Contact Details</h1>
+            <p class="phone">Phone: +91 6363760275</p>
+            <h2>Address</h2>
+           <h1>Contact Details </h1>
+        <p class="address">#1400, 2nd Floor</p> 
+        <p>28th main S & C Cross Rd</p>
+        <p>Jayanagar 9th Block, Bengaluru - 560069</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7641139370116!2d77.5482270749186!3d12.986933587329856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d721715ea3d%3A0xf49700e44d994dc0!2sTechmiya%20Solutions!5e0!3m2!1sen!2sin!4v1707639104484!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1158641794024!2d77.56189961436076!3d13.009548190825717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16626b8f44d1%3A0x2f7a5b62a63bf35b!2sRajajinagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1639457041555!5m2!1sen!2sin"
-        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+    <div id="footer"></div>
 </body>
 
 </html>

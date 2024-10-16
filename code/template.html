@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects for Final Year Students</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/code/common.js"></script>
+  <div id="header"></div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    #parent-div {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      overflow: auto; /* Added overflow to fix floated elements */
+      display: flex; /* Use flexbox for layout */
+      flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    #bodyarea {
+      width: 100%; /* Full width on small screens */
+      max-width: 75%; /* Limit width on larger screens */
+      background-color: rgb(255, 255, 255);
+      float: none; /* Remove float */
+      padding: 10px; /* Adjust padding */
+    }
+
+    #sidebar {
+      width: 100%; /* Full width on small screens */
+      max-width: 22%; /* Limit width on larger screens */
+      background-color: rgb(255, 255, 255);
+      float: none; /* Remove float */
+      padding: 10px; /* Adjust padding */
+      line-height: 3; /* Adjusted line-height */
+    }
+
+    #title-content {
+      padding: 10px;
+      font-family: sans-serif;
+      font-size: large;
+    }
+
+    #image {
+      text-align: center; /* Changed to text-align */
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    #paragraph {
+      padding: 10px; /* Adjusted padding */
+      text-align: justify;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    #footer-div { /* Changed to match ID in HTML */
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 768px) {
+      #bodyarea, #sidebar {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="parent-div" class="clearfix">
+    <div id="bodyarea">
+      <div id="title-content">
+        <h1>Project Title with detailed abstract and explanation</h1>
+        <br>
+        <br>
+      </div>
+      <div id="image">
+        <img src="/static/images/relay.jpeg" alt="image name" style="max-width: 100%;" height="auto">
+      </div>
+      <h2 style="text-align: center;">Abstract</h2>
+      <div id="paragraph">
+        <p>Raspberry Pi, a versatile and affordable single-board computer, has garnered widespread attention and adoption across various fields, ranging from hobbyist projects to industrial applications. This paper provides a comprehensive overview of the capabilities, features, and potential applications of Raspberry Pi. Beginning with an introduction to Raspberry Pi's hardware specifications and architecture, the paper delves into the diverse range of models available, highlighting their differences and strengths. It explores the extensive array of peripherals and expansion options, including GPIO pins, camera modules, and networking capabilities, which contribute to its flexibility and adaptability for different projects.
+          Moreover, the paper investigates the software ecosystem surrounding Raspberry Pi, encompassing the official Raspberry Pi OS, as well as various Linux distributions and specialized software packages tailored for specific tasks. It discusses the development environments, programming languages, and libraries commonly used for Raspberry Pi projects, catering to both beginners and advanced users.
+          Furthermore, the paper surveys a multitude of real-world applications and projects leveraging Raspberry Pi across domains such as education, home automation, robotics, IoT (Internet of Things), media centers, and beyond. It highlights notable case studies and success stories, illustrating the practical utility and innovative potential of Raspberry Pi in diverse scenarios.
+          Additionally, the paper explores emerging trends and future prospects for Raspberry Pi, including advancements in hardware capabilities, integration with emerging technologies such as AI (Artificial Intelligence) and edge computing, and its role in fostering STEM (Science, Technology, Engineering, and Mathematics) education and digital literacy.
+          In summary, this paper serves as a comprehensive guide for enthusiasts, educators, developers, and professionals seeking to understand, utilize, and maximize the potential of Raspberry Pi in their projects and endeavors. Through its exploration of hardware, software, applications, and future trends, it aims to inspire creativity, innovation, and exploration within the Raspberry Pi community and beyond.</p>
+      </div>
+      <h2 style="text-align: center;">Block Diagram</h2>
+      <br>
+      <div id="image">
+        <img src="/static/images/block.png" alt="image name" style="max-width: 100%;" height="auto">
+      </div>
+    </div>
+    <div id="sidebar">
+      <ul>
+      <h3 style="font-family:sans-serif;">Electronics Project List</h3>
+      <li><a href="/code/electronics_projects/Iot.html">IoT Projects</a></li>
+      <li><a href="/code/electronics_projects/rasp.html">Raspberry pi Projects</a></li>
+      <li><a href="/code/electronics_projects/ardunio.html">Arduino Projects</a></li>
+      <li><a href="/code/electronics_projects/drones.html">Drones and Robotics</a></li>
+      <li><a href="/code/electronics_projects/sensor.html">Sensor based Projects</a></li>
+      <li><a href="/code/electronics_projects/gsm.html">GSM based Projects</a></li>
+      <li><a href="/code/electronics_projects/wirless.html">Wireless communication Projects</a></li>
+      <li><a href="/code/electronics_projects/solar.html">Solar based Projects</a></li>
+      <li><a href="/code/electronics_projects/gps.html">GPS based Projects</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div id="footer-div">
+      <div id="footer"></div>
+    </div>
+  </footer>
+</body>
+</html>
