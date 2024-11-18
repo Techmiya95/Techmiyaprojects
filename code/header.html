@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sticky Header</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+</head>
+<br>
+<body>
+
+<!-- Sticky Header -->
+<header class="sticky-header">
+    <nav>
+        <a href="#"><img src="/static/images/logo.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times close-icon" onclick="toggleMenu()"></i>
+            <ul>
+                <li class="active">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#">BRANCHES</a>
+                    <ul class="dropdown">
+                        <li><a href="/code/software-projects/python.html">Computer Science</a></li>
+                        <li><a href="/code/electronic-projects/raspberrypi.html">Electronics and Communication</a></li>
+                        <li><a href="/code/software-projects/machine-learning.html">Machine Learning</a></li>
+                        <li><a href="/code/software-projects/ai.html">Artificial Intelligence</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ELECTRONIC PROJECTS</a>
+                    <ul class="dropdown">
+                        <li><a href="/code/electronic-projects/Iot.html">IoT Projects</a></li>
+                        <li><a href="/code/electronic-projects/raspberrypi.html">Raspberry Pi Projects</a></li>
+                        <li><a href="/code/electronic-projects/aurdino.html">Arduino Projects</a></li>
+                        <li><a href="/code/electronic-projects/drones.html">Drone and Robotics</a></li>
+                        <li><a href="/code/electronic-projects/sensor.html">Sensor based Projects</a></li>
+                        <li><a href="/code/electronic-projects/gsm.html">GSM based Projects</a></li>
+                        <li><a href="/code/electronic-projects/wireless.html">Wireless Communication Projects</a></li>
+                        <li><a href="/code/electronic-projects/solar.html">Solar based Projects</a></li>
+                        <li><a href="/code/electronic-projects/gsp.html">GPS based projects</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">SOFTWARE PROJECTS</a>
+                    <ul class="dropdown">
+                        <li><a href="/code/software-projects/machine-learning.html">Machine Learning Projects</a></li>
+                        <li><a href="/code/software-projects/ai.html">Artificial Intelligence Projects</a></li>
+                        <li><a href="/code/software-projects/python.html">Python Projects</a></li>
+                        <li><a href="/code/software-projects/java.html">Java based Projects</a></li>
+                        <li><a href="/code/software-projects/android.html">Android based Projects</a></li>
+                        <li><a href="/code/software-projects/data-science.html">Data Science based Projects</a></li>
+                        <li><a href="/code/software-projects/deep-learning.html">Deep Learning Projects</a></li>
+                        <li><a href="/code/software-projects/cloud-computing.html">Cloud Computing Projects</a></li>
+                        <li><a href="/code/software-projects/network.html">Network Security Projects</a></li>
+                        <li><a href="/code/software-projects/block-chain.html">Block Chain Projects</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">DOMAINS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Embedded Systems</a></li>
+                        <li><a href="/code/electronic-projects/Iot.html">Internet of Things</a></li>
+                        <li><a href="#">Python and Data Science</a></li>
+                        <li><a href="#">AI and ML</a></li>
+                    </ul>
+                </li>
+                <li><a href="/code/about-us.html">ABOUT US</a></li>
+                <li><a href="/code/contact-us.html">CONTACT US</a></li>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-info1">
+            <span class="email"><i class="fa fa-envelope"></i> techmiyaprojects@gmail.com</span>
+            <span class="phone"><i class="fa fa-phone"></i> +91 6363760275</span>
+        </div>
+        <i class="fa fa-bars open-icon" onclick="toggleMenu()"></i>
+    </nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
+    document.querySelectorAll('.nav-links ul li').forEach(item => {
+    item.addEventListener('click', (event) => {
+        // Prevents event from closing dropdowns if clicking inside
+        event.stopPropagation();
+        
+        // Toggle active state on the clicked item only
+        item.classList.toggle('active');
+        
+        // Close any other open dropdowns
+        document.querySelectorAll('.nav-links ul li').forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+    });
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-links ul li').forEach(item => {
+        item.classList.remove('active');
+    });
+});
+
+</script>
+
+</body>
+</html>
