@@ -18,8 +18,9 @@
 
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 1500px;
       margin: auto;
+      margin-right: 30%;
     }
 
     h1, h2, h3 {
@@ -69,17 +70,101 @@
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    ul {
+    .project-list ol {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      font-size: 1.2em;
     }
 
-    li {
+    .project-list li {
       font-size: 1.2em;
       line-height: 1.6;
       margin-left: 0;
+      text-align: left;
     }
+    .project-list ol li a{
+      color: rgb(49, 47, 47);
+      text-decoration: none;
+      font-size: 1.0em;
+      margin: 0;
+      display: block;
+      padding: 5px 0;
+    }
+    .project-list ol li{
+      font-size: 1.25em;
+      margin: 0 10px;
+    }
+    .project-list ol li a:hover{
+      background: #485777;
+    }
+    .video-list {
+      position: fixed;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    .video-list iframe {
+      margin-bottom: 70px;
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .project-list {
+      width: 100%; 
+    }
+    @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .p1, .project-list li {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .project-list {
+    width: 100%;
+  }
+
+  .video-list {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-list ol li a {
+    font-size: 1em;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+}
     </style>
 </head>
 <body>
@@ -92,38 +177,48 @@
     <main>
 
     <h1>List of 50 Deep Learning Projects</h1>
+    <div class="content">
+      <div class="project-list">
     <ol>
-        <li>DL - 1: Image Classification using Convolutional Neural Networks (CNNs)</li>
-        <li>DL - 2: Facial Expression Recognition</li>
-        <li>DL - 3: Object Detection in Images and Videos</li>
-        <li>DL - 4: Handwritten Digit Recognition (MNIST Dataset)</li>
-        <li>DL - 5: Speech Recognition with Deep Learning</li>
-        <li>DL - 6: Image Style Transfer</li>
-        <li>DL - 7: Generative Adversarial Networks (GANs) for Image Generation</li>
-        <li>DL - 8: Text Generation with Recurrent Neural Networks (RNNs)</li>
-        <li>DL - 9: Sentiment Analysis using Long Short-Term Memory (LSTM) Networks</li>
-        <li>DL - 10: Named Entity Recognition in Natural Language Processing (NLP)</li>
-        <li>DL - 11: Human Pose Estimation</li>
-        <li>DL - 12: Anomaly Detection in Time Series Data</li>
-        <li>DL - 13: Character-level Language Modeling</li>
-        <li>DL - 14: Video Classification using 3D Convolutional Neural Networks</li>
-        <li>DL - 15: Image Segmentation</li>
-        <li>DL - 16: Recommendation System with Deep Learning</li>
-        <li>DL - 17: Reinforcement Learning for Game Playing</li>
-        <li>DL - 18: Transfer Learning for Image Recognition</li>
-        <li>DL - 19: Time Series Prediction with Attention Mechanisms</li>
-        <li>DL - 20: Multi-modal Image Captioning</li>
-        <li>DL - 21: Object Tracking in Videos</li>
-        <li>DL - 22: Automated Image Captioning</li>
-        <li>DL - 23: DeepFake Detection</li>
-        <li>DL - 24: Question Answering System with Transformers</li>
-        <li>DL - 25: Drug Discovery with Deep Learning</li>
-        <li>DL - 26: Indoor Navigation using Neural Networks</li>
-        <li>DL - 27: Gesture Recognition with Deep Learning</li>
-        <li>DL - 28: Neural Style Transfer for Videos</li>
-        <li>DL - 29: Deep Learning for Brain-Computer Interface</li>
-        <li>DL - 30: Image Super-Resolution</li>
+        <li><a href="#">DL - 1: Image Classification using Convolutional Neural Networks (CNNs)</a></li>
+        <li><a href="#">DL - 2: Facial Expression Recognition</a></li>
+        <li><a href="#">DL - 3: Object Detection in Images and Videos</a></li>
+        <li><a href="#">DL - 4: Handwritten Digit Recognition (MNIST Dataset)</a></li>
+        <li><a href="#">DL - 5: Speech Recognition with Deep Learning</a></li>
+        <li><a href="#">DL - 6: Image Style Transfer</a></li>
+        <li><a href="#">DL - 7: Generative Adversarial Networks (GANs) for Image Generation</a></li>
+        <li><a href="#">DL - 8: Text Generation with Recurrent Neural Networks (RNNs)</a></li>
+        <li><a href="#">DL - 9: Sentiment Analysis using Long Short-Term Memory (LSTM) Networks</a></li>
+        <li><a href="#">DL - 10: Named Entity Recognition in Natural Language Processing (NLP)</a></li>
+        <li><a href="#">DL - 11: Human Pose Estimation</a></li>
+        <li><a href="#">DL - 12: Anomaly Detection in Time Series Data</a></li>
+        <li><a href="#">DL - 13: Character-level Language Modeling</a></li>
+        <li><a href="#">DL - 14: Video Classification using 3D Convolutional Neural Networks</a></li>
+        <li><a href="#">DL - 15: Image Segmentation</a></li>
+        <li><a href="#">DL - 16: Recommendation System with Deep Learning</a></li>
+        <li><a href="#">DL - 17: Reinforcement Learning for Game Playing</a></li>
+        <li><a href="#">DL - 18: Transfer Learning for Image Recognition</a></li>
+        <li><a href="#">DL - 19: Time Series Prediction with Attention Mechanisms</a></li>
+        <li><a href="#">DL - 20: Multi-modal Image Captioning</a></li>
+        <li><a href="#">DL - 21: Object Tracking in Videos</a></li>
+        <li><a href="#">DL - 22: Automated Image Captioning</a></li>
+        <li><a href="#">DL - 23: DeepFake Detection</a></li>
+        <li><a href="#">DL - 24: Question Answering System with Transformers</a></li>
+        <li><a href="#">DL - 25: Drug Discovery with Deep Learning</a></li>
+        <li><a href="#">DL - 26: Indoor Navigation using Neural Networks</a></li>
+        <li><a href="#">DL - 27: Gesture Recognition with Deep Learning</a></li>
+        <li><a href="#">DL - 28: Neural Style Transfer for Videos</a></li>
+        <li><a href="#">DL - 29: Deep Learning for Brain-Computer Interface</a></li>
+        <li><a href="#">DL - 30: Image Super-Resolution</a></li>
         </ol>
+      </div>
+      <div class="video-list">
+        <!-- Add YouTube video embeds here -->
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/qnl8Mt8LW4g?si=2YwdGDLCLw_bzGG4?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/TF5vHKFYfiM?si=lsO-_Ab3LYRMwrHC?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
+    </div>
         </main>
         <div id="footer-container"></div>
         <script src="/code/script.js"></script>

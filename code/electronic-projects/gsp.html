@@ -6,8 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/static/css/footer.css">
- 
-  <title>Raspberry Pi Projects for Final Year Students</title>
+  <title>Arduino Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,71 +16,107 @@
       padding: 0;
     }
 
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
-    h1, h2, h3 {
-      margin-left: 0;
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #333;
       text-align: center;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 2.5em;
+      color: #333;
     }
 
-    h2 {
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 20px;
-    color: #fff;
-    }
-    h2:hover{
-    color: #ec3146;
-    }
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .p1 {
-      font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
-      color: #555; 
-    }
-    .p1:hover{
-      color: #0e0e0e;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    ul {
-      list-style-type: none;
+    .main-content ol {
+      list-style: none;
       padding: 0;
-      margin: 0;
     }
 
-    li {
+    .main-content ol li {
       font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
-      text-align: justify;
+      margin-bottom: 10px;
     }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -91,63 +126,103 @@
   <br>
   <br>
   <br>
-<main>
 
-  <h1>GPS-Based Projects</h1>
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>GPS-Based Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">GP-01: GPS Location Tracker for Vehicles</a></li>
+        <li><a href="#">GP-02: Geo-Fencing System using GPS</a></li>
+        <li><a href="#">GP-03: GPS-based Weather Monitoring System</a></li>
+        <li><a href="#">GP-04: Real-time GPS Navigation System</a></li>
+        <li><a href="#">GP-05: GPS-based Asset Tracking System</a></li>
+        <li><a href="#">GP-06: GPS-guided Autonomous Drone</a></li>
+        <li><a href="#">GP-07: GPS-based enabled Fitness Tracker</a></li>
+        <li><a href="#">GP-08: GPS-based Wildlife Tracking</a></li>
+        <li><a href="#">GP-09: GPS-based Fleet Management System</a></li>
+        <li><a href="#">GP-10: GPS-controlled Agricultural Drone</a></li>
+        <li><a href="#">GP-11: GPS-based Smart Parking System</a></li>
+        <li><a href="#">GP-12: GPS-based Emergency Response System</a></li>
+        <li><a href="#">GP-13: GPS-guided Robotic Vehicle</a></li>
+        <li><a href="#">GP-14: GPS-based Share My Location App</a></li>
+        <li><a href="#">GP-15: GPS-based Health Monitoring System</a></li>
+        <li><a href="#">GP-16: GPS-based Augmented Reality Navigation</a></li>
+        <li><a href="#">GP-17: GPS-enabled Personal Safety Device</a></li>
+        <li><a href="#">GP-18: GPS-based Earthquake Early Warning System</a></li>
+        <li><a href="#">GP-19: GPS-guided Smart Glasses for Navigation</a></li>
+        <li><a href="#">GP-20: GPS-based Railway Track Monitoring</a></li>
+        <li><a href="#">GP-21: GPS-controlled Underwater Exploration Vehicle</a></li>
+        <li><a href="#">GP-22: GPS-based Tourist Guide App</a></li>
+        <li><a href="#">GP-23: GPS-based Location-based Advertising System</a></li>
+        <li><a href="#">GP-24: GPS-guided Autonomous Car</a></li>
+        <li><a href="#">GP-25: GPS-based Wildfire Monitoring System</a></li>
+        <li><a href="#">GP-26: GPS-enabled Mobile Robot for Package Delivery</a></li>
+        <li><a href="#">GP-27: GPS-based Navigation System for Visually Impaired</a></li>
+        <li><a href="#">GP-28: GPS-guided Smart Bicycle</a></li>
+        <li><a href="#">GP-29: GPS-Integrated Environmental Quality Monitor</a></li>
+        <li><a href="#">GP-30: GPS-controlled Smart Home Automation</a></li>
+        <li><a href="#">GP-31: GPS-based Disaster Management System</a></li>
+        <li><a href="#">GP-32: GPS-guided Agricultural Field Monitoring</a></li>
+        <li><a href="#">GP-33: GPS-based Indoor Navigation System</a></li>
+        <li><a href="#">GP-34: GPS-enabled Water Quality Monitoring</a></li>
+        <li><a href="#">GP-35: GPS-based Geo-tagging Mobile App</a></li>
+        <li><a href="#">GP-36: GPS-guided Surveillance Drone</a></li>
+        <li><a href="#">GP-37: GPS-based Air Traffic Control System</a></li>
+        <li><a href="#">GP-38: GPS-controlled Smart Street Lighting</a></li>
+        <li><a href="#">GP-39: GPS-based Disaster Recovery Drone</a></li>
+        <li><a href="#">GP-40: GPS-guided Virtual Reality Exploration</a></li>
+        <li><a href="#">GP-41: GPS-based Smart Tourism System</a></li>
+        <li><a href="#">GP-42: GPS-enabled Fishing Activity Monitoring</a></li>
+        <li><a href="#">GP-43: GPS-based Vehicle Toll Collection System</a></li>
+        <li><a href="#">GP-44: GPS-guided Autonomous Underwater Vehicle (AUV)</a></li>
+        <li><a href="#">GP-45: GPS-based Campus Navigation App</a></li>
+        <li><a href="#">GP-46: GPS-controlled Smart City Infrastructure</a></li>
+        <li><a href="#">GP-47: GPS-based Wildlife Conservation Monitoring</a></li>
+        <li><a href="#">GP-48: GPS-guided Precision Agriculture System</a></li>
+        <li><a href="#">GP-49: GPS-enabled Disaster Evacuation Planning</a></li>
+        <li><a href="#">GP-50: GPS-based Location-aware Social Networking</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
 
-  <ul>
-    <li>GP-01: GPS Location Tracker for Vehicles</li>
-    <li>GP-02: Geo-Fencing System using GPS</li>
-    <li>GP-03: GPS-based Weather Station</li>
-    <li>GP-04: Real-time GPS Navigation System</li>
-    <li>GP-05: GPS-based Asset Tracking System</li>
-    <li>GP-06: GPS-guided Autonomous Drone</li>
-    <li>GP-07: GPS-enabled Fitness Tracker</li>
-    <li>GP-08: GPS-based Wildlife Tracking</li>
-    <li>GP-09: GPS-based Fleet Management System</li>
-    <li>GP-10: GPS-controlled Agricultural Drone</li>
-    <li>GP-11: GPS-based Smart Parking System</li>
-    <li>GP-12: GPS-based Emergency Response System</li>
-    <li>GP-13: GPS-guided Robotic Vehicle</li>
-    <li>GP-14: GPS-based Location Sharing App</li>
-    <li>GP-15: GPS-based Health Monitoring System</li>
-    <li>GP-16: GPS-based Augmented Reality Navigation</li>
-    <li>GP-17: GPS-enabled Personal Safety Device</li>
-    <li>GP-18: GPS-based Earthquake Early Warning System</li>
-    <li>GP-19: GPS-guided Smart Glasses for Navigation</li>
-    <li>GP-20: GPS-based Railway Track Monitoring</li>
-    <li>GP-21: GPS-controlled Underwater Exploration Vehicle</li>
-    <li>GP-22: GPS-based Tourist Guide App</li>
-    <li>GP-23: GPS-based Location-based Advertising System</li>
-    <li>GP-24: GPS-guided Autonomous Car</li>
-    <li>GP-25: GPS-based Wildfire Monitoring System</li>
-    <li>GP-26: GPS-enabled Mobile Robot for Package Delivery</li>
-    <li>GP-27: GPS-based Navigation System for Visually Impaired</li>
-    <li>GP-28: GPS-guided Smart Bicycle</li>
-    <li>GP-29: GPS-based Air Quality Monitoring</li>
-    <li>GP-30: GPS-controlled Smart Home Automation</li>
-    <li>GP-31: GPS-based Disaster Management System</li>
-    <li>GP-32: GPS-guided Agricultural Field Monitoring</li>
-    <li>GP-33: GPS-based Indoor Navigation System</li>
-    <li>GP-34: GPS-enabled Water Quality Monitoring</li>
-    <li>GP-35: GPS-based Geo-tagging Mobile App</li>
-    <li>GP-36: GPS-guided Surveillance Drone</li>
-    <li>GP-37: GPS-based Air Traffic Control System</li>
-    <li>GP-38: GPS-controlled Smart Street Lighting</li>
-    <li>GP-39: GPS-based Disaster Recovery Drone</li>
-    <li>GP-40: GPS-guided Virtual Reality Exploration</li>
-    <li>GP-41: GPS-based Smart Tourism System</li>
-    <li>GP-42: GPS-enabled Fishing Activity Monitoring</li>
-    <li>GP-43: GPS-based Vehicle Toll Collection System</li>
-    <li>GP-44: GPS-guided Autonomous Underwater Vehicle (AUV)</li>
-    <li>GP-45: GPS-based Campus Navigation App</li>
-    <li>GP-46: GPS-controlled Smart City Infrastructure</li>
-    <li>GP-47: GPS-based Wildlife Conservation Monitoring</li>
-    <li>GP-48: GPS-guided Precision Agriculture System</li>
-    <li>GP-49: GPS-enabled Disaster Evacuation Planning</li>
-    <li>GP-50: GPS-based Location-aware Social Networking</li>
-  </ul>
-  </main>
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <div id="footer-container"></div>
   <script src="/code/script.js"></script>
 </body>

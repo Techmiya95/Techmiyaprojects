@@ -18,8 +18,9 @@
 
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 1500px;
       margin: auto;
+      margin-right: 30%;
     }
 
     h1, h2, h3 {
@@ -69,17 +70,102 @@
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    ul {
+    .project-list ol {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      font-size: 1.2em;
     }
 
-    li {
+    .project-list li {
       font-size: 1.2em;
       line-height: 1.6;
       margin-left: 0;
-        }
+      text-align: left;
+    }
+    .project-list ol li a{
+      color: rgb(49, 47, 47);
+      text-decoration: none;
+      font-size: 1.0em;
+      margin: 0;
+      display: block;
+      padding: 5px 0;
+    }
+    .project-list ol li{
+      font-size: 1.25em;
+      margin: 0 10px;
+    }
+    .project-list ol li a:hover{
+      background: #485777;
+    }
+
+    .video-list {
+      position: fixed;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    .video-list iframe {
+      margin-bottom: 70px;
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .project-list {
+      width: 100%; 
+    }
+    @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .p1, .project-list li {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .project-list {
+    width: 100%;
+  }
+
+  .video-list {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-list ol li a {
+    font-size: 1em;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+}
     </style>
 </head>
 <body>
@@ -91,45 +177,55 @@
     <br>
     <main>
     <h1>List of 37 Blockchain Projects</h1>
+    <div class="content">
+      <div class="project-list">
     <ol>
-        <li>BC - 1: Organic Food Traceability System using Blockchain</li>
-        <li>BC - 2: Pharma Supply Chain System using Smart Contracts</li>
-        <li>BC - 3: Evidence Protection System Using Blockchain Technology</li>
-        <li>BC - 4: Blockchain Shipment Management Tracking System</li>
-        <li>BC - 5: Identifying Fake Products Through A Barcode-Based Blockchain System</li>
-        <li>BC - 6: Medical Report Management & Distribution System on Blockchain</li>
-        <li>BC - 7: Real Estate Booking System using Smart Contracts</li>
-        <li>BC - 8: Trusted Crowdfunding Platform Using a Smart Contract</li>
-        <li>BC - 9: Blockchain based Loan Management System with Smart Contracts</li>
-        <li>BC - 10: Blockchain Rental Property System with Smart Contracts</li>
-        <li>BC - 11: Anti-Money Laundering System using Blockchain</li>
-        <li>BC - 12: Blockchain-based Transaction and Settlement System</li>
-        <li>BC - 13: Blockchain based Cloud File Sharing System</li>
-        <li>BC - 14: Blockchain based Cross Border Payment System</li>
-        <li>BC - 15: Blockchain based Merchant Payment System</li>
-        <li>BC - 16: Organization Finance Tracking System using Blockchain</li>
-        <li>BC - 17: Blockchain based Personal Identity Security System</li>
-        <li>BC - 18: Blockchain Tender/Contract Management System in Python</li>
-        <li>BC - 19: Blockchain based Disk Space Rental System</li>
-        <li>BC - 20: Blockchain Based Crowdfunding Platform</li>
-        <li>BC - 21: Blockchain Based Antiques Verification System</li>
-        <li>BC - 22: Property Registration Management System using Blockchain</li>
-        <li>BC - 23: Patient Data Management System using Blockchain</li>
-        <li>BC - 24: Electronic Voting System using Blockchain</li>
-        <li>BC - 25: Loyalty Points Exchange System using Blockchain</li>
-        <li>BC - 26: NGO Management System using Blockchain</li>
-        <li>BC - 27: Smart Tender Management System Using Blockchain</li>
-        <li>BC - 28: Blockchain based Transaction & Settlement System</li>
-        <li>BC - 29: Blockchain Based Cloud Storage System</li>
-        <li>BC - 30: Medical Report Management & Distribution System over Blockchain Technology</li>
-        <li>BC - 31: Android Document Sharing System using Blockchain Technology</li>
-        <li>BC - 32: Government Fund Allocation & Tracking System over Blockchain</li>
-        <li>BC - 33: Blockchain Project For Supply Chain Management System</li>
-        <li>BC - 34: Blockchain based Advanced Banking Software System</li>
-        <li>BC - 35: Automotive ERP System over Blockchain Technology</li>
-        <li>BC - 36: Industrial ERP System over Blockchain Technology</li>
-        <li>BC - 37: Retail Distribution Outlet Management System using Blockchain Technology</li>
+        <li><a href="#">BC - 1: Organic Food Traceability System using Blockchain</a></li>
+        <li><a href="#">BC - 2: Pharma Supply Chain System using Smart Contracts</a></li>
+        <li><a href="#">BC - 3: Evidence Protection System Using Blockchain Technology</a></li>
+        <li><a href="#">BC - 4: Blockchain Shipment Management Tracking System</a></li>
+        <li><a href="#">BC - 5: Identifying Fake Products Through A Barcode-Based Blockchain System</a></li>
+        <li><a href="#">BC - 6: Medical Report Management & Distribution System on Blockchain</a></li>
+        <li><a href="#">BC - 7: Real Estate Booking System using Smart Contracts</a></li>
+        <li><a href="#">BC - 8: Trusted Crowdfunding Platform Using a Smart Contract</a></li>
+        <li><a href="#">BC - 9: Blockchain based Loan Management System with Smart Contracts</a></li>
+        <li><a href="#">BC - 10: Blockchain Rental Property System with Smart Contracts</a></li>
+        <li><a href="#">BC - 11: Anti-Money Laundering System using Blockchain</a></li>
+        <li><a href="#">BC - 12: Blockchain-based Transaction and Settlement System</a></li>
+        <li><a href="#">BC - 13: Blockchain based Cloud File Sharing System</a></li>
+        <li><a href="#">BC - 14: Blockchain based Cross Border Payment System</a></li>
+        <li><a href="#">BC - 15: Blockchain based Merchant Payment System</a></li>
+        <li><a href="#">BC - 16: Organization Finance Tracking System using Blockchain</a></li>
+        <li><a href="#">BC - 17: Blockchain based Personal Identity Security System</a></li>
+        <li><a href="#">BC - 18: Blockchain Tender/Contract Management System in Python</a></li>
+        <li><a href="#">BC - 19: Blockchain based Disk Space Rental System</a></li>
+        <li><a href="#">BC - 20: Blockchain Based Crowdfunding Platform</a></li>
+        <li><a href="#">BC - 21: Blockchain Based Antiques Verification System</a></li>
+        <li><a href="#">BC - 22: Property Registration Management System using Blockchain</a></li>
+        <li><a href="#">BC - 23: Patient Data Management System using Blockchain</a></li>
+        <li><a href="#">BC - 24: Electronic Voting System using Blockchain</a></li>
+        <li><a href="#">BC - 25: Loyalty Points Exchange System using Blockchain</a></li>
+        <li><a href="#">BC - 26: NGO Management System using Blockchain</a></li>
+        <li><a href="#">BC - 27: Smart Tender Management System Using Blockchain</a></li>
+        <li><a href="#">BC - 28: Blockchain based Transaction & Settlement System</a></li>
+        <li><a href="#">BC - 29: Blockchain Based Cloud Storage System</a></li>
+        <li><a href="#">BC - 30: Medical Report Management & Distribution System over Blockchain Technology</a></li>
+        <li><a href="#">BC - 31: Android Document Sharing System using Blockchain Technology</a></li>
+        <li><a href="#">BC - 32: Government Fund Allocation & Tracking System over Blockchain</a></li>
+        <li><a href="#">BC - 33: Blockchain Project For Supply Chain Management System</a></li>
+        <li><a href="#">BC - 34: Blockchain based Advanced Banking Software System</a></li>
+        <li><a href="#">BC - 35: Automotive ERP System over Blockchain Technology</a></li>
+        <li><a href="#">BC - 36: Industrial ERP System over Blockchain Technology</a></li>
+        <li><a href="#">BC - 37: Retail Distribution Outlet Management System using Blockchain Technology</a></li>
     </ol>
+  </div>
+  <div class="video-list">
+    <!-- Add YouTube video embeds here -->
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/wxv8zlDVgUg?si=GtWhYk2KbJgDis0b?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/nO6568unOM0?si=tfsBgFt283eVwey-?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+  </div>
+</div>
     </main>
     <div id="footer-container"></div>
     <script src="/code/script.js"></script>

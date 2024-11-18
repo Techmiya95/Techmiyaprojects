@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.header{ 
+.page1{ 
     min-height: 125vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/static/images/banner1.jpg);
@@ -29,21 +29,18 @@ ul li ul.dropdown li{
     display: block;
 }
 ul li ul.dropdown{
-    width: 100%;
+    width: 122%;
     background: #101011;
     position: absolute;
     z-index: 999;
     display: none;
 }
 ul li a:hover{
-    background: #112c66;
+    background: #485777;
 }
 ul li:hover ul.dropdown{
     display: block;
 
-}
-ul li.active ul.dropdown {
-    display: block; /* Show when the parent is active */
 }
 
 nav{
@@ -52,9 +49,15 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav img{
-    width: 150px;
+nav a img {
+    width: 100px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+
+    
 }
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -82,6 +85,7 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -119,54 +123,98 @@ nav img{
 nav .fa{
     display: none;
 }
-#nav-links:checked + label + ul li ul.dropdown {
-    display: block;
-}
-@media(max-width: 700px){
-    .text-box h1{
+
+@media(max-width: 700px) {
+    .text-box h1 {
         font-size: 20px;
     }
-    .nav-links ul li{
-        display: block;
-        position: relative;
-    }
-    .nav-links{
+    
+    /* Adjust Navigation Logo */
+    nav a img {
+        width: 50px;
         position: absolute;
-        background: #f44336;
+        top: 15px;
+        left: 15px;
+        z-index: 3;
+    }
+
+    /* Side Navigation Styling */
+    .nav-links {
+        position: fixed;
+        background: #224466;
         height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
         z-index: 1;
-        transition: 1s;
+        transition: right 0.3s ease;
+        overflow-y: auto;
     }
-    nav .fa{
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Hamburger Icon Styling */
+    nav .fa {
         display: block;
         color: #fff;
-        margin: 10px;
+        margin: 5px;
         font-size: 22px;
         cursor: pointer;
     }
-    .nav-links ul{
-        padding: 30px;
-
-    }
-    ul li ul.dropdown {
-        display: none; /* Initially hide dropdown */
-        position: static; /* Default position */
-        background: #101011; /* Background for dropdown */
-        width: 100%; /* Full width of parent */
-        padding: 0; /* Reset padding */
+    .open-icon, .close-icon {
+        display: block;
     }
 
-    ul li.active ul.dropdown {
-        display: block; /* Show when active */
+    .fa-times.open-icon {
+        display: none;
+        position: absolute;
+        right: 15px;
+        top: 46px;
+        z-index: 3;
     }
 
-    /* Dropdown item styles */
-    ul li ul.dropdown li {
-        padding: 10px 8px; /* Add padding */
+    .fa-times.close-icon {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        display: none;
+    }
+
+    /* Navigation Links */
+    .nav-links ul {
+        padding: 20px;
+        list-style: none;
+    }
+
+    .nav-links ul li {
+        display: block;
+        position: relative;
+    }
+    /* Dropdown Menu Styling */
+    .nav-links ul li ul.dropdown {
+        position: static;
+        display: none; /* Hidden by default */
+        opacity: 1; /* Ensure visibility when displayed */
+        transition: all 0.3s ease; /* Smooth transition for display */
+        background: #222;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links ul li ul.dropdown li {
+        padding: 0px 5px; /* Adjust padding between list items */
+    }
+
+    .nav-links ul li ul.dropdown li a {
+        line-height: 1.0; /* Adjust line height to reduce vertical spacing */
+    }
+
+    /* Show the dropdown when the parent `li` has the active class */
+    .nav-links ul li.active ul.dropdown {
+        display: block;
     }
     .hero-btn {
         font-size: 12px;
@@ -400,13 +448,13 @@ hr{
 .testimonial-slider {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 900%;
     justify-content: center;
-    animation: slide 40s infinite;
+    animation: slide 60s infinite;
 }
 
 .testimonial-col {
-    min-width: 25%; /* Adjust the box size */
+    min-width: 50vw; /* Adjust the box size */
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -457,59 +505,73 @@ hr{
     0% {
         transform: translateX(0);
     }
-    10% {
-        transform: translateX(-10%);
+    9.09% {
+        transform: translateX(-9.09%);
     }
-    20% {
-        transform: translateX(-20%);
+    18.18% {
+        transform: translateX(-18.18%);
     }
-    30% {
-        transform: translateX(-30%);
+    27.27% {
+        transform: translateX(-27.27%);
     }
-    40% {
-        transform: translateX(-40%);
+    36.36% {
+        transform: translateX(-36.36%);
     }
-    50% {
-        transform: translateX(-50%);
+    45.45% {
+        transform: translateX(-45.45%);
     }
-    60% {
-        transform: translateX(-60%);
+    54.54% {
+        transform: translateX(-54.54%);
     }
-    70% {
-        transform: translateX(-70%);
+    63.63% {
+        transform: translateX(-63.63%);
     }
-    80% {
-        transform: translateX(-80%);
+    72.72% {
+        transform: translateX(-72.72%);
     }
-    90% {
-        transform: translateX(-90%);
+    81.81% {
+        transform: translateX(-81.81%);
+    }
+    90.9% {
+        transform: translateX(-90.9%);
     }
     100% {
         transform: translateX(-100%);
     }
 }
 .testimonial-slider {
-    animation: slide 60s linear infinite; /* Slow, continuous sliding */
+    animation: slide 30s linear infinite; /* Slow, continuous sliding */
 }
 
 
 /* Responsive for smaller screens */
 @media (max-width: 480px) {
-    .testimonial-col {
-        min-width: 100%;
+    .testimonials {
+      padding: 20px 0;
     }
-
+  
     .testimonials h1 {
-        font-size: 24px;
+      font-size: 1.8em; /* Further reduce heading size */
     }
-
+  
+    .testimonial-col {
+      min-width: 95vw; /* Full width with slight margin */
+      padding: 10px; /* Even less padding */
+      margin: 0 5px; /* Narrower margin */
+    }
+  
     .testimonial-col p {
-        font-size: 14px;
+      font-size: 0.8em; /* Further reduce font size */
+      line-height: 1.3em;
     }
-
+  
     .testimonial-col h3 {
-        font-size: 16px;
+      font-size: 0.9em; /* Smaller font size for names */
     }
-}
+  
+    .testimonial-slider {
+      width: 1000%; /* Ensure enough width for smooth sliding */
+    }
+  }
 
 

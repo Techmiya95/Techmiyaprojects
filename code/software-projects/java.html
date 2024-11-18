@@ -18,8 +18,9 @@
 
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 1500px;
       margin: auto;
+      margin-right: 30%;
     }
 
     h1, h2, h3 {
@@ -69,17 +70,101 @@
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    ul {
+    .project-list ol {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      font-size: 1.2em;
     }
 
-    li {
+    .project-list li {
       font-size: 1.2em;
       line-height: 1.6;
       margin-left: 0;
-        }
+      text-align: left;
+    }
+    .project-list ol li a{
+      color: rgb(49, 47, 47);
+      text-decoration: none;
+      font-size: 1.0em;
+      margin: 0;
+      display: block;
+      padding: 5px 0;
+    }
+    .project-list ol li{
+      font-size: 1.25em;
+      margin: 0 10px;
+    }
+    .project-list ol li a:hover{
+      background: #485777;
+    }
+    .video-list {
+      position: fixed;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    .video-list iframe {
+      margin-bottom: 70px;
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .project-list {
+      width: 100%; 
+    }
+    @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .p1, .project-list li {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .project-list {
+    width: 100%;
+  }
+
+  .video-list {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-list ol li a {
+    font-size: 1em;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+}
     </style>
 </head>
 <body>
@@ -91,58 +176,68 @@
   <br>
   <main>
     <h1>List of Java Projects</h1>
-    <ul>
-        <li>JA - 1: Online Banking System using Java</li>
-        <li>JA - 2: Hospital Management System in Java</li>
-        <li>JA - 3: Student Information System using Java Swing</li>
-        <li>JA - 4: Library Management System in Java</li>
-        <li>JA - 5: Hotel Reservation System using Java and MySQL</li>
-        <li>JA - 6: Employee Payroll Management System in Java</li>
-        <li>JA - 7: Online Quiz System using Java</li>
-        <li>JA - 8: E-commerce Website in Java</li>
-        <li>JA - 9: Inventory Management System in Java</li>
-        <li>JA - 10: Social Media Application in Java</li>
-        <li>JA - 11: Attendance Management System using Java Swing</li>
-        <li>JA - 12: Railway Reservation System in Java</li>
-        <li>JA - 13: Airline Reservation System using Java and SQL</li>
-        <li>JA - 14: Online Movie Ticket Booking System in Java</li>
-        <li>JA - 15: College Management System using Java and Hibernate</li>
-        <li>JA - 16: Online Exam System in Java</li>
-        <li>JA - 17: Employee Leave Management System using Java</li>
-        <li>JA - 18: Car Rental System in Java</li>
-        <li>JA - 19: Online Course Registration System using Java Swing</li>
-        <li>JA - 20: Budget Management System in Java</li>
-        <li>JA - 21: Online Auction System using Java and MySQL</li>
-        <li>JA - 22: Mobile Store Management System in Java</li>
-        <li>JA - 23: Content Management System (CMS) in Java</li>
-        <li>JA - 24: Blood Bank Management System using Java</li>
-        <li>JA - 25: Payroll System in Java and MySQL</li>
-        <li>JA - 26: Complaint Management System using Java Swing</li>
-        <li>JA - 27: Gym Management System in Java</li>
-        <li>JA - 28: Hotel Management System using Java and Hibernate</li>
-        <li>JA - 29: Online Voting System in Java</li>
-        <li>JA - 30: Online News Portal in Java</li>
-        <li>JA - 31: Event Management System using Java and SQL</li>
-        <li>JA - 32: Health Record Management System in Java</li>
-        <li>JA - 33: Tour and Travel Management System using Java Swing</li>
-        <li>JA - 34: Employee Task Management System in Java</li>
-        <li>JA - 35: Inventory Tracking System using Java and MySQL</li>
-        <li>JA - 36: Recruitment Management System in Java</li>
-        <li>JA - 37: Employee Performance Management System using Java</li>
-        <li>JA - 38: Online Property Management System in Java</li>
-        <li>JA - 39: Online Course Evaluation System using Java</li>
-        <li>JA - 40: Human Resource Management System in Java</li>
-        <li>JA - 41: College Admission System using Java Swing</li>
-        <li>JA - 42: Online Grocery Shopping System in Java</li>
-        <li>JA - 43: Expense Tracker System using Java</li>
-        <li>JA - 44: Student Result Management System in Java</li>
-        <li>JA - 45: Task Scheduler System using Java Swing</li>
-        <li>JA - 46: Railway Ticket Reservation System in Java</li>
-        <li>JA - 47: Online Matrimonial System using Java and MySQL</li>
-        <li>JA - 48: Employee Attendance System in Java</li>
-        <li>JA - 49: Online Complaint Management System using Java Swing</li>
-        <li>JA - 50: Movie Recommendation System in Java</li>
-    </ul>
+    <div class="content">
+      <div class="project-list">
+    <ol>
+        <li><a href="#">JA - 1: Online Banking System using Java</a></li>
+        <li><a href="#">JA - 2: Hospital Management System in Java</a></li>
+        <li><a href="#">JA - 3: Student Information System using Java Swing</a></li>
+        <li><a href="#">JA - 4: Library Management System in Java</a></li>
+        <li><a href="#">JA - 5: Hotel Reservation System using Java and MySQL</a></li>
+        <li><a href="#">JA - 6: Employee Payroll Management System in Java</a></li>
+        <li><a href="#">JA - 7: Online Quiz System using Java</a></li>
+        <li><a href="#">JA - 8: E-commerce Website in Java</a></li>
+        <li><a href="#">JA - 9: Inventory Management System in Java</a></li>
+        <li><a href="#">JA - 10: Social Media Application in Java</a></li>
+        <li><a href="#">JA - 11: Attendance Management System using Java Swing</a></li>
+        <li><a href="#">JA - 12: Railway Reservation System in Java</a></li>
+        <li><a href="#">JA - 13: Airline Reservation System using Java and SQL</a></li>
+        <li><a href="#">JA - 14: Online Movie Ticket Booking System in Java</a></li>
+        <li><a href="#">JA - 15: College Management System using Java and Hibernate</a></li>
+        <li><a href="#">JA - 16: Online Exam System in Java</a></li>
+        <li><a href="#">JA - 17: Employee Leave Management System using Java</a></li>
+        <li><a href="#">JA - 18: Car Rental System in Java</a></li>
+        <li><a href="#">JA - 19: Online Course Registration System using Java Swing</a></li>
+        <li><a href="#">JA - 20: Budget Management System in Java</a></li>
+        <li><a href="#">JA - 21: Online Auction System using Java and MySQL</a></li>
+        <li><a href="#">JA - 22: Mobile Store Management System in Java</a></li>
+        <li><a href="#">JA - 23: Content Management System (CMS) in Java</a></li>
+        <li><a href="#">JA - 24: Blood Bank Management System using Java</a></li>
+        <li><a href="#">JA - 25: Payroll System in Java and MySQL</a></li>
+        <li><a href="#">JA - 26: Complaint Management System using Java Swing</a></li>
+        <li><a href="#">JA - 27: Gym Management System in Java</a></li>
+        <li><a href="#">JA - 28: Hotel Management System using Java and Hibernate</a></li>
+        <li><a href="#">JA - 29: Online Voting System in Java</a></li>
+        <li><a href="#">JA - 30: Online News Portal in Java</a></li>
+        <li><a href="#">JA - 31: Event Management System using Java and SQL</a></li>
+        <li><a href="#">JA - 32: Health Record Management System in Java</a></li>
+        <li><a href="#">JA - 33: Tour and Travel Management System using Java Swing</a></li>
+        <li><a href="#">JA - 34: Employee Task Management System in Java</a></li>
+        <li><a href="#">JA - 35: Inventory Tracking System using Java and MySQL</a></li>
+        <li><a href="#">JA - 36: Recruitment Management System in Java</a></li>
+        <li><a href="#">JA - 37: Employee Performance Management System using Java</a></li>
+        <li><a href="#">JA - 38: Online Property Management System in Java</a></li>
+        <li><a href="#">JA - 39: Online Course Evaluation System using Java</a></li>
+        <li><a href="#">JA - 40: Human Resource Management System in Java</a></li>
+        <li><a href="#">JA - 41: College Admission System using Java Swing</a></li>
+        <li><a href="#">JA - 42: Online Grocery Shopping System in Java</a></li>
+        <li><a href="#">JA - 43: Expense Tracker System using Java</a></li>
+        <li><a href="#">JA - 44: Student Result Management System in Java</a></li>
+        <li><a href="#">JA - 45: Task Scheduler System using Java Swing</a></li>
+        <li><a href="#">JA - 46: Railway Ticket Reservation System in Java</a></li>
+        <li><a href="#">JA - 47: Online Matrimonial System using Java and MySQL</a></li>
+        <li><a href="#">JA - 48: Employee Attendance System in Java</a></li>
+        <li><a href="#">JA - 49: Online Complaint Management System using Java Swing</a></li>
+        <li><a href="#">JA - 50: Movie Recommendation System in Java</a></li>
+    </ol>
+  </div>
+  <div class="video-list">
+    <!-- Add YouTube video embeds here -->
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/qnl8Mt8LW4g?si=2YwdGDLCLw_bzGG4?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/wxv8zlDVgUg?si=GtWhYk2KbJgDis0b?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+  </div>
+</div>
     </main>
     <div id="footer-container"></div>
     <script src="/code/script.js"></script>   

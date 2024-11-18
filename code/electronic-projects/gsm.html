@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gsm based Projects for Final Year Students</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/static/css/footer.css">
-  
+  <title>Arduino Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,71 +16,107 @@
       padding: 0;
     }
 
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
-    h1, h2, h3 {
-      margin-left: 0;
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #333;
       text-align: center;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 2.5em;
+      color: #333;
     }
 
-    h2 {
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 20px;
-    color: #fff;
-    }
-    h2:hover{
-    color: #ec3146;
-    }
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .p1 {
-      font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
-      color: #555; 
-    }
-    .p1:hover{
-      color: #0e0e0e;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    ul {
-      list-style-type: none;
+    .main-content ol {
+      list-style: none;
       padding: 0;
-      margin: 0;
     }
 
-    li {
+    .main-content ol li {
       font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
-      text-align: justify;
+      margin-bottom: 10px;
     }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -92,64 +127,102 @@
   <br>
   <br>
 
-  <main>
-    <h1>GSM-Based Projects</h1>
-    <p1>Explore innovative projects utilizing GSM technology. These projects incorporate GSM modules to enable communication and control systems remotely. Here is a list of 50 GSM-based projects for your final year engineering journey:</p1>
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>GSM-Based Projects</h1>
+      <br>
+      <br>
+      <ol>
+      <li><a href="#">GS - 1 GSM Based Home Automation System</a></li>
+      <li><a href="#">GS - 2 SMS Based Weather Monitoring System</a></li>
+      <li><a href="#">GS - 3 GSM-Based Remote Control Robot</a></li>
+      <li><a href="#">GS - 4 Patient Health Monitoring System using GSM</a></li>
+      <li><a href="#">GS - 5 GSM Based Energy Meter Reading System</a></li>
+      <li><a href="#">GS - 6 Vehicle Theft Detection and Tracking System</a></li>
+      <li><a href="#">GS - 7 SMS Based Notice Board using GSM</a></li>
+      <li><a href="#">GS - 8 GSM Based Irrigation Control System</a></li>
+      <li><a href="#">GS - 9 Home Security System with SMS Alert</a></li>
+      <li><a href="#">GS - 10 GSM Based Voting System</a></li>
+      <li><a href="#">GS - 11 GSM-Based Smart Parking Management System</a></li>
+      <li><a href="#">GS - 12 SMS Based Student Attendance System</a></li>
+      <li><a href="#">GS - 13 GSM Controlled Home Appliances</a></li>
+      <li><a href="#">GS - 14 Remote Industrial Parameter Monitoring System using GSM</a></li>
+      <li><a href="#">GS - 15 Accident Detection and Alert System using GSM</a></li>
+      <li><a href="#">GS - 16 GSM Based Fire Alarm System</a></li>
+      <li><a href="#">GS - 17 SMS Based Railway Ticket Booking System</a></li>
+      <li><a href="#">GS - 18 Automatic Street Light Control System using GSM</a></li>
+      <li><a href="#">GS - 19 GSM Based Agricultural Monitoring and Controlling System</a></li>
+      <li><a href="#">GS - 20 SMS Based Security System</a></li>
+      <li><a href="#">GS - 21 GSM Based Energy Meter Billing System</a></li>
+      <li><a href="#">GS - 22 Vehicle Tracking System using GSM and GPS</a></li>
+      <li><a href="#">GS - 23 SMS Based Home Automation System</a></li>
+      <li><a href="#">GS - 24 GSM Based Electronic Voting Machine</a></li>
+      <li><a href="#">GS - 25 Industrial Fault Monitoring System using GSM</a></li>
+      <li><a href="#">GS - 26 SMS Based LPG Gas Leakage Detection System</a></li>
+      <li><a href="#">GS - 27 GSM Based Home Security System</a></li>
+      <li><a href="#">GS - 28 SMS Based Car Engine Control System</li>
+      <li><a href="#">GS - 29 GSM Based Anti-theft Alarm System for Vehicles</a></li>
+      <li><a href="#">GS - 30 Wireless Energy Meter Monitoring System using GSM</a></li>
+      <li><a href="#">GS - 31 SMS Based Wireless Home Appliance Control System</a></li>
+      <li><a href="#">GS - 32 GSM Based Health Monitoring System</a></li>
+      <li><a href="#">GS - 33 SMS Based Banking System using GSM</a></li>
+      <li><a href="#">GS - 34 GSM Based Water Pump Motor Control System</a></li>
+      <li><a href="#">GS - 35 Industrial Temperature Monitoring System using GSM</a></li>
+      <li><a href="#">GS - 36 SMS Based Highway Vehicle Breakdown Assistance</a></li>
+      <li><a href="#">GS - 37 GSM Based Solar Power Monitoring System</a></li>
+      <li><a href="#">GS - 38 SMS Based Wireless Electronic Notice Board using GSM</a></li>
+      <li><a href="#">GS - 39 GSM Based Home Automation for Physically Impaired</a></li>
+      <li><a href="#">GS - 40 SMS Based Home Security System using GSM</a></li>
+      <li><a href="#">GS - 41 GSM Based Car Parking System</a></li>
+      <li><a href="#">GS - 42 SMS Based DC Motor Speed Control System using GSM</a></li>
+      <li><a href="#">GS - 43 GSM Based Agriculture Motor Control System</a></li>
+      <li><a href="#">GS - 44 SMS Based Automatic Room Light Controller with Visitor Counter using GSM</a></li>
+      <li><a href="#">GS - 45 GSM Based Water Tank Monitoring System</a></li>
+      <li><a href="#">GS - 46 SMS Based Wireless Electronic Voting Machine</a></li>
+      <li><a href="#">GS - 47 GSM Based Weather Forecasting System</a></li>
+      <li><a href="#">GS - 48 SMS Based Automatic Energy Meter Reading System using GSM</a></li>
+      <li><a href="#">GS - 49 GSM Based Prepaid Energy Meter</a></li>
+      <li><a href="#">GS - 50 SMS Based Wireless Home Security System</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
 
-    <h3>Project List</h3>
-    <ul>
-      <li>GS - 1 GSM Based Home Automation System</li>
-      <li>GS - 2 SMS Based Weather Monitoring System</li>
-      <li>GS - 3 GSM Controlled Robot</li>
-      <li>GS - 4 Patient Health Monitoring System using GSM</li>
-      <li>GS - 5 GSM Based Energy Meter Reading System</li>
-      <li>GS - 6 Vehicle Theft Detection and Tracking System</li>
-      <li>GS - 7 SMS Based Notice Board using GSM</li>
-      <li>GS - 8 GSM Based Irrigation Control System</li>
-      <li>GS - 9 Home Security System with SMS Alert</li>
-      <li>GS - 10 GSM Based Voting System</li>
-      <li>GS - 11 Smart Parking System using GSM</li>
-      <li>GS - 12 SMS Based Student Attendance System</li>
-      <li>GS - 13 GSM Controlled Home Appliances</li>
-      <li>GS - 14 Remote Industrial Parameter Monitoring System using GSM</li>
-      <li>GS - 15 Accident Detection and Alert System using GSM</li>
-      <li>GS - 16 GSM Based Fire Alarm System</li>
-      <li>GS - 17 SMS Based Railway Ticket Booking System</li>
-      <li>GS - 18 Automatic Street Light Control System using GSM</li>
-      <li>GS - 19 GSM Based Agricultural Monitoring and Controlling System</li>
-      <li>GS - 20 SMS Based Security System</li>
-      <li>GS - 21 GSM Based Energy Meter Billing System</li>
-      <li>GS - 22 Vehicle Tracking System using GSM and GPS</li>
-      <li>GS - 23 SMS Based Home Automation System</li>
-      <li>GS - 24 GSM Based Electronic Voting Machine</li>
-      <li>GS - 25 Industrial Fault Monitoring System using GSM</li>
-      <li>GS - 26 SMS Based LPG Gas Leakage Detection System</li>
-      <li>GS - 27 GSM Based Home Security System</li>
-      <li>GS - 28 SMS Based Car Engine Control System</li>
-      <li>GS - 29 GSM Based Anti-theft Alarm System for Vehicles</li>
-      <li>GS - 30 Wireless Energy Meter Monitoring System using GSM</li>
-      <li>GS - 31 SMS Based Wireless Home Appliance Control System</li>
-      <li>GS - 32 GSM Based Health Monitoring System</li>
-      <li>GS - 33 SMS Based Banking System using GSM</li>
-      <li>GS - 34 GSM Based Water Pump Motor Control System</li>
-      <li>GS - 35 Industrial Temperature Monitoring System using GSM</li>
-      <li>GS - 36 SMS Based Highway Vehicle Breakdown Assistance</li>
-      <li>GS - 37 GSM Based Solar Power Monitoring System</li>
-      <li>GS - 38 SMS Based Wireless Electronic Notice Board using GSM</li>
-      <li>GS - 39 GSM Based Home Automation for Physically Impaired</li>
-      <li>GS - 40 SMS Based Home Security System using GSM</li>
-      <li>GS - 41 GSM Based Car Parking System</li>
-      <li>GS - 42 SMS Based DC Motor Speed Control System using GSM</li>
-      <li>GS - 43 GSM Based Agriculture Motor Control System</li>
-      <li>GS - 44 SMS Based Automatic Room Light Controller with Visitor Counter using GSM</li>
-      <li>GS - 45 GSM Based Water Tank Monitoring System</li>
-      <li>GS - 46 SMS Based Wireless Electronic Voting Machine</li>
-      <li>GS - 47 GSM Based Weather Forecasting System</li>
-      <li>GS - 48 SMS Based Automatic Energy Meter Reading System using GSM</li>
-      <li>GS - 49 GSM Based Prepaid Energy Meter</li>
-      <li>GS - 50 SMS Based Wireless Home Security System</li>
-    </ul>
-  </main>
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <div id="footer-container"></div>
   <script src="/code/script.js"></script>
 </body>

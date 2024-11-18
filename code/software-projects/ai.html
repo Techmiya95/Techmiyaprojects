@@ -19,8 +19,9 @@
     
         main {
           padding: 20px;
-          max-width: 800px;
+          max-width: 1500px;
           margin: auto;
+          margin-right: 30%;
         }
     
         h1, h2, h3 {
@@ -70,18 +71,103 @@
           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
     
-        ul {
+        .project-list ol {
           list-style-type: none;
           padding: 0;
           margin: 0;
+          font-size: 1.2em;
         }
     
-        li {
-          font-size: 1.2em;
+        .project-list li {
+          font-size: 1.0em;
           line-height: 1.6;
           margin-left: 0;
-          text-align: justify;
+          text-align: left;
         }
+        .project-list ol li a{
+          color: rgb(49, 47, 47);
+          text-decoration: none;
+          font-size: 1.0em;
+          margin: 0;
+          display: block;
+          padding: 5px 0;
+        }
+        .project-list ol li{
+          font-size: 1.25em;
+          margin: 0 10px;
+        }
+        .project-list ol li a:hover{
+          background: #485777;
+        }
+
+        .video-list {
+          position: fixed;
+          right: 20px;
+          top: 170px;
+          width: 25%;
+        }
+
+        .video-list iframe {
+          margin-bottom: 70px;
+          width: 100%;
+        }
+        .content {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        .project-list {
+          width: 100%; 
+        }
+        @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .p1, .project-list li {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .project-list {
+    width: 100%;
+  }
+
+  .video-list {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-list ol li a {
+    font-size: 1em;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+}
+
       </style>
 </head>
 
@@ -95,94 +181,104 @@
 
     <main>
     <h1>Artificial Intelligence Projects</h1>
-    <ul>
-        <li>AI - 1: Leaf Detection System using OpenCV Python - Develop an AI system for detecting and analyzing leaves using computer vision.</li>
-        <li>AI - 2: Chronic Obstructive Pulmonary Disease Prediction System - Predict and manage COPD with machine learning.</li>
-        <li>AI - 3: College Placement System Using Python - Optimize college placement processes with AI algorithms.</li>
-        <li>AI - 4: Face Recognition Attendance System for Employees using Python - Automate attendance tracking using facial recognition.</li>
-        <li>AI - 5: Liver Cirrhosis Prediction System using Random Forest - Predict liver cirrhosis risk with advanced machine learning techniques.</li>
-        <li>AI - 6: Multiple Disease Prediction System using Machine Learning - Develop a system for predicting multiple diseases based on health data.</li>
-        <li>AI - 7: Secure Persona Prediction and Data Leakage Prevention System using Python - Enhance security with AI-powered persona prediction and data leakage prevention.</li>
-        <li>AI - 8: Stroke Prediction System using Linear Regression - Predict the likelihood of stroke using machine learning.</li>
-        <li>AI - 9: Toxic Comment Classification System using Deep Learning - Implement a system to classify toxic comments using deep learning techniques.</li>
-        <li>AI - 10: Skin Disease Detection System Using CNN - Develop an AI system for accurate detection of skin diseases through convolutional neural networks.</li>
-        <li>AI - 11: Signature Verification System Using CNN - Implement signature verification using convolutional neural networks for enhanced security.</li>
-        <li>AI - 12: Heart Failure Prediction System - Predict heart failure risk using machine learning algorithms.</li>
-        <li>AI - 13: Python Doctor Appointment Booking System - Create a system for convenient and efficient doctor appointment bookings using Python.</li>
-        <li>AI - 14: Yoga Poses Detection using Open Pose - Develop an AI system to detect and analyze yoga poses using Open Pose.</li>
-        <li>AI - 15: Credit Card Fraud Detection System Python - Implement a system to detect credit card fraud using machine learning in Python.</li>
-        <li>AI - 16: Automatic Pronunciation Mistake Detector - Build an AI system to detect and correct pronunciation mistakes in speech.</li>
-        <li>AI - 17: Learning Disability Detector and Classifier System - Create an AI system to detect and classify learning disabilities in individuals.</li>
-        <li>AI - 18: AI Mental Health Therapist Chatbot - Develop a chatbot with AI capabilities to provide mental health support.</li>
-        <li>AI - 19: Ecommerce Fake Product Reviews Monitor and Deletion System - Ensure authenticity by monitoring and removing fake product reviews in an e-commerce system.</li>
-        <li>AI - 20: Smart Time Table Generation Flutter App Using Genetic Algorithm - Optimize timetable generation using Flutter and genetic algorithms.</li>
-        <li>AI - 21: Chatbot Assistant System using Python - Implement a chatbot assistant system with Python for enhanced user interaction.</li>
-        <li>AI - 22: Dental Caries Detection System using Python - Develop an AI system for the early detection of dental caries using Python.</li>
-        <li>AI - 23: Movie Success Prediction System using Python - Predict the success of movies using machine learning algorithms in Python.</li>
-        <li>AI - 24: Speech Emotion Detection System using Python - Implement a system to detect emotions in speech using Python.</li>
-        <li>AI - 25: Student Feedback Review System using Python - Gather and analyze student feedback efficiently using an AI-powered system.</li>
-        <li>AI - 26: Use of Pose Estimation in Elderly People using Python - Leverage pose estimation for the well-being of elderly individuals through Python.</li>
-        <li>AI - 27: Intelligent Video Surveillance Using Deep Learning System - Enhance video surveillance capabilities with intelligent deep learning algorithms.</li>
-        <li>AI - 28: AI healthcare bot - Develop a healthcare bot with AI capabilities to assist users in managing their health.</li>
-        <li>AI - 29: Music Genres Classification using KNN System - Classify music genres using the K-nearest neighbors algorithm for an accurate system.</li>
-        <li>AI - 30: Traffic Sign Recognition System using CNN - Implement a system for accurate recognition of traffic signs using convolutional neural networks.</li>
-        <li>AI - 31: Auto capture Selfie by Detecting Smile Python - Create a Python system that captures selfies automatically by detecting smiles.</li>
-        <li>AI - 32: Face Recognition Attendance System using Python - Enhance attendance tracking using facial recognition for improved accuracy.</li>
-        <li>AI - 33: Human Detector and Counter using Python - Implement a system to detect and count humans using Python.</li>
-        <li>AI - 34: Pneumonia Detection using Chest X-Ray - Develop an AI system for the early detection of pneumonia using chest X-ray images.</li>
-        <li>AI - 35: Music Recommendation System by Facial Emotion - Recommend music based on facial emotion analysis for a personalized experience.</li>
-        <li>AI - 36: Parkinson’s Detector System using Python - Detect and predict Parkinson's disease using machine learning algorithms in Python.</li>
-        <li>AI - 37: Cryptocurrency price prediction using Machine Learning Python - Predict cryptocurrency prices using machine learning in Python.</li>
-        <li>AI - 38: Depression Detection System using Python - Implement a system to detect and manage depression using Python.</li>
-        <li>AI - 39: Car Lane Detection Using NumPy OpenCV Python - Implement lane detection in cars using NumPy and OpenCV in Python.</li>
-        <li>AI - 40: Sign Language Recognition Using Python - Develop a system for accurate recognition of sign language gestures using Python.</li>
-        <li>AI - 41: Signature verification System using Python - Implement a system for accurate signature verification using Python.</li>
-        <li>AI - 42: Driver Drowsiness Detection System Using Python - Detect driver drowsiness for improved road safety using Python.</li>
-        <li>AI - 43: Predicting House Price Using Decision Tree - Predict house prices using decision tree algorithms for real estate insights.</li>
-        <li>AI - 44: Blockchain Based Antiques Verification System - Use blockchain for antiques verification, ensuring authenticity and preventing fraud.</li>
-        <li>AI - 45: Facial Emotion Detection using Neural Networks - Detect facial emotions using neural networks for applications like human-computer interaction.</li>
-        <li>AI - 46: Cancer Prediction using Naive Bayes - Predict the likelihood of cancer using Naive Bayes classification algorithms.</li>
-        <li>AI - 47: Voice based Intelligent Virtual Assistance for Windows - Implement an intelligent virtual assistant for Windows using voice commands.</li>
-        <li>AI - 48: Online Logistic Chatbot System - Enhance logistics with an AI-powered chatbot for efficient online coordination.</li>
-        <li>AI - 49: Transformer Conversational Chatbot in Python using TensorFlow 2.0 - Develop a conversational chatbot using the Transformer model in TensorFlow 2.0.</li>
-        <li>AI - 50: Lane-Line Detection System in Python using OpenCV - Implement a lane-line detection system in Python using OpenCV for autonomous vehicles.</li>
-        <li>AI - 51: Facial Emotion Recognition and Detection in Python using Deep Learning - Recognize and detect facial emotions using deep learning techniques in Python.</li>
-        <li>AI - 52: Artificial Intelligence HealthCare Chatbot System - Create a healthcare chatbot system powered by artificial intelligence for medical assistance.</li>
-        <li>AI - 53: Online Assignment Plagiarism Checker Project using Data Mining - Develop an online tool for checking assignment plagiarism using data mining techniques.</li>
-        <li>AI - 54: Teachers Automatic Time-Table Software Generation System using PHP - Generate automatic timetables for teachers using PHP for streamlined scheduling.</li>
-        <li>AI - 55: Read Me My Book App - Create an app that reads books aloud, enhancing accessibility and convenience.</li>
-        <li>AI - 56: Customer Targeted E-Commerce - Enhance e-commerce experiences with a customer-targeted approach using artificial intelligence.</li>
-        <li>AI - 57: Android General Knowledge Chatbot - Develop a general knowledge chatbot for Android to provide instant information.</li>
-        <li>AI - 58: Customer Focused Ecommerce Site with AI Bot - Build a customer-focused e-commerce site with an AI bot for personalized shopping experiences.</li>
-        <li>AI - 59: Your Personal Nutritionist Using Fat Secret API - Create a personalized nutritionist app using the Fat Secret API for dietary guidance.</li>
-        <li>AI - 60: Price Negotiator Ecommerce Chatbot System - Implement a chatbot system that negotiates prices in e-commerce transactions.</li>
-        <li>AI - 61: Personality Prediction System Through CV Analysis - Predict personality traits through CV analysis for various applications.</li>
-        <li>AI - 62: TV Show Popularity Analysis Using Data Mining - Analyze TV show popularity using data mining techniques for content optimization.</li>
-        <li>AI - 63: Twitter Trend Analysis Using Latent Dirichlet Allocation - Analyze Twitter trends using Latent Dirichlet Allocation for insightful information.</li>
-        <li>AI - 64: Online Book Recommendation Using Collaborative Filtering - Provide personalized book recommendations using collaborative filtering techniques.</li>
-        <li>AI - 65: Movie Success Prediction Using Data Mining Php - Predict the success of movies using data mining techniques in PHP.</li>
-        <li>AI - 66: Fake Product Review Monitoring & Removal For Genuine Ratings Php - Monitor and remove fake product reviews to ensure genuine ratings in PHP.</li>
-        <li>AI - 67: A Commodity Search System For Online Shopping Using Web Mining - Develop a commodity search system using web mining techniques for online shopping.</li>
-        <li>AI - 68: College Enquiry Chat Bot - Create a chatbot for college inquiries, providing instant information and assistance.</li>
-        <li>AI - 69: Stream Analysis For Career Choice Aptitude Tests - Analyze career choice aptitude test results using stream analysis for insightful career guidance.</li>
-        <li>AI - 70: Product Review Analysis For Genuine Rating - Analyze product reviews for genuine ratings, ensuring credibility in e-commerce.</li>
-        <li>AI - 71: Android Smart City Traveler - Develop a smart city traveler app for Android to enhance travel experiences.</li>
-        <li>AI - 72: Artificial Intelligence Dietician - Create an AI-powered dietician for personalized dietary recommendations and guidance.</li>
-        <li>AI - 73: Heart Disease Prediction Project - Predict the likelihood of heart disease using artificial intelligence algorithms.</li>
-        <li>AI - 74: Smart Health Consulting Project - Develop a smart health consulting project for personalized healthcare advice and guidance.</li>
-        <li>AI - 75: Banking Bot Project - Implement a banking bot for efficient and automated banking services.</li>
-        <li>AI - 76: Sentiment Based Movie Rating System - Provide movie ratings based on sentiment analysis for personalized recommendations.</li>
-        <li>AI - 77: Online AI Shopping With M-Wallet System - Integrate AI features into online shopping with an M-Wallet system for convenience.</li>
-        <li>AI - 78: Question paper generator system - Generate question papers automatically for educational institutions using AI.</li>
-        <li>AI - 79: Student Information Chatbot Project - Develop a chatbot to provide information and assistance to students.</li>
-        <li>AI - 80: Website Evaluation Using Opinion Mining - Evaluate websites using opinion mining for improved user experience.</li>
-        <li>AI - 81: Android Attendance System - Implement an attendance system for Android devices using AI for accuracy.</li>
-        <li>AI - 82: Intelligent Tourist System Project - Create an intelligent tourist system for personalized travel recommendations and guidance.</li>
-        <li>AI - 83: AI Desktop Partner - Develop an AI-powered desktop partner for various applications and assistance.</li>
-        <li>AI - 84: Intelligent Chat Bot - Implement an intelligent chatbot for interactive and informative conversations.</li>
-        <li>AI - 85: Stock Market Analysis and Prediction - Analyze and predict stock market trends using artificial intelligence algorithms.</li>
-        <li>AI - 86: Automatic Answer Checker - Develop an automatic answer checker for educational assessments using AI.</li>
-    </ul>
+    <div class="content">
+      <div class="project-list">
+    <ol>
+        <li><a href="#">AI - 1: Leaf Detection System using OpenCV Python - Develop an AI system for detecting and analyzing leaves using computer vision.</a></li>
+        <li><a href="#">AI - 2: Chronic Obstructive Pulmonary Disease Prediction System - Predict and manage COPD with machine learning.</a></li>
+        <li><a href="#">AI - 3: College Placement System Using Python - Optimize college placement processes with AI algorithms.</a></li>
+        <li><a href="#">AI - 4: Face Recognition Attendance System for Employees using Python - Automate attendance tracking using facial recognition.</a></li>
+        <li><a href="#">AI - 5: Liver Cirrhosis Prediction System using Random Forest - Predict liver cirrhosis risk with advanced machine learning techniques.</a></li>
+        <li><a href="#">AI - 6: Multiple Disease Prediction System using Machine Learning - Develop a system for predicting multiple diseases based on health data.</a></li>
+        <li><a href="#">AI - 7: Secure Persona Prediction and Data Leakage Prevention System using Python - Enhance security with AI-powered persona prediction and data leakage prevention.</a></li>
+        <li><a href="#">AI - 8: Stroke Prediction System using Linear Regression - Predict the likelihood of stroke using machine learning.</a></li>
+        <li><a href="#">AI - 9: Toxic Comment Classification System using Deep Learning - Implement a system to classify toxic comments using deep learning techniques.</a></li>
+        <li><a href="#">AI - 10: Skin Disease Detection System Using CNN - Develop an AI system for accurate detection of skin diseases through convolutional neural networks.</a></li>
+        <li><a href="#">AI - 11: Signature Verification System Using CNN - Implement signature verification using convolutional neural networks for enhanced security.</a></li>
+        <li><a href="#">AI - 12: Heart Failure Prediction System - Predict heart failure risk using machine learning algorithms.</a></li>
+        <li><a href="#">AI - 13: Python Doctor Appointment Booking System - Create a system for convenient and efficient doctor appointment bookings using Python.</a></li>
+        <li><a href="#">AI - 14: Yoga Poses Detection using Open Pose - Develop an AI system to detect and analyze yoga poses using Open Pose.</a></li>
+        <li><a href="#">AI - 15: Credit Card Fraud Detection System Python - Implement a system to detect credit card fraud using machine learning in Python.</a></li>
+        <li><a href="#">AI - 16: Automatic Pronunciation Mistake Detector - Build an AI system to detect and correct pronunciation mistakes in speech.</a></li>
+        <li><a href="#">AI - 17: Learning Disability Detector and Classifier System - Create an AI system to detect and classify learning disabilities in individuals.</a></li>
+        <li><a href="#">AI - 18: AI Mental Health Therapist Chatbot - Develop a chatbot with AI capabilities to provide mental health support.</a></li>
+        <li><a href="#">AI - 19: Ecommerce Fake Product Reviews Monitor and Deletion System - Ensure authenticity by monitoring and removing fake product reviews in an e-commerce system.</a></li>
+        <li><a href="#">AI - 20: Smart Time Table Generation Flutter App Using Genetic Algorithm - Optimize timetable generation using Flutter and genetic algorithms.</a></li>
+        <li><a href="#">AI - 21: Chatbot Assistant System using Python - Implement a chatbot assistant system with Python for enhanced user interaction.</a></li>
+        <li><a href="#">AI - 22: Dental Caries Detection System using Python - Develop an AI system for the early detection of dental caries using Python.</a></li>
+        <li><a href="#">AI - 23: Movie Success Prediction System using Python - Predict the success of movies using machine learning algorithms in Python.</a></li>
+        <li><a href="#">AI - 24: Speech Emotion Detection System using Python - Implement a system to detect emotions in speech using Python.</a></li>
+        <li><a href="#">AI - 25: Student Feedback Review System using Python - Gather and analyze student feedback efficiently using an AI-powered system.</a></li>
+        <li><a href="#">AI - 26: Use of Pose Estimation in Elderly People using Python - Leverage pose estimation for the well-being of elderly individuals through Python.</a></li>
+        <li><a href="#">AI - 27: Intelligent Video Surveillance Using Deep Learning System - Enhance video surveillance capabilities with intelligent deep learning algorithms.</a></li>
+        <li><a href="#">AI - 28: AI healthcare bot - Develop a healthcare bot with AI capabilities to assist users in managing their health.</a></li>
+        <li><a href="#">AI - 29: Music Genres Classification using KNN System - Classify music genres using the K-nearest neighbors algorithm for an accurate system.</a></li>
+        <li><a href="#">AI - 30: Traffic Sign Recognition System using CNN - Implement a system for accurate recognition of traffic signs using convolutional neural networks.</a></li>
+        <li><a href="#">AI - 31: Auto capture Selfie by Detecting Smile Python - Create a Python system that captures selfies automatically by detecting smiles.</a></li>
+        <li><a href="#">AI - 32: Face Recognition Attendance System using Python - Enhance attendance tracking using facial recognition for improved accuracy.</a></li>
+        <li><a href="#">AI - 33: Human Detector and Counter using Python - Implement a system to detect and count humans using Python.</a></li>
+        <li><a href="#">AI - 34: Pneumonia Detection using Chest X-Ray - Develop an AI system for the early detection of pneumonia using chest X-ray images.</a></li>
+        <li><a href="#">AI - 35: Music Recommendation System by Facial Emotion - Recommend music based on facial emotion analysis for a personalized experience.</a></li>
+        <li><a href="#">AI - 36: Parkinson’s Detector System using Python - Detect and predict Parkinson's disease using machine learning algorithms in Python.</a></li>
+        <li><a href="#">AI - 37: Cryptocurrency price prediction using Machine Learning Python - Predict cryptocurrency prices using machine learning in Python.</a></li>
+        <li><a href="#">AI - 38: Depression Detection System using Python - Implement a system to detect and manage depression using Python.</a></li>
+        <li><a href="#">AI - 39: Car Lane Detection Using NumPy OpenCV Python - Implement lane detection in cars using NumPy and OpenCV in Python.</a></li>
+        <li><a href="#">AI - 40: Sign Language Recognition Using Python - Develop a system for accurate recognition of sign language gestures using Python.</a></li>
+        <li><a href="#">AI - 41: Signature verification System using Python - Implement a system for accurate signature verification using Python.</a></li>
+        <li><a href="#">AI - 42: Driver Drowsiness Detection System Using Python - Detect driver drowsiness for improved road safety using Python.</a></li>
+        <li><a href="#">AI - 43: Predicting House Price Using Decision Tree - Predict house prices using decision tree algorithms for real estate insights.</a></li>
+        <li><a href="#">AI - 44: Blockchain Based Antiques Verification System - Use blockchain for antiques verification, ensuring authenticity and preventing fraud.</a></li>
+        <li><a href="#">AI - 45: Facial Emotion Detection using Neural Networks - Detect facial emotions using neural networks for applications like human-computer interaction.</a></li>
+        <li><a href="#">AI - 46: Cancer Prediction using Naive Bayes - Predict the likelihood of cancer using Naive Bayes classification algorithms.</a></li>
+        <li><a href="#">AI - 47: Voice based Intelligent Virtual Assistance for Windows - Implement an intelligent virtual assistant for Windows using voice commands.</a></li>
+        <li><a href="#">AI - 48: Online Logistic Chatbot System - Enhance logistics with an AI-powered chatbot for efficient online coordination.</a></li>
+        <li><a href="#">AI - 49: Transformer Conversational Chatbot in Python using TensorFlow 2.0 - Develop a conversational chatbot using the Transformer model in TensorFlow 2.0.</a></li>
+        <li><a href="#">AI - 50: Lane-Line Detection System in Python using OpenCV - Implement a lane-line detection system in Python using OpenCV for autonomous vehicles.</a></li>
+        <li><a href="#">AI - 51: Facial Emotion Recognition and Detection in Python using Deep Learning - Recognize and detect facial emotions using deep learning techniques in Python.</a></li>
+        <li><a href="#">AI - 52: Artificial Intelligence HealthCare Chatbot System - Create a healthcare chatbot system powered by artificial intelligence for medical assistance.</a></li>
+        <li><a href="#">AI - 53: Online Assignment Plagiarism Checker Project using Data Mining - Develop an online tool for checking assignment plagiarism using data mining techniques.</a></li>
+        <li><a href="#">AI - 54: Teachers Automatic Time-Table Software Generation System using PHP - Generate automatic timetables for teachers using PHP for streamlined scheduling.</a></li>
+        <li><a href="#">AI - 55: Read Me My Book App - Create an app that reads books aloud, enhancing accessibility and convenience.</a></li>
+        <li><a href="#">AI - 56: Customer Targeted E-Commerce - Enhance e-commerce experiences with a customer-targeted approach using artificial intelligence.</a></li>
+        <li><a href="#">AI - 57: Android General Knowledge Chatbot - Develop a general knowledge chatbot for Android to provide instant information.</li>
+        <li><a href="#">AI - 58: Customer Focused Ecommerce Site with AI Bot - Build a customer-focused e-commerce site with an AI bot for personalized shopping experiences.</a></li>
+        <li><a href="#">AI - 59: Your Personal Nutritionist Using Fat Secret API - Create a personalized nutritionist app using the Fat Secret API for dietary guidance.</a></li>
+        <li><a href="#">AI - 60: Price Negotiator Ecommerce Chatbot System - Implement a chatbot system that negotiates prices in e-commerce transactions.</a></li>
+        <li><a href="#">AI - 61: Personality Prediction System Through CV Analysis - Predict personality traits through CV analysis for various applications.</a></li>
+        <li><a href="#">AI - 62: TV Show Popularity Analysis Using Data Mining - Analyze TV show popularity using data mining techniques for content optimization.</a></li>
+        <li><a href="#">AI - 63: Twitter Trend Analysis Using Latent Dirichlet Allocation - Analyze Twitter trends using Latent Dirichlet Allocation for insightful information.</a></li>
+        <li><a href="#">AI - 64: Online Book Recommendation Using Collaborative Filtering - Provide personalized book recommendations using collaborative filtering techniques.</a></li>
+        <li><a href="#">AI - 65: Movie Success Prediction Using Data Mining Php - Predict the success of movies using data mining techniques in PHP.</a></li>
+        <li><a href="#">AI - 66: Fake Product Review Monitoring & Removal For Genuine Ratings Php - Monitor and remove fake product reviews to ensure genuine ratings in PHP.</a></li>
+        <li><a href="#">AI - 67: A Commodity Search System For Online Shopping Using Web Mining - Develop a commodity search system using web mining techniques for online shopping.</a></li>
+        <li><a href="#">AI - 68: College Enquiry Chat Bot - Create a chatbot for college inquiries, providing instant information and assistance.</a></li>
+        <li><a href="#">AI - 69: Stream Analysis For Career Choice Aptitude Tests - Analyze career choice aptitude test results using stream analysis for insightful career guidance.</a></li>
+        <li><a href="#">AI - 70: Product Review Analysis For Genuine Rating - Analyze product reviews for genuine ratings, ensuring credibility in e-commerce.</a></li>
+        <li><a href="#">AI - 71: Android Smart City Traveler - Develop a smart city traveler app for Android to enhance travel experiences.</a></li>
+        <li><a href="#">AI - 72: Artificial Intelligence Dietician - Create an AI-powered dietician for personalized dietary recommendations and guidance.</a></li>
+        <li><a href="#">AI - 73: Heart Disease Prediction Project - Predict the likelihood of heart disease using artificial intelligence algorithms.</a></li>
+        <li><a href="#">AI - 74: Smart Health Consulting Project - Develop a smart health consulting project for personalized healthcare advice and guidance.</a></li>
+        <li><a href="#">AI - 75: Banking Bot Project - Implement a banking bot for efficient and automated banking services.</a></li>
+        <li><a href="#">AI - 76: Sentiment Based Movie Rating System - Provide movie ratings based on sentiment analysis for personalized recommendations.</a></li>
+        <li><a href="#">AI - 77: Online AI Shopping With M-Wallet System - Integrate AI features into online shopping with an M-Wallet system for convenience.</a></li>
+        <li><a href="#">AI - 78: Question paper generator system - Generate question papers automatically for educational institutions using AI.</a></li>
+        <li><a href="#">AI - 79: Student Information Chatbot Project - Develop a chatbot to provide information and assistance to students.</a></li>
+        <li><a href="#">AI - 80: Website Evaluation Using Opinion Mining - Evaluate websites using opinion mining for improved user experience.</a></li>
+        <li><a href="#">AI - 81: Android Attendance System - Implement an attendance system for Android devices using AI for accuracy.</li>
+        <li><a href="#">AI - 82: Intelligent Tourist System Project - Create an intelligent tourist system for personalized travel recommendations and guidance.</a></li>
+        <li><a href="#">AI - 83: AI Desktop Partner - Develop an AI-powered desktop partner for various applications and assistance.</a></li>
+        <li><a href="#">AI - 84: Intelligent Chat Bot - Implement an intelligent chatbot for interactive and informative conversations.</li>
+        <li><a href="#">AI - 85: Stock Market Analysis and Prediction - Analyze and predict stock market trends using artificial intelligence algorithms.</a></li>
+        <li><a href="#">AI - 86: Automatic Answer Checker - Develop an automatic answer checker for educational assessments using AI.</a></li>
+    </ol>
+  </div>
+  <div class="video-list">
+    <!-- Add YouTube video embeds here -->
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/gMd1Z66I1_A?si=BkJ28rN9uol-cgvL?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/wxv8zlDVgUg?si=GtWhYk2KbJgDis0b?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+  </div>
+</div>
     </main>
     <div id="footer-container"></div>
     <script src="/code/script.js"></script>

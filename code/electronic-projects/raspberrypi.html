@@ -6,7 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/static/css/footer.css">
-  <title>Raspberry Pi Projects for Final Year Students</title>
+  <title>Arduino Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,75 +16,110 @@
       padding: 0;
     }
 
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
-    h1, h2, h3 {
-      margin-left: 0;
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #333;
       text-align: center;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 2.5em;
+      color: #333;
     }
 
-    h2 {
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 20px;
-    color: #fff;
-    }
-    h2:hover{
-    color: #ec3146;
-    }
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .p1 {
-      font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
-      color: #555; 
-    }
-    .p1:hover{
-      color: #0e0e0e;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      color: #381aa4;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    ul {
-      list-style-type: none;
+    .main-content ol {
+      list-style: none;
       padding: 0;
-      margin: 0;
     }
 
-    li {
+    .main-content ol li {
       font-size: 1.2em;
-      line-height: 1.6;
-      margin-left: 0;
+      margin-bottom: 10px;
     }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+
   </style>
 </head>
-
 <body>
-
   <div id="header-placeholder"></div>
   <br>
   <br>
@@ -92,117 +127,154 @@
   <br>
   <br>
 
-<main>
-  <h1>Raspberry Pi Projects</h1>
-  <h3>Explore Exciting Raspberry Pi Projects for Final Year Students</h3>
-  <p>Welcome to our Raspberry Pi Projects showcase, where innovation meets technology! Here's a curated list of projects that final year students can explore and implement using Raspberry Pi.</p>
-  <h3>Project List</h3>
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Raspberry Pi Projects</h1>
+      <br>
+      <br>
+      <ol>
+    <li><a href="#">RP-1: Raspberry Pi-based Home Automation System</a></li>
+    <li><a href="#">RP-2: IoT-based Weather Station using Raspberry Pi</a></li>
+    <li><a href="#">RP-3: Raspberry Pi-controlled Surveillance Camera</a></li>
+    <li><a href="#">RP-4: Smart Garden Irrigation System with Raspberry Pi</a></li>
+    <li><a href="#">RP-5: Raspberry Pi-based Media Center</a></li>
+    <li><a href="#">RP-6: IoT-based Smart Door Lock System with Raspberry Pi</a></li>
+    <li><a href="#">RP-7: Raspberry Pi-controlled Robot</a></li>
+    <li><a href="#">RP-8: Smart Health Monitoring System using Raspberry Pi</a></li>
+    <li><a href="#">RP-9: Raspberry Pi-based Retro Gaming Console</a></li>
+    <li><a href="#">RP-10: IoT-based Smart Mirror with Raspberry Pi</a></li>
+    <li><a href="#">RP-11: Raspberry Pi-controlled Quadcopter</a></li>
+    <li><a href="#">RP-12: Smart Pet Feeding System with Raspberry Pi</a></li>
+    <li><a href="#">RP-13: Raspberry Pi-based Smart Car Parking System</a></li>
+    <li><a href="#">RP-14: IoT-based Home Energy Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-15: Raspberry Pi-controlled Voice Assistant</a></li>
+    <li><a href="#">RP-16: Smart Water Quality Monitoring System using Raspberry Pi</a></li>
+    <li><a href="#">RP-17: Raspberry Pi-based Internet Radio</a></li>
+    <li><a href="#">RP-18: IoT-based Smart Plant Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-19: Raspberry Pi-controlled Autonomous Boat</a></li>
+    <li><a href="#">RP-20: Smart Traffic Light Control System with Raspberry Pi</a></li>
+    <li><a href="#">RP-21: Raspberry Pi-based Digital Signage System</a></li>
+    <li><a href="#">RP-22: IoT-based Smart Refrigerator System with Raspberry Pi</a></li>
+    <li><a href="#">RP-23: Raspberry Pi-controlled Automated Fish Feeder</a></li>
+    <li><a href="#">RP-24: Smart Waste Management System using Raspberry Pi</a></li>
+    <li><a href="#">RP-25: Raspberry Pi-based Network Attached Storage (NAS)</a></li>
+    <li><a href="#">RP-26: IoT-based Smart Thermostat with Raspberry Pi</a></li>
+    <li><a href="#">RP-27: Raspberry Pi-controlled CNC Machine</a></li>
+    <li><a href="#">RP-28: Smart Bird Feeding System with Raspberry Pi</a></li>
+    <li><a href="#">RP-29: Raspberry Pi-based Home Security System</a></li>
+    <li><a href="#">RP-30: IoT-based Smart Sprinkler System with Raspberry Pi</a></li>
+    <li><a href="#">RP-31: Raspberry Pi-controlled Self-driving Car</a></li>
+    <li><a href="#">RP-32: Smart Plant Watering System with Raspberry Pi</a></li>
+    <li><a href="#">RP-33: Raspberry Pi-based Voice-controlled Light System</a></li>
+    <li><a href="#">RP-34: IoT-based Smart Coffee Maker with Raspberry Pi</a></li>
+    <li><a href="#">RP-35: Raspberry Pi-controlled Drone</a></li>
+    <li><a href="#">RP-36: Smart Hydroponic System with Raspberry Pi</a></li>
+    <li><a href="#">RP-37: Raspberry Pi-based Facial Recognition System</a></li>
+    <li><a href="#">RP-38: IoT-based Smart Fish Tank Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-39: Raspberry Pi-controlled 3D Printer</a></li>
+    <li><a href="#">RP-40: Smart Plant Growth Chamber with Raspberry Pi</a></li>
+    <li><a href="#">RP-41: Raspberry Pi-based Automated Plant Watering System</a></li>
+    <li><a href="#">RP-42: IoT-based Smart Garage Door Opener with Raspberry Pi</a></li>
+    <li><a href="#">RP-43: Raspberry Pi-controlled Robotic Arm</a></li>
+    <li><a href="#">RP-44: Smart Cat Feeding System with Raspberry Pi</a></li>
+    <li><a href="#">RP-45: Raspberry Pi-based Home Weather Station</a></li>
+    <li><a href="#">RP-46: IoT-based Smart Solar Power System with Raspberry Pi</a></li>
+    <li><a href="#">RP-47: Raspberry Pi-controlled Home Theater System</a></li>
+    <li><a href="#">RP-48: Smart Egg Incubator with Raspberry Pi</a></li>
+    <li><a href="#">RP-49: Raspberry Pi-based Voice-controlled Garage Door Opener</a></li>
+    <li><a href="#">RP-50: IoT-based Smart Beehive Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-51: Raspberry Pi-controlled Automated Plant Growing System</a></li>
+    <li><a href="#">RP-52: Smart Birdhouse with Raspberry Pi</a></li>
+    <li><a href="#">RP-53: Raspberry Pi-based Voice-controlled Fan System</a></li>
+    <li><a href="#">RP-54: IoT-based Smart Bee Feeder with Raspberry Pi</a></li>
+    <li><a href="#">RP-55: Raspberry Pi-controlled Plant Monitoring System</a></li>
+    <li><a href="#">RP-56: Smart Watering System for Potted Plants with Raspberry Pi</a></li>
+    <li><a href="#">RP-57: Raspberry Pi-based Automatic Pet Door</a></li>
+    <li><a href="#">RP-58: IoT-based Smart Chicken Coop Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-59: Raspberry Pi-controlled Hydroponic Garden</a></li>
+    <li><a href="#">RP-60: Smart Food Dispenser for Pets with Raspberry Pi</a></li>
+    <li><a href="#">RP-61: Raspberry Pi-based Aquarium Monitoring System</a></li>
+    <li><a href="#">RP-62: IoT-based Smart Dog Feeder with Raspberry Pi</a></li>
+    <li><a href="#">RP-63: Raspberry Pi-controlled Automated Cat Litter Box</a></li>
+    <li><a href="#">RP-64: Smart Watering System for Indoor Plants with Raspberry Pi</a></li>
+    <li><a href="#">RP-65: Raspberry Pi-based Voice-controlled Aquarium Lights</a></li>
+    <li><a href="#">RP-66: IoT-based Smart Rabbit Hutch Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-67: Raspberry Pi-controlled Automatic Plant Watering System</a></li>
+    <li><a href="#">RP-68: Smart Plant Nutrient Dispenser with Raspberry Pi</a></li>
+    <li><a href="#">RP-69: Raspberry Pi-based Home Hydroponics System</a></li>
+    <li><a href="#">RP-70: IoT-based Smart Cat Litter Box with Raspberry Pi</a></li>
+    <li><a href="#">RP-71: Raspberry Pi-controlled Automatic Chicken Coop Door</a></li>
+    <li><a href="#">RP-72: Smart Sprouting System for Seeds with Raspberry Pi</a></li>
+    <li><a href="#">RP-73: Raspberry Pi-based Voice-controlled Terrarium Lighting</a></li>
+    <li><a href="#">RP-74: IoT-based Smart Hamster Cage Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-75: Raspberry Pi-controlled Automatic Plant Feeder</a></li>
+    <li><a href="#">RP-76: Smart Vertical Farming System with Raspberry Pi</a></li>
+    <li><a href="#">RP-77: Raspberry Pi-based Voice-controlled Herb Garden</a></li>
+    <li><a href="#">RP-78: IoT-based Smart Guinea Pig Cage Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-79: Raspberry Pi-controlled Hydroponic Plant Tower</a></li>
+    <li><a href="#">RP-80: Smart Bonsai Tree Care System with Raspberry Pi</a></li>
+    <li><a href="#">RP-81: Raspberry Pi-based Voice-controlled Greenhouse</a></li>
+    <li><a href="#">RP-82: IoT-based Smart Bird Feeder with Raspberry Pi</a></li>
+    <li><a href="#">RP-83: Raspberry Pi-controlled Indoor Vegetable Garden</a></li>
+    <li><a href="#">RP-84: Smart Herb Growing System with Raspberry Pi</a></li>
+    <li><a href="#">RP-85: Raspberry Pi-based Voice-controlled Mushroom Farm</a></li>
+    <li><a href="#">RP-86: IoT-based Smart Snail Habitat Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-87: Raspberry Pi-controlled Automatic Fertilizer Dispenser</a></li>
+    <li><a href="#">RP-88: Smart Succulent Care System with Raspberry Pi</a></li>
+    <li><a href="#">RP-89: Raspberry Pi-based Voice-controlled Orchid Garden</a></li>
+    <li><a href="#">RP-90: IoT-based Smart Ant Farm Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-91: Raspberry Pi-controlled Aquaponic System</a></li>
+    <li><a href="#">RP-92: Smart Cactus Watering System with Raspberry Pi</a></li>
+    <li><a href="#">RP-93: Raspberry Pi-based Voice-controlled Venus Flytrap Terrarium</a></li>
+    <li><a href="#">RP-94: IoT-based Smart Worm Farm Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-95: Raspberry Pi-controlled Indoor Plant Watering System</a></li>
+    <li><a href="#">RP-96: Smart Venus Flytrap Care System with Raspberry Pi</a></li>
+    <li><a href="#">RP-97: Raspberry Pi-based Voice-controlled Carnivorous Plant Habitat</a></li>
+    <li><a href="#">RP-98: IoT-based Smart Spider Habitat Monitoring System with Raspberry Pi</a></li>
+    <li><a href="#">RP-99: Raspberry Pi-controlled Biodome</a></li>
+    <li><a href="#">RP-100: Smart Plant Growth Chamber with Raspberry Pi</a></li>
 
-  <ul>
-    <li>RP-1: Raspberry Pi-based Home Automation System</li>
-    <li>RP-2: IoT-based Weather Station using Raspberry Pi</li>
-    <li>RP-3: Raspberry Pi-controlled Surveillance Camera</li>
-    <li>RP-4: Smart Garden Irrigation System with Raspberry Pi</li>
-    <li>RP-5: Raspberry Pi-based Media Center</li>
-    <li>RP-6: IoT-based Smart Door Lock System with Raspberry Pi</li>
-    <li>RP-7: Raspberry Pi-controlled Robot</li>
-    <li>RP-8: Smart Health Monitoring System using Raspberry Pi</li>
-    <li>RP-9: Raspberry Pi-based Retro Gaming Console</li>
-    <li>RP-10: IoT-based Smart Mirror with Raspberry Pi</li>
-    <li>RP-11: Raspberry Pi-controlled Quadcopter</li>
-    <li>RP-12: Smart Pet Feeding System with Raspberry Pi</li>
-    <li>RP-13: Raspberry Pi-based Smart Car Parking System</li>
-    <li>RP-14: IoT-based Home Energy Monitoring System with Raspberry Pi</li>
-    <li>RP-15: Raspberry Pi-controlled Voice Assistant</li>
-    <li>RP-16: Smart Water Quality Monitoring System using Raspberry Pi</li>
-    <li>RP-17: Raspberry Pi-based Internet Radio</li>
-    <li>RP-18: IoT-based Smart Plant Monitoring System with Raspberry Pi</li>
-    <li>RP-19: Raspberry Pi-controlled Autonomous Boat</li>
-    <li>RP-20: Smart Traffic Light Control System with Raspberry Pi</li>
-    <li>RP-21: Raspberry Pi-based Digital Signage System</li>
-    <li>RP-22: IoT-based Smart Refrigerator System with Raspberry Pi</li>
-    <li>RP-23: Raspberry Pi-controlled Automated Fish Feeder</li>
-    <li>RP-24: Smart Waste Management System using Raspberry Pi</li>
-    <li>RP-25: Raspberry Pi-based Network Attached Storage (NAS)</li>
-    <li>RP-26: IoT-based Smart Thermostat with Raspberry Pi</li>
-    <li>RP-27: Raspberry Pi-controlled CNC Machine</li>
-    <li>RP-28: Smart Bird Feeding System with Raspberry Pi</li>
-    <li>RP-29: Raspberry Pi-based Home Security System</li>
-    <li>RP-30: IoT-based Smart Sprinkler System with Raspberry Pi</li>
-    <li>RP-31: Raspberry Pi-controlled Self-driving Car</li>
-    <li>RP-32: Smart Plant Watering System with Raspberry Pi</li>
-    <li>RP-33: Raspberry Pi-based Voice-controlled Light System</li>
-    <li>RP-34: IoT-based Smart Coffee Maker with Raspberry Pi</li>
-    <li>RP-35: Raspberry Pi-controlled Drone</li>
-    <li>RP-36: Smart Hydroponic System with Raspberry Pi</li>
-    <li>RP-37: Raspberry Pi-based Facial Recognition System</li>
-    <li>RP-38: IoT-based Smart Fish Tank Monitoring System with Raspberry Pi</li>
-    <li>RP-39: Raspberry Pi-controlled 3D Printer</li>
-    <li>RP-40: Smart Plant Growth Chamber with Raspberry Pi</li>
-    <li>RP-41: Raspberry Pi-based Automated Plant Watering System</li>
-    <li>RP-42: IoT-based Smart Garage Door Opener with Raspberry Pi</li>
-    <li>RP-43: Raspberry Pi-controlled Robotic Arm</li>
-    <li>RP-44: Smart Cat Feeding System with Raspberry Pi</li>
-    <li>RP-45: Raspberry Pi-based Home Weather Station</li>
-    <li>RP-46: IoT-based Smart Solar Power System with Raspberry Pi</li>
-    <li>RP-47: Raspberry Pi-controlled Home Theater System</li>
-    <li>RP-48: Smart Egg Incubator with Raspberry Pi</li>
-    <li>RP-49: Raspberry Pi-based Voice-controlled Garage Door Opener</li>
-    <li>RP-50: IoT-based Smart Beehive Monitoring System with Raspberry Pi</li>
-    <li>RP-51: Raspberry Pi-controlled Automated Plant Growing System</li>
-    <li>RP-52: Smart Birdhouse with Raspberry Pi</li>
-    <li>RP-53: Raspberry Pi-based Voice-controlled Fan System</li>
-    <li>RP-54: IoT-based Smart Bee Feeder with Raspberry Pi</li>
-    <li>RP-55: Raspberry Pi-controlled Plant Monitoring System</li>
-    <li>RP-56: Smart Watering System for Potted Plants with Raspberry Pi</li>
-    <li>RP-57: Raspberry Pi-based Automatic Pet Door</li>
-    <li>RP-58: IoT-based Smart Chicken Coop Monitoring System with Raspberry Pi</li>
-    <li>RP-59: Raspberry Pi-controlled Hydroponic Garden</li>
-    <li>RP-60: Smart Food Dispenser for Pets with Raspberry Pi</li>
-    <li>RP-61: Raspberry Pi-based Aquarium Monitoring System</li>
-    <li>RP-62: IoT-based Smart Dog Feeder with Raspberry Pi</li>
-    <li>RP-63: Raspberry Pi-controlled Automated Cat Litter Box</li>
-    <li>RP-64: Smart Watering System for Indoor Plants with Raspberry Pi</li>
-    <li>RP-65: Raspberry Pi-based Voice-controlled Aquarium Lights</li>
-    <li>RP-66: IoT-based Smart Rabbit Hutch Monitoring System with Raspberry Pi</li>
-    <li>RP-67: Raspberry Pi-controlled Automatic Plant Watering System</li>
-    <li>RP-68: Smart Plant Nutrient Dispenser with Raspberry Pi</li>
-    <li>RP-69: Raspberry Pi-based Home Hydroponics System</li>
-    <li>RP-70: IoT-based Smart Cat Litter Box with Raspberry Pi</li>
-    <li>RP-71: Raspberry Pi-controlled Automatic Chicken Coop Door</li>
-    <li>RP-72: Smart Sprouting System for Seeds with Raspberry Pi</li>
-    <li>RP-73: Raspberry Pi-based Voice-controlled Terrarium Lighting</li>
-    <li>RP-74: IoT-based Smart Hamster Cage Monitoring System with Raspberry Pi</li>
-    <li>RP-75: Raspberry Pi-controlled Automatic Plant Feeder</li>
-    <li>RP-76: Smart Vertical Farming System with Raspberry Pi</li>
-    <li>RP-77: Raspberry Pi-based Voice-controlled Herb Garden</li>
-    <li>RP-78: IoT-based Smart Guinea Pig Cage Monitoring System with Raspberry Pi</li>
-    <li>RP-79: Raspberry Pi-controlled Hydroponic Plant Tower</li>
-    <li>RP-80: Smart Bonsai Tree Care System with Raspberry Pi</li>
-    <li>RP-81: Raspberry Pi-based Voice-controlled Greenhouse</li>
-    <li>RP-82: IoT-based Smart Bird Feeder with Raspberry Pi</li>
-    <li>RP-83: Raspberry Pi-controlled Indoor Vegetable Garden</li>
-    <li>RP-84: Smart Herb Growing System with Raspberry Pi</li>
-    <li>RP-85: Raspberry Pi-based Voice-controlled Mushroom Farm</li>
-    <li>RP-86: IoT-based Smart Snail Habitat Monitoring System with Raspberry Pi</li>
-    <li>RP-87: Raspberry Pi-controlled Automatic Fertilizer Dispenser</li>
-    <li>RP-88: Smart Succulent Care System with Raspberry Pi</li>
-    <li>RP-89: Raspberry Pi-based Voice-controlled Orchid Garden</li>
-    <li>RP-90: IoT-based Smart Ant Farm Monitoring System with Raspberry Pi</li>
-    <li>RP-91: Raspberry Pi-controlled Aquaponic System</li>
-    <li>RP-92: Smart Cactus Watering System with Raspberry Pi</li>
-    <li>RP-93: Raspberry Pi-based Voice-controlled Venus Flytrap Terrarium</li>
-    <li>RP-94: IoT-based Smart Worm Farm Monitoring System with Raspberry Pi</li>
-    <li>RP-95: Raspberry Pi-controlled Indoor Plant Watering System</li>
-    <li>RP-96: Smart Venus Flytrap Care System with Raspberry Pi</li>
-    <li>RP-97: Raspberry Pi-based Voice-controlled Carnivorous Plant Habitat</li>
-    <li>RP-98: IoT-based Smart Spider Habitat Monitoring System with Raspberry Pi</li>
-    <li>RP-99: Raspberry Pi-controlled Biodome</li>
-    <li>RP-100: Smart Plant Growth Chamber with Raspberry Pi</li>
-  </ul>
-  
-</main>
-<div id="footer-container"></div>
-<script src="/code/script.js"></script>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
 </body>
 </html>

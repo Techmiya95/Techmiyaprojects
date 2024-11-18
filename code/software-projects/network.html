@@ -18,8 +18,9 @@
 
     main {
       padding: 20px;
-      max-width: 800px;
+      max-width: 1500px;
       margin: auto;
+      margin-right: 30%;
     }
 
     h1, h2, h3 {
@@ -69,17 +70,101 @@
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    ul {
+    .project-list ol {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      font-size: 1.2em;
     }
 
-    li {
+    .project-list li {
       font-size: 1.2em;
       line-height: 1.6;
       margin-left: 0;
-        }
+      text-align: left;
+    }
+    .project-list ol li a{
+      color: rgb(49, 47, 47);
+      text-decoration: none;
+      font-size: 1.0em;
+      margin: 0;
+      display: block;
+      padding: 5px 0;
+    }
+    .project-list ol li{
+      font-size: 1.25em;
+      margin: 0 10px;
+    }
+    .project-list ol li a:hover{
+      background: #485777;
+    }
+
+    .video-list {
+      position: fixed;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+    .video-list iframe {
+      margin-bottom: 70px;
+      width: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .project-list {
+      width: 100%; 
+    }
+    @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .p1, .project-list li {
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .project-list {
+    width: 100%;
+  }
+
+  .video-list {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-list iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-list ol li a {
+    font-size: 1em;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+}
     </style>
 </head>
 <body>
@@ -91,109 +176,119 @@
   <br>
   <main>
     <h1>List of 101 Network Security Projects</h1>
+    <div class="content">
+      <div class="project-list">
     <ol>
-        <li>NS - 1: Secure Persona Prediction and Data Leakage Prevention System using Python</li>
-        <li>NS - 2: Organic Food Traceability System using Blockchain</li>
-        <li>NS - 3: Pharma Supply Chain System using Smart Contracts</li>
-        <li>NS - 4: File Transfer System using Elliptic Curve Cryptography</li>
-        <li>NS - 5: Anti-Money Laundering System using Blockchain</li>
-        <li>NS - 6: Blockchain-based Transaction and Settlement System</li>
-        <li>NS - 7: Blockchain based Cloud File Sharing System</li>
-        <li>NS - 8: Blockchain based Cross Border Payment System</li>
-        <li>NS - 9: Blockchain based Merchant Payment System</li>
-        <li>NS - 10: Organization Finance Tracking System using Blockchain</li>
-        <li>NS - 11: Blockchain based Personal Identity Security System</li>
-        <li>NS - 12: Signature verification System using Python</li>
-        <li>NS - 13: Secure File Access System Android App</li>
-        <li>NS - 14: Property Registration Management System using Blockchain</li>
-        <li>NS - 15: Patient Data Management System using Blockchain</li>
-        <li>NS - 16: Electronic Voting System using Blockchain</li>
-        <li>NS - 17: Loyalty Points Exchange System using Blockchain</li>
-        <li>NS - 18: NGO Management System using Blockchain</li>
-        <li>NS - 19: Python Image Forgery Detection using MD5 OpenCV</li>
-        <li>NS - 20: Three Level Image Password Authentication</li>
-        <li>NS - 21: Safe Folder App</li>
-        <li>NS - 22: Text Steganography Project</li>
-        <li>NS - 23: Graphical Password Authentication System using Intuitive Approach</li>
-        <li>NS - 24: Online Transaction Fraud Detection using Backlogging on E-Commerce Website</li>
-        <li>NS - 25: Pocket Certificates using Double Encryption</li>
-        <li>NS - 26: Sql Injection Prevention System Php</li>
-        <li>NS - 27: Encryption & Decryption Using Deffie Hellman Algorithm</li>
-        <li>NS - 28: Secure Backup Software System</li>
-        <li>NS - 29: Secure E Learning Using Data Mining Techniques</li>
-        <li>NS - 30: Android Video Encryption & Sharing</li>
-        <li>NS - 31: Secure File Sharing Using Access Control</li>
-        <li>NS - 32: Image Authentication Based On Watermarking Approach</li>
-        <li>NS - 33: Digital Watermarking To Hide Text Messages</li>
-        <li>NS - 34: Matrix Based Shoulder Surfing Security System</li>
-        <li>NS - 35: Improved Session Password Based Security System</li>
-        <li>NS - 36: Android Text Encryption Using Various Algorithms</li>
-        <li>NS - 37: RFID Based Smart EVM For Reducing Electoral Frauds</li>
-        <li>NS - 38: Secure Online Auction System</li>
-        <li>NS - 39: School Security System (SSS) using RFID</li>
-        <li>NS - 40: E Authentication System Using QR Code & OTP</li>
-        <li>NS - 41: Secure Text Transfer Using Diffie Hellman Key Exchange Based on Cloud</li>
-        <li>NS - 42: Android Based Encrypted SMS System</li>
-        <li>NS - 43: Detecting Phishing Websites Using Machine Learning</li>
-        <li>NS - 44: Secure Electronic Fund Transfer Over Internet Using DES</li>
-        <li>NS - 45: Preventing Phishing Attack On Voting System Using Visual Cryptography</li>
-        <li>NS - 46: Card Payment Security Using RSA</li>
-        <li>NS - 47: Secure File Storage On Cloud Using Hybrid Cryptography</li>
-        <li>NS - 48: ATM Detail Security Using Image Steganography</li>
-        <li>NS - 49: Image Steganography Using Kmeans & Encryption</li>
-        <li>NS - 50: Implementing Triple DES With OTP</li>
-        <li>NS - 51: Fingerprint Authenticated Secure Android Notes</li>
-        <li>NS - 52: Customized AES using Pad and Chaff Technique And Diffie Hellman Key Exchange</li>
-        <li>NS - 53: Detecting Data Leaks via Sql Injection Prevention on an E-Commerce</li>
-        <li>NS - 54: Cloud Based Improved File Handling and Duplication Removal Using MD5</li>
-        <li>NS - 55: Cloud Based Student Information Chatbot Project</li>
-        <li>NS - 56: Secure File Storage On Cloud Using Hybrid Cryptography</li>
-        <li>NS - 57: Secure File Storage On Cloud Using Hybrid Cryptography</li>
-        <li>NS - 58: Financial Status Analysis Using Credit Score Rating</li>
-        <li>NS - 59: Hybrid Payment Security Model For E Commerce</li>
-        <li>NS - 60: Fingerprint Authenticated Secure Android Notes</li>
-        <li>NS - 61: Data Duplication Removal Using File Checksum</li>
-        <li>NS - 62: High Security Encryption Using AES & Visual Cryptography</li>
-        <li>NS - 63: A New Hybrid Technique For Data Encryption</li>
-        <li>NS - 64: Extended AES with Custom Configurable Encryption</li>
-        <li>NS - 65: Image Encryption Using AES Algorithm</li>
-        <li>NS - 66: Image Encryption Using Triple DES</li>
-        <li>NS - 67: Graphical Password To Avoid Shoulder Surfing</li>
-        <li>NS - 68: Secure Data Transfer Over Internet Using Image Steganography</li>
-        <li>NS - 69: Secure Electronic Fund Transfer Over Internet Using DES</li>
-        <li>NS - 70: Smart Android Graphical Password Strategy</li>
-        <li>NS - 71: Image Encryption For Secure Internet Transfer</li>
-        <li>NS - 72: Image Encryption For Secure Internet Transfer</li>
-        <li>NS - 73: Secure Remote Communication Using DES Algorithm</li>
-        <li>NS - 74: Secure ATM Using Card Scanning Plus OTP</li>
-        <li>NS - 75: Secure Lab Access Using Card Scanner Plus Face Recognition</li>
-        <li>NS - 76: Active Chat Monitoring and Suspicious Chat Detection over Internet</li>
-        <li>NS - 77: Credit Card Fraud Detection</li>
-        <li>NS - 78: Remote User Recognition And Access Provision</li>
-        <li>NS - 79: Collective Face Detection Project</li>
-        <li>NS - 80: College automation project</li>
-        <li>NS - 81: Automated Attendance System</li>
-        <li>NS - 82: Mobile Attendance System Project</li>
-        <li>NS - 83: Improved Data Leakage Detection</li>
-        <li>NS - 84: Criminal Investigation Tracker with Suspect Prediction</li>
-        <li>NS - 85: Facial Expression Recognition</li>
-        <li>NS - 86: Graphical Password By Image Segmentation</li>
-        <li>NS - 87: Android Anti-Virus Application</li>
-        <li>NS - 88: Three Level Password Authentication System</li>
-        <li>NS - 89: Attack Source Tracing Project</li>
-        <li>NS - 90: Graphical Password Strategy</li>
-        <li>NS - 91: Software Piracy Protection Project</li>
-        <li>NS - 92: file encryption using fibonacci series</li>
-        <li>NS - 93: Hybrid AES DES encryption algorithm(any combination of algorithms is available)</li>
-        <li>NS - 94: Internet Border Patrol</li>
-        <li>NS - 95: Detecting Data Leaks</li>
-        <li>NS - 96: Camera Motion Sensing Project</li>
-        <li>NS - 97: Mobile Self Encryption</li>
-        <li>NS - 98: Detecting Data Leaks</li>
-        <li>NS - 99: Sql Injection Prevention Project</li>
-        <li>NS - 100: Improved Honeypot Project</li>
-        <li>NS - 101: Video Surveillance Project</li>
+        <li><a href="#">NS - 1: Secure Persona Prediction and Data Leakage Prevention System using Python</a></li>
+        <li><a href="#">NS - 2: Organic Food Traceability System using Blockchain</a></li>
+        <li><a href="#">NS - 3: Pharma Supply Chain System using Smart Contracts</a></li>
+        <li><a href="#">NS - 4: File Transfer System using Elliptic Curve Cryptography</a></li>
+        <li><a href="#">NS - 5: Anti-Money Laundering System using Blockchain</a></li>
+        <li><a href="#">NS - 6: Blockchain-based Transaction and Settlement System</a></li>
+        <li><a href="#">NS - 7: Blockchain based Cloud File Sharing System</a></li>
+        <li><a href="#">NS - 8: Blockchain based Cross Border Payment System</a></li>
+        <li><a href="#">NS - 9: Blockchain based Merchant Payment System</a></li>
+        <li><a href="#">NS - 10: Organization Finance Tracking System using Blockchain</a></li>
+        <li><a href="#">NS - 11: Blockchain based Personal Identity Security System</a></li>
+        <li><a href="#">NS - 12: Signature verification System using Python</a></li>
+        <li><a href="#">NS - 13: Secure File Access System Android App</a></li>
+        <li><a href="#">NS - 14: Property Registration Management System using Blockchain</a></li>
+        <li><a href="#">NS - 15: Patient Data Management System using Blockchain</a></li>
+        <li><a href="#">NS - 16: Electronic Voting System using Blockchain</a></li>
+        <li><a href="#">NS - 17: Loyalty Points Exchange System using Blockchain</a></li>
+        <li><a href="#">NS - 18: NGO Management System using Blockchain</a></li>
+        <li><a href="#">NS - 19: Python Image Forgery Detection using MD5 OpenCV</a></li>
+        <li><a href="#">NS - 20: Three Level Image Password Authentication</a></li>
+        <li><a href="#">NS - 21: Safe Folder App</a></li>
+        <li><a href="#">NS - 22: Text Steganography Project</li>
+        <li><a href="#">NS - 23: Graphical Password Authentication System using Intuitive Approach</a></li>
+        <li><a href="#">NS - 24: Online Transaction Fraud Detection using Backlogging on E-Commerce Website</a></li>
+        <li><a href="#">NS - 25: Pocket Certificates using Double Encryption</a></li>
+        <li><a href="#">NS - 26: Sql Injection Prevention System Php</a></li>
+        <li><a href="#">NS - 27: Encryption & Decryption Using Deffie Hellman Algorithm</a></li>
+        <li><a href="#">NS - 28: Secure Backup Software System</a></li>
+        <li><a href="#">NS - 29: Secure E Learning Using Data Mining Techniques</a></li>
+        <li><a href="#">NS - 30: Android Video Encryption & Sharing</a></li>
+        <li><a href="#">NS - 31: Secure File Sharing Using Access Control</a></li>
+        <li><a href="#">NS - 32: Image Authentication Based On Watermarking Approach</a></li>
+        <li><a href="#">NS - 33: Digital Watermarking To Hide Text Messages</a></li>
+        <li><a href="#">NS - 34: Matrix Based Shoulder Surfing Security System</a></li>
+        <li><a href="#">NS - 35: Improved Session Password Based Security System</a></li>
+        <li><a href="#">NS - 36: Android Text Encryption Using Various Algorithms</a></li>
+        <li><a href="#">NS - 37: RFID Based Smart EVM For Reducing Electoral Frauds</a></li>
+        <li><a href="#">NS - 38: Secure Online Auction System</a></li>
+        <li><a href="#">NS - 39: School Security System (SSS) using RFID</a></li>
+        <li><a href="#">NS - 40: E Authentication System Using QR Code & OTP</a></li>
+        <li><a href="#">NS - 41: Secure Text Transfer Using Diffie Hellman Key Exchange Based on Cloud</a></li>
+        <li><a href="#">NS - 42: Android Based Encrypted SMS System</a></li>
+        <li><a href="#">NS - 43: Detecting Phishing Websites Using Machine Learning</a></li>
+        <li><a href="#">NS - 44: Secure Electronic Fund Transfer Over Internet Using DES</a></li>
+        <li><a href="#">NS - 45: Preventing Phishing Attack On Voting System Using Visual Cryptography</a></li>
+        <li><a href="#">NS - 46: Card Payment Security Using RSA</a></li>
+        <li><a href="#">NS - 47: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 48: ATM Detail Security Using Image Steganography</a></li>
+        <li><a href="#">NS - 49: Image Steganography Using Kmeans & Encryption</a></li>
+        <li><a href="#">NS - 50: Implementing Triple DES With OTP</a></li>
+        <li><a href="#">NS - 51: Fingerprint Authenticated Secure Android Notes</a></li>
+        <li><a href="#">NS - 52: Customized AES using Pad and Chaff Technique And Diffie Hellman Key Exchange</a></li>
+        <li><a href="#">NS - 53: Detecting Data Leaks via Sql Injection Prevention on an E-Commerce</a></li>
+        <li><a href="#">NS - 54: Cloud Based Improved File Handling and Duplication Removal Using MD5</a></li>
+        <li><a href="#">NS - 55: Cloud Based Student Information Chatbot Project</a></li>
+        <li><a href="#">NS - 56: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 57: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 58: Financial Status Analysis Using Credit Score Rating</a></li>
+        <li><a href="#">NS - 59: Hybrid Payment Security Model For E Commerce</a></li>
+        <li><a href="#">NS - 60: Fingerprint Authenticated Secure Android Notes</a></li>
+        <li><a href="#">NS - 61: Data Duplication Removal Using File Checksum</a></li>
+        <li><a href="#">NS - 62: High Security Encryption Using AES & Visual Cryptography</a></li>
+        <li><a href="#">NS - 63: A New Hybrid Technique For Data Encryption</a></li>
+        <li><a href="#">NS - 64: Extended AES with Custom Configurable Encryption</a></li>
+        <li><a href="#">NS - 65: Image Encryption Using AES Algorithm</a></li>
+        <li><a href="#">NS - 66: Image Encryption Using Triple DES</a></li>
+        <li><a href="#">NS - 67: Graphical Password To Avoid Shoulder Surfing</a></li>
+        <li><a href="#">NS - 68: Secure Data Transfer Over Internet Using Image Steganography</a></li>
+        <li><a href="#">NS - 69: Secure Electronic Fund Transfer Over Internet Using DES</a></li>
+        <li><a href="#">NS - 70: Smart Android Graphical Password Strategy</a></li>
+        <li><a href="#">NS - 71: Image Encryption For Secure Internet Transfer</a></li>
+        <li><a href="#">NS - 72: Image Encryption For Secure Internet Transfer</a></li>
+        <li><a href="#">NS - 73: Secure Remote Communication Using DES Algorithm</a></li>
+        <li><a href="#">NS - 74: Secure ATM Using Card Scanning Plus OTP</a></li>
+        <li><a href="#">NS - 75: Secure Lab Access Using Card Scanner Plus Face Recognition</a></li>
+        <li><a href="#">NS - 76: Active Chat Monitoring and Suspicious Chat Detection over Internet</a></li>
+        <li><a href="#">NS - 77: Credit Card Fraud Detection</a></li>
+        <li><a href="#">NS - 78: Remote User Recognition And Access Provision</a></li>
+        <li><a href="#">NS - 79: Collective Face Detection Project</a></li>
+        <li><a href="#">NS - 80: College automation project</a></li>
+        <li><a href="#">NS - 81: Automated Attendance System</a></li>
+        <li><a href="#">NS - 82: Mobile Attendance System Project</a></li>
+        <li><a href="#">NS - 83: Improved Data Leakage Detection</a></li>
+        <li><a href="#">NS - 84: Criminal Investigation Tracker with Suspect Prediction</a></li>
+        <li><a href="#">NS - 85: Facial Expression Recognition</a></li>
+        <li><a href="#">NS - 86: Graphical Password By Image Segmentation</a></li>
+        <li><a href="#">NS - 87: Android Anti-Virus Application</a></li>
+        <li><a href="#">NS - 88: Three Level Password Authentication System</a></li>
+        <li><a href="#">NS - 89: Attack Source Tracing Project</a></li>
+        <li><a href="#">NS - 90: Graphical Password Strategy</a></li>
+        <li><a href="#">NS - 91: Software Piracy Protection Project</a></li>
+        <li><a href="#">NS - 92: file encryption using fibonacci series</a></li>
+        <li><a href="#">NS - 93: Hybrid AES DES encryption algorithm(any combination of algorithms is available)</a></li>
+        <li><a href="#">NS - 94: Internet Border Patrol</a></li>
+        <li><a href="#">NS - 95: Detecting Data Leaks</a></li>
+        <li><a href="#">NS - 96: Camera Motion Sensing Project</a></li>
+        <li><a href="#">NS - 97: Mobile Self Encryption</a></li>
+        <li><a href="#">NS - 98: Detecting Data Leaks</a></li>
+        <li><a href="#">NS  99: Sql Injection Prevention Project</a></li>
+        <li><a href="#">NS - 100: Improved Honeypot Project</a></li>
+        <li><a href="#">NS - 101: Video Surveillance Project</a></li>
     </ol>
+  </div>
+  <div class="video-list">
+    <!-- Add YouTube video embeds here -->
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/y_Qj9MiHdDs?si=LCuXeq0H2N2ZxDU5?autoplay=1&mute=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/wxv8zlDVgUg?si=GtWhYk2KbJgDis0b?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+  </div>
+</div>
     </main>
     <div id="footer-container"></div>
     <script src="/code/script.js"></script>
