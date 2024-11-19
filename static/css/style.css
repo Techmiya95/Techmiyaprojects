@@ -448,7 +448,7 @@ hr{
 .testimonial-slider {
     display: flex;
     position: relative;
-    width: 900%;
+    width: calc(11 * 2 * 50vw);
     justify-content: center;
     animation: slide 60s infinite;
 }
@@ -505,42 +505,12 @@ hr{
     0% {
         transform: translateX(0);
     }
-    9.09% {
-        transform: translateX(-9.09%);
-    }
-    18.18% {
-        transform: translateX(-18.18%);
-    }
-    27.27% {
-        transform: translateX(-27.27%);
-    }
-    36.36% {
-        transform: translateX(-36.36%);
-    }
-    45.45% {
-        transform: translateX(-45.45%);
-    }
-    54.54% {
-        transform: translateX(-54.54%);
-    }
-    63.63% {
-        transform: translateX(-63.63%);
-    }
-    72.72% {
-        transform: translateX(-72.72%);
-    }
-    81.81% {
-        transform: translateX(-81.81%);
-    }
-    90.9% {
-        transform: translateX(-90.9%);
-    }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(calc(-11 * 50vw)); /* Slide by the width of original items */
     }
 }
 .testimonial-slider {
-    animation: slide 30s linear infinite; /* Slow, continuous sliding */
+    animation: slide 60s linear infinite; /* Slow, continuous sliding */
 }
 
 
@@ -573,5 +543,47 @@ hr{
       width: 1000%; /* Ensure enough width for smooth sliding */
     }
   }
+/* Container Styling */
+/* WhatsApp Button Container */
+.whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px; 
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+
+
 
 
