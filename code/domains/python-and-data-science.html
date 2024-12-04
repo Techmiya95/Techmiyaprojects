@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Python and Data Science</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>List of Python and Data Science Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">py - 1: AI Healthcare Bot System using Python</a></li>
+        <li><a href="#">py - 2: Predictive Analytics for House Prices</a></li>
+        <li><a href="#">py - 3: Sentiment Analysis on Social Media Posts</a></li>
+        <li><a href="#">py - 4: Weather Forecasting using Machine Learning</a></li>
+        <li><a href="#">py - 5: Real-Time Face Recognition System</a></li>
+        <li><a href="#">py - 6: Chatbot for Customer Support</a></li>
+        <li><a href="#">py - 7: Handwritten Digit Recognition with Neural Networks</a></li>
+        <li><a href="#">py - 8: Email Spam Detection</a></li>
+        <li><a href="#">py - 9: Stock Market Prediction using LSTM</a></li>
+        <li><a href="#">py - 10: Text Summarization Tool</a></li>
+        <li><a href="#">py - 11: Image Classification with CNN</a></li>
+        <li><a href="#">py - 12: Credit Card Fraud Detection System</a></li>
+        <li><a href="#">py - 13: Recommendation System for Movies</a></li>
+        <li><a href="#">py - 14: Traffic Sign Recognition System</a></li>
+        <li><a href="#">py - 15: Object Detection using YOLO</a></li>
+        <li><a href="#">py - 16: Air Quality Monitoring and Analysis</a></li>
+        <li><a href="#">py - 17: Diabetes Prediction using Machine Learning</a></li>
+        <li><a href="#">py - 18: Real-Time Chat Application</a></li>
+        <li><a href="#">py - 19: Fake News Detection System</a></li>
+        <li><a href="#">py - 20: Speech-to-Text Conversion Tool</a></li>
+        <li><a href="#">py - 21: Python-based Virtual Assistant</a></li>
+        <li><a href="#">py - 22: Fitness Tracker using Data Analysis</a></li>
+        <li><a href="#">py - 23: Heart Disease Prediction System</a></li>
+        <li><a href="#">py - 24: Python Web Scraper for News Articles</a></li>
+        <li><a href="#">py - 25: Keyword Spotting for Voice Commands</a></li>
+        <li><a href="#">py - 26: Game Development: Snake Game</a></li>
+        <li><a href="#">py - 27: Customer Churn Prediction</a></li>
+        <li><a href="#">py - 28: E-commerce Product Recommendation System</a></li>
+        <li><a href="#">py - 29: Image Caption Generator</a></li>
+        <li><a href="#">py - 30: Automated Resume Screening Tool</a></li>
+        <li><a href="#">py - 31: Twitter Sentiment Analysis</a></li>
+        <li><a href="#">py - 32: Data Cleaning and Visualization on COVID-19</a></li>
+        <li><a href="#">py - 33: Personal Expense Tracker</a></li>
+        <li><a href="#">py - 34: Real-Time Object Tracking</a></li>
+        <li><a href="#">py - 35: Portfolio Optimization using Python</a></li>
+        <li><a href="#">py - 36: Music Genre Classification</a></li>
+        <li><a href="#">py - 37: Building a Sudoku Solver</a></li>
+        <li><a href="#">py - 38: Dynamic Dashboard for Data Visualization</a></li>
+        <li><a href="#">py - 39: Resume Parser using Natural Language Processing</a></li>
+        <li><a href="#">py - 40: Crime Prediction in Cities</a></li>
+        <li><a href="#">py - 41: YouTube Video Downloader Application</a></li>
+        <li><a href="#">py - 42: Plagiarism Detection Tool</a></li>
+        <li><a href="#">py - 43: Autonomous Driving Simulation</a></li>
+        <li><a href="#">py - 44: Data Science Project on Employee Attrition</a></li>
+        <li><a href="#">py - 45: ChatGPT-like Model using GPT APIs</a></li>
+        <li><a href="#">py - 46: Pathfinding Visualization with A* Algorithm</a></li>
+        <li><a href="#">py - 47: Crop Yield Prediction using ML</a></li>
+        <li><a href="#">py - 48: Create a Virtual Keyboard</a></li>
+        <li><a href="#">py - 49: Instagram Automation Tool</a></li>
+        <li><a href="#">py - 50: Analyzing Trends in Cryptocurrency</a></li>
+
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>
