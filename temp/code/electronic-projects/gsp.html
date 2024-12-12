@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>GSP-Based Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>GPS-Based Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">GP-01: GPS Location Tracker for Vehicles</a></li>
+        <li><a href="#">GP-02: Geo-Fencing System using GPS</a></li>
+        <li><a href="#">GP-03: GPS-based Weather Monitoring System</a></li>
+        <li><a href="#">GP-04: Real-time GPS Navigation System</a></li>
+        <li><a href="#">GP-05: GPS-based Asset Tracking System</a></li>
+        <li><a href="#">GP-06: GPS-guided Autonomous Drone</a></li>
+        <li><a href="#">GP-07: GPS-based enabled Fitness Tracker</a></li>
+        <li><a href="#">GP-08: GPS-based Wildlife Tracking</a></li>
+        <li><a href="#">GP-09: GPS-based Fleet Management System</a></li>
+        <li><a href="#">GP-10: GPS-controlled Agricultural Drone</a></li>
+        <li><a href="#">GP-11: GPS-based Smart Parking System</a></li>
+        <li><a href="#">GP-12: GPS-based Emergency Response System</a></li>
+        <li><a href="#">GP-13: GPS-guided Robotic Vehicle</a></li>
+        <li><a href="#">GP-14: GPS-based Share My Location App</a></li>
+        <li><a href="#">GP-15: GPS-based Health Monitoring System</a></li>
+        <li><a href="#">GP-16: GPS-based Augmented Reality Navigation</a></li>
+        <li><a href="#">GP-17: GPS-enabled Personal Safety Device</a></li>
+        <li><a href="#">GP-18: GPS-based Earthquake Early Warning System</a></li>
+        <li><a href="#">GP-19: GPS-guided Smart Glasses for Navigation</a></li>
+        <li><a href="#">GP-20: GPS-based Railway Track Monitoring</a></li>
+        <li><a href="#">GP-21: GPS-controlled Underwater Exploration Vehicle</a></li>
+        <li><a href="#">GP-22: GPS-based Tourist Guide App</a></li>
+        <li><a href="#">GP-23: GPS-based Location-based Advertising System</a></li>
+        <li><a href="#">GP-24: GPS-guided Autonomous Car</a></li>
+        <li><a href="#">GP-25: GPS-based Wildfire Monitoring System</a></li>
+        <li><a href="#">GP-26: GPS-enabled Mobile Robot for Package Delivery</a></li>
+        <li><a href="#">GP-27: GPS-based Navigation System for Visually Impaired</a></li>
+        <li><a href="#">GP-28: GPS-guided Smart Bicycle</a></li>
+        <li><a href="#">GP-29: GPS-Integrated Environmental Quality Monitor</a></li>
+        <li><a href="#">GP-30: GPS-controlled Smart Home Automation</a></li>
+        <li><a href="#">GP-31: GPS-based Disaster Management System</a></li>
+        <li><a href="#">GP-32: GPS-guided Agricultural Field Monitoring</a></li>
+        <li><a href="#">GP-33: GPS-based Indoor Navigation System</a></li>
+        <li><a href="#">GP-34: GPS-enabled Water Quality Monitoring</a></li>
+        <li><a href="#">GP-35: GPS-based Geo-tagging Mobile App</a></li>
+        <li><a href="#">GP-36: GPS-guided Surveillance Drone</a></li>
+        <li><a href="#">GP-37: GPS-based Air Traffic Control System</a></li>
+        <li><a href="#">GP-38: GPS-controlled Smart Street Lighting</a></li>
+        <li><a href="#">GP-39: GPS-based Disaster Recovery Drone</a></li>
+        <li><a href="#">GP-40: GPS-guided Virtual Reality Exploration</a></li>
+        <li><a href="#">GP-41: GPS-based Smart Tourism System</a></li>
+        <li><a href="#">GP-42: GPS-enabled Fishing Activity Monitoring</a></li>
+        <li><a href="#">GP-43: GPS-based Vehicle Toll Collection System</a></li>
+        <li><a href="#">GP-44: GPS-guided Autonomous Underwater Vehicle (AUV)</a></li>
+        <li><a href="#">GP-45: GPS-based Campus Navigation App</a></li>
+        <li><a href="#">GP-46: GPS-controlled Smart City Infrastructure</a></li>
+        <li><a href="#">GP-47: GPS-based Wildlife Conservation Monitoring</a></li>
+        <li><a href="#">GP-48: GPS-guided Precision Agriculture System</a></li>
+        <li><a href="#">GP-49: GPS-enabled Disaster Evacuation Planning</a></li>
+        <li><a href="#">GP-50: GPS-based Location-aware Social Networking</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

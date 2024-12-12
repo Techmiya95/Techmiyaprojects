@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Data-science Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+      position: fixed; /* Keep the button fixed on the screen */
+      bottom: 53px;
+      right: 55px; /* Close to the right edge of the page */
+      transform: translateY(-50%); /* Adjust for perfect vertical centering */
+      z-index: 1000; /* Ensure it's on top of other content */
+    }
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>List of 50 Data Science Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">DS - 1: Predictive Analysis of Sales Data</a></li>
+        <li><a href="#">DS - 2: Sentiment Analysis on Social Media Data</a></li>
+        <li><a href="#">DS - 3: Customer Churn Prediction using Machine Learning</a></li>
+        <li><a href="#">DS - 4: Fraud Detection in Financial Transactions</a></li>
+        <li><a href="#">DS - 5: Movie Recommendation System using Collaborative Filtering</a></li>
+        <li><a href="#">DS - 6: Text Classification for Spam Detection</a></li>
+        <li><a href="#">DS - 7: Predictive Maintenance for Industrial Equipment</a></li>
+        <li><a href="#">DS - 8: Image Classification using Convolutional Neural Networks</a></li>
+        <li><a href="#">DS - 9: Time Series Analysis and Forecasting</a></li>
+        <li><a href="#">DS - 10: Natural Language Processing for Named Entity Recognition</a></li>
+        <li><a href="#">DS - 11: Credit Scoring Model for Loan Approval</a></li>
+        <li><a href="#">DS - 12: Clustering Analysis on Customer Segmentation</a></li>
+        <li><a href="#">DS - 13: Stock Price Prediction using Machine Learning</a></li>
+        <li><a href="#">DS - 14: Recommendation System for E-commerce Products</a></li>
+        <li><a href="#">DS - 15: Analyzing Social Media Trends using Topic Modeling</a></li>
+        <li><a href="#">DS - 16: Health Risk Prediction based on Patient Data</a></li>
+        <li><a href="#">DS - 17: Image Segmentation for Medical Imaging</a></li>
+        <li><a href="#">DS - 18: Anomaly Detection in Network Security</a></li>
+        <li><a href="#">DS - 19: Predicting Housing Prices with Regression Analysis</a></li>
+        <li><a href="#">DS - 20: Analysis of COVID-19 Spread using Epidemiological Models</a></li>
+        <li><a href="#">DS - 21: Human Activity Recognition with Smartphone Sensor Data</a></li>
+        <li><a href="#">DS - 22: Traffic Flow Prediction using Machine Learning</a></li>
+        <li><a href="#">DS - 23: Social Network Analysis for Community Detection</a></li>
+        <li><a href="#">DS - 24: Energy Consumption Forecasting with Time Series Analysis</a></li>
+        <li><a href="#">DS - 25: Recommender System for Online Courses</a></li>
+        <li><a href="#">DS - 26: Fraudulent Transaction Detection in Credit Card Data</a></li>
+        <li><a href="#">DS - 27: Disease Classification in Medical Images</a></li>
+        <li><a href="#">DS - 28: Natural Language Generation for Text Summarization</a></li>
+        <li><a href="#">DS - 29: Weather Forecasting using Machine Learning Models</a></li>
+        <li><a href="#">DS - 30: Predictive Analysis of Stock Market Trends</a></li>
+        <li><a href="#">DS - 31: Voice Emotion Recognition with Deep Learning</a></li>
+        <li><a href="#">DS - 32: E-commerce Customer Segmentation for Targeted Marketing</a></li>
+        <li><a href="#">DS - 33: Movie Script Sentiment Analysis</a></li>
+        <li><a href="#">DS - 34: Predictive Analysis of COVID-19 Cases</a></li>
+        <li><a href="#">DS - 35: Image Captioning using Neural Networks</a></li>
+        <li><a href="#">DS - 36: Fraud Detection in Online Banking Transactions</a></li>
+        <li><a href="#">DS - 37: Human Pose Estimation in Images</a></li>
+        <li><a href="#">DS - 38: Market Basket Analysis for Retail Sales</a></li>
+        <li><a href="#">DS - 39: Predicting Employee Attrition in Organizations</a></li>
+        <li><a href="#">DS - 40: Personality Prediction based on Social Media Posts</a></li>
+        <li><a href="#">DS - 41: Credit Card Approval System using Machine Learning</a></li>
+        <li><a href="#">DS - 42: Speech Emotion Recognition for Call Center Analytics</a></li>
+        <li><a href="#">DS - 43: Predictive Analysis of Airbnb Rental Prices</a></li>
+        <li><a href="#">DS - 44: Face Recognition for Attendance Tracking</a></li>
+        <li><a href="#">DS - 45: Network Intrusion Detection using Machine Learning</a></li>
+        <li><a href="#">DS - 46: Predictive Analysis of Online User Ratings</a></li>
+        <li><a href="#">DS - 47: Diabetes Prediction with Health Data</a></li>
+        <li><a href="#">DS - 48: Customer Segmentation for Marketing Strategy</a></li>
+        <li><a href="#">DS - 49: Image Super-Resolution using Deep Learning</a></li>
+        <li><a href="#">DS - 50: Recommender System for Music Streaming Platforms</a></li>
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

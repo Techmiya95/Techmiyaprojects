@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky Header Styling */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #224466;
+    color: #fff;
+    padding: 15.9px 20px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img {
+    width: 1000px;
+}
+
+.contact-info1 {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.contact-info1 .phone, .contact-info1 .email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links ul li {
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    background: #222;
+    display: none;
+    list-style: none;
+    top: 100%;
+    left: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.open-icon, .close-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+nav .fa{
+    display: none;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+    .sticky-header {
+        height: 80px; /* Increase height for mobile */
+        padding: 20px 10px; /* Optional: Adjust padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+    .nav-links {
+        position: relative;
+        top: 80px;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: #0B1A36;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: right 0.3s ease;
+        z-index: 2;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+    }
+
+    .nav-links ul li ul.dropdown {
+        position: static;
+        display: none;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+        background: #222;
+        width: 100%;
+    }
+
+    .nav-links ul li.active ul.dropdown {
+        display: block;
+    }
+
+    .contact-info1 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 10px;
+        gap: 0px; /* Space between phone and email */
+        align-items: flex-end; /* Aligns text to the right */
+        text-align: right;
+    }
+
+    .contact-info1 .email, .contact-info1 .phone {
+        font-size: 10px;
+    }
+
+    .open-icon, .close-icon {
+        display: block;
+    }
+
+    .fa-bars.open-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 51px;
+        z-index: 3;
+    }
+
+    .fa-times.close-icon {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav a img {
+        width: 50px; /* Adjust to preferred size */
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 3;
+    }
+}

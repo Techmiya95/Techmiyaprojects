@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>IOT Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>IOT Projects</h1>
+      <br>
+      <br>
+      <ol>
+            <li><a href="/code/electronic-projects/Iot-using-arduino-and-raspberrypi.html">IOT - 01	IOT Weather Reporting System using Arduino and Ras Pi</a></li>
+            <li><a href="">IOT - 02	Wearable Computer with Temperature Distance Sensors</a></li>
+            <li><a href="">IOT - 03	Weather Imaging CubeSat with Telemetry Transmission</a></li>
+            <li><a href="">IOT - 04	IOT IV Bag Monitoring and Alert System</a></li>
+            <li><a href="">IOT - 05	IOT Water Pollution Monitor RC Boat</a></li>
+            <li><a href="">IOT - 06	Mountain Climber Health & GPS Tracker</a></li>
+            <li><a href="">IOT - 07	Contactless IOT Doorbell Ringing</a></li>
+            <li><a href="">IOT - 08	IOT Smart Parking Using RFID(Radio Frequency Identification)</a></li>
+            <li><a href="">IOT - 09	IOT Syringe Infusion Pump</a></li>
+            <li><a href="">IOT - 10 IOT Contactless Covid Testing Booth Automation</a></li>
+            <li><a href="">IOT - 11 IOT Social Distancing & Monitoring Robot For Queue</a></li>
+            <li><a href="">IOT - 12 IOT Covid Patient Health Monitor in Quarantine</a></li>
+            <li><a href="">IOT - 13 IOT based Manhole Detection and Monitoring System</a></li>
+            <li><a href="">IOT - 14 IOT based Smart Energy Meter Monitoring with Theft Detection</a></li>
+            <li><a href="#">IOT - 15 IOT Health Monitoring Companion Robot</a></li>
+            <li><a href="">IOT - 16 IOT Based Weather Station Airship</a></li>
+            <li><a href="">IOT - 17 DIY 2G Android Phone with Gesture Interface</a></li>
+            <li><a href="">IOT - 18 IOT based Three Phase Power Failure Monitoring with SMS Alerts</a></li>
+            <li><a href="">IOT - 19 IOT based Intelligent Gas Leakage Detector Using Arduino</a></li>
+            <li><a href="">IOT - 20 IOT Dog Daycare Robot</a></li>
+            <li><a href="">IOT - 21 IOT 360° Aerial Surveillance UAV With IOT Camera</a></li>
+            <li><a href="">IOT - 22 IOT Garbage Segregator & Bin Level Indicator</a></li>
+            <li><a href="">IOT - 23 IOT Temperature & Mask Scan Entry System</a></li>
+            <li><a href="">IOT - 24 IOT based Smart Agriculture Monitoring System Project</a></li>
+            <li><a href="">IOT - 25 IOT Based Automatic Vehicle Accident Detection and Rescue System</a></li>
+            <li><a href="">IOT - 26 Gas Leakage Detection with Buzzer System using Atmega</a></li>
+            <li><a href="">IOT - 27 Greenhouse Monitoring and Control System using IOT Project</a></li>
+            <li><a href="">IOT - 28 IOT Based Coal Mine Safety Monitoring and Alerting System</a></li>
+            <li><a href="">IOT - 29 IOT Based Heart Monitoring System Using ECG</a></li>
+            <li><a href="">IOT - 30 IOT based Anti-theft Flooring System using Raspberry Pi</a></li>
+            <li><a href="">IOT - 31 Raspberry Pi based Weather Reporting Over IOT</a></li>
+            <li><a href="">IOT - 32 IOT Based Monitoring System for Comatose Patients</a></li>
+            <li><a href="">IOT - 33 IOT Early Flood Detection & Avoidance</a></li>
+            <li><a href="">IOT - 34 IOT Garbage Monitoring Using Raspberry Pi</a></li>
+            <li><a href="">IOT - 35 IOT Based Circuit Breaker Project</a></li>
+            <li><a href="">IOT - 36 Women Safety Night Patrolling IOT Robot</a></li>
+            <li><a href="">IOT - 37 IOT Mining Tracking & Worker Safety Helmet</a></li>
+            <li><a href="">IOT - 38 IOT Flood Monitoring & Alerting System</a></li>
+            <li><a href="">IOT - 39 IOT Prison Break Monitoring & Alerting System</li>
+            <li><a href="">IOT - 40 Raspberry Pi Air and Noise Pollution Monitoring System Over IOT</a></li>
+            <li><a href="">IOT - 41 IOT Energy Meter with Current, Voltage and Cost Monitoring System</a></li>
+            <li><a href="">IOT - 42 IOT Industry Protection System Arduino</a></li>
+            <li><a href="">IOT - 43 IOT Colour Based Product Sorting Machine Project</a></li>
+            <li><a href="">IOT - 44 IOT BasedSmart Energy Grid</a></li>
+            <li><a href="">IOT - 45 IOT Based Paralysis Patient Health Care Project</a></li>
+            <li><a href="">IOT - 46 IOT BasedCar Parking System</a></li>
+            <li><a href="">IOT - 47 IOT Based Smart Dustbin with IOT Notifications</a></li>
+            <li><a href="">IOT - 48 IOT Smart Mirror with News & Temperature</a></li>
+            <li><a href="">IOT - 49 IOT Garbage Monitoring with Weight Sensing</a></li>
+            <li><a href="">IOT - 50 IOT Based Asset tracking System</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

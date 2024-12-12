@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Solar Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+   
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Solar Based Projects</h1>
+      <br>
+      <br>
+      <ol>
+    <li><a href="#">SO-1: Solar Powered Smart Irrigation System</a></li>
+    <li><a href="#">SO-2: Solar Water Heater with Automatic Temperature Control</a></li>
+    <li><a href="#">SO-3: Solar Tracking System for Maximum Energy Harvesting</a></li>
+    <li><a href="#">SO-4: Solar Powered Air Conditioning System</a></li>
+    <li><a href="#">SO-5: Solar Street Lighting System with Automatic Dimming</a></li>
+    <li><a href="#">SO-6: Solar Powered Electric Vehicle Charging Station</a></li>
+    <li><a href="#">SO-7: Solar Powered Remote Monitoring System for Agriculture</a></li>
+    <li><a href="#">SO-8: Solar-Powered Smart Home Automation System</a></li>
+    <li><a href="#">SO-9: Solar Desalination Plant for Clean Water Production</a></li>
+    <li><a href="#">SO-10: Solar-Powered Waste Management System</a></li>
+    <li><a href="#">SO-11: Solar-Powered Water Purification System</a></li>
+    <li><a href="#">SO-12: Solar-Powered Greenhouse for Year-Round Cultivation</a></li>
+    <li><a href="#">SO-13: Solar-Powered Ventilation System for Buildings</a></li>
+    <li><a href="#">SO-14: Solar-Powered Electric Fence for Agricultural Protection</a></li>
+    <li><a href="#">SO-15: Solar-Powered Wireless Communication Network</a></li>
+    <li><a href="#">SO-16: Solar-Powered LED Traffic Signaling System</a></li>
+    <li><a href="#">SO-17: Solar-Powered Water Pumping System for Irrigation</a></li>
+    <li><a href="#">SO-18: Solar-Powered Automatic Gate Opener</a></li>
+    <li><a href="#">SO-19: Solar-Powered Security Camera System</a></li>
+    <li><a href="#">SO-20: Solar-Powered Educational Kit for Schools</a></li>
+    <li><a href="#">SO-21: Solar-Powered Weather Monitoring Station</a></li>
+    <li><a href="#">SO-22: Solar-Powered Hydroponic Farming System</a></li>
+    <li><a href="#">SO-23: Solar-Powered Air Quality Monitoring Device</a></li>
+    <li><a href="#">SO-24: Solar-Powered Refrigeration System for Rural Areas</a></li>
+    <li><a href="#">SO-25: Solar-Powered Emergency Lighting System</a></li>
+    <li><a href="#">SO-26: Solar-Powered Mobile Charging Kiosk</a></li>
+    <li><a href="#">SO-27: Solar-Powered Pest Control System</a></li>
+    <li><a href="#">SO-28: Solar-Powered Outdoor Advertising Display</a></li>
+    <li><a href="#">SO-29: Solar-Powered Water Heating System for Swimming Pools</a></li>
+    <li><a href="#">SO-30: Solar-Powered Aquaponic System for Sustainable Agriculture</a></li>
+    <li><a href="#">SO-31: Solar-Powered Street Sweeping Machine</a></li>
+    <li><a href="#">SO-32: Solar-Powered Autonomous Boat for Water Monitoring</a></li>
+    <li><a href="#">SO-33: Solar-Powered Medical Refrigerator for Vaccine Storage</a></li>
+    <li><a href="#">SO-34: Solar-Powered Disaster Relief Shelter</a></li>
+    <li><a href="#">SO-35: Solar-Powered Electric Bicycle</a></li>
+    <li><a href="#">SO-36: Solar-Powered Remote Sensing Drone</a></li>
+    <li><a href="#">SO-37: Solar-Powered Portable Water Filtration System</a></li>
+    <li><a href="#">SO-38: Solar-Powered Insect Trap for Pest Management</a></li>
+    <li><a href="#">SO-39: Solar-Powered Traffic Monitoring System</a></li>
+    <li><a href="#">SO-40: Solar-Powered Irrigation Drone</a></li>
+    <li><a href="#">SO-41: Solar-Powered Mobile Health Clinic</a></li>
+    <li><a href="#">SO-42: Solar-Powered Air Purification System</a></li>
+    <li><a href="#">SO-43: Solar-Powered Electric Vehicle Conversion Kit</a></li>
+    <li><a href="#">SO-44: Solar-Powered Remote Surveillance System</a></li>
+    <li><a href="#">SO-45: Solar-Powered Educational Toy for Children</a></li>
+    <li><a href="#">SO-46: Solar-Powered Water Desalination Plant for Coastal Areas</a></li>
+    <li><a href="#">SO-47: Solar-Powered Internet Hotspot for Rural Communities</a></li>
+    <li><a href="#">SO-48: Solar-Powered Rainwater Harvesting System</a></li>
+    <li><a href="#">SO-49: Solar-Powered Autonomous Robot for Environmental Monitoring</a></li>
+    <li><a href="#">SO-50: Solar-Powered Smart City Infrastructure Management System</a></li>
+
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

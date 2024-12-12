@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Embedded-Systems Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>List of Embedded System Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">ES-1: Arduino-based Smart Home Automation System</a></li>
+        <li><a href="#">ES-2: IoT-based Weather Monitoring System</a></li>
+        <li><a href="#">ES-3: Arduino-controlled Robotic Arm</a></li>
+        <li><a href="#">ES-4: Smart Door Lock System Using RFID</a></li>
+        <li><a href="#">ES-5: Voice-controlled Home Appliances Using Arduino</a></li>
+        <li><a href="#">ES-6: Arduino-based Digital Thermometer</a></li>
+        <li><a href="#">ES-7: Real-time GPS Tracker Using Arduino</a></li>
+        <li><a href="#">ES-8: Arduino-based Smart Parking System</a></li>
+        <li><a href="#">ES-9: Arduino-based Fire Detection and Alert System</a></li>
+        <li><a href="#">ES-10: Energy Meter Using Arduino and IoT</a></li>
+        <li><a href="#">ES-11: Raspberry Pi-based Face Recognition Door Lock</a></li>
+        <li><a href="#">ES-12: Smart Mirror Using Raspberry Pi</a></li>
+        <li><a href="#">ES-13: IoT-based Smart Agriculture Monitoring System</a></li>
+        <li><a href="#">ES-14: Raspberry Pi-based Surveillance Camera</a></li>
+        <li><a href="#">ES-15: Raspberry Pi Weather Station</a></li>
+        <li><a href="#">ES-16: Smart Attendance System Using Raspberry Pi</a></li>
+        <li><a href="#">ES-17: Raspberry Pi-based Object Detection Robot</a></li>
+        <li><a href="#">ES-18: Air Pollution Monitoring System Using Raspberry Pi</a></li>
+        <li><a href="#">ES-19: Smart Energy Management System Using Raspberry Pi</a></li>
+        <li><a href="#">ES-20: IoT-enabled Smart Refrigerator</a></li>
+        <li><a href="#">ES-21: AVR-based Digital Stopwatch</a></li>
+        <li><a href="#">ES-22: Automatic Street Light Controller Using AVR</a></li>
+        <li><a href="#">ES-23: Touchless Hand Sanitizer Dispenser Using AVR</a></li>
+        <li><a href="#">ES-24: AVR Microcontroller-based Traffic Light Controller</a></li>
+        <li><a href="#">ES-25: Biometric Attendance System Using AVR</a></li>
+        <li><a href="#">ES-26: ESP8266-based Smart Water Management System</a></li>
+        <li><a href="#">ES-27: Home Automation Using ESP32 and Google Assistant</a></li>
+        <li><a href="#">ES-28: Smart Health Monitoring System Using ESP8266</a></li>
+        <li><a href="#">ES-29: ESP32-based Real-time Vehicle Tracking System</a></li>
+        <li><a href="#">ES-30: IoT-based Soil Moisture Monitoring System</a></li>
+        <li><a href="#">ES-31: MSP430-based Heart Rate Monitor</a></li>
+        <li><a href="#">ES-32: Ultrasonic Radar Using MSP430</a></li>
+        <li><a href="#">ES-33: MSP430-based Burglar Alarm System</a></li>
+        <li><a href="#">ES-34: Solar Tracker System Using MSP430</a></li>
+        <li><a href="#">ES-35: Smart Irrigation System Using MSP430</a></li>
+        <li><a href="#">ES-36: PIC Microcontroller-based DC Motor Speed Controller</a></li>
+        <li><a href="#">ES-37: Temperature Data Logger Using PIC</a></li>
+        <li><a href="#">ES-38: PIC-based Automated Railway Gate System</a></li>
+        <li><a href="#">ES-39: Home Security System Using PIC Microcontroller</a></li>
+        <li><a href="#">ES-40: Water Level Indicator Using PIC</a></li>
+        <li><a href="#">ES-41: STM32-based Smart Air Quality Monitor</a></li>
+        <li><a href="#">ES-42: Real-time Clock Using STM32</a></li>
+        <li><a href="#">ES-43: STM32-based Home Energy Management System</a></li>
+        <li><a href="#">ES-44: Gesture-controlled Robot Using STM32</a></li>
+        <li><a href="#">ES-45: Smart Garbage Monitoring System Using STM32</a></li>
+        <li><a href="#">ES-46: FPGA-based Digital Signal Processing System</a></li>
+        <li><a href="#">ES-47: Real-time Video Processing System Using FPGA</a></li>
+        <li><a href="#">ES-48: Smart Traffic Light System Using FPGA</a></li>
+        <li><a href="#">ES-49: FPGA-based Face Detection System</a></li>
+        <li><a href="#">ES-50: IoT-enabled Smart Street Lighting Using FPGA</a></li>
+
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

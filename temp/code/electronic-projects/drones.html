@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Drones-and-Robotics Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+    position: fixed; /* Keep the button fixed on the screen */
+    bottom: 53px;
+    right: 55px; /* Close to the right edge of the page */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Exploring Robotics And Drones</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">RD-1: Smart Shopping Trolley that Follows Customer</a></li>
+        <li><a href="#">RD-2: Object Tracker & Follower Robot Using Raspberry Pi</a></li>
+        <li><a href="#">RD-3: Rough Terrain Beetle Robot</a></li>
+        <li><a href="#">RD-4: Smart Solar Grass Cutter with Lawn Coverage</a></li>
+        <li><a href="#">RD-5: Path Planner Robot for Indoor Positioning</a></li>
+        <li><a href="#">RD-6: LIDAR based Self Driving Car</a></li>
+        <li><a href="#">RD-7: Motorized Solar Scarecrow Bird Animal Repellent</a></li>
+        <li><a href="#">RD-8: DIY 5DOF Wireless Hand Motion Controlled Robotic Gripper Arm</a></li>
+        <li><a href="#">RD-9: Design and Fabrication of Emergency braking system in Four-Wheeler</a></li>
+        <li><a href="#">RD-10: Arduino based Snake Robot Controlled using Android Application</a></li>
+        <li><a href="#">RD-11: Variable Head Solar Grass Cutter Weed Trimmer</a></li>
+        <li><a href="#">RD-12: Fire Fighter Robot with Night Vision Camera</a></li>
+        <li><a href="#">RD-13: RF Controlled Solar Panel Based Robotic Vehicle</a></li>
+        <li><a href="#">RD-14: LIDAR based Object Detection for Military Spying</a></li>
+        <li><a href="#">RD-15: Design and Manufacturing of Solar Powered Seed Sprayer Machine</a></li>
+        <li><a href="#">RD-16: Long Range Spy Robot with Night Vision</a></li>
+        <li><a href="#">RD-17: Long Range Spy Robot with Obstacle Detection</a></li>
+        <li><a href="#">RD-18: Long Range Spy Robot with Metal Detection</a></li>
+        <li><a href="#">RD-19: Remote Controlled Automobile Using Rf</a></li>
+        <li><a href="#">RD-20: Robotic Vehicle Controlled by Hand Gesture Using PIC</a></li>
+        <li><a href="#">RD-21: Android Controlled Robotic Arm</a></li>
+        <li><a href="#">RD-22: Hand Motion Controlled Robotic Arm</a></li>
+        <li><a href="#">RD-23: 8 Leg Spider Robot by Theo Jansen Linkage</a></li>
+        <li><a href="#">RD-24: Goods Transport Stair Climber Robot</a></li>
+        <li><a href="#">RD-25: Flamethrower & Extinguisher RC Robot</a></li>
+        <li><a href="#">RD-26: RC Solar Lake Pool Cleaner Drone</a></li>
+        <li><a href="#">RD-27: Oil Skimmer RC Boat</a></li>
+        <li><a href="#">RD-28: Wireless Master Joystick Controller for Robotics</a></li>
+        <li><a href="#">RD-29: Arduino Based Autonomous Fire Fighting Robot</a></li>
+        <li><a href="#">RD-30: Arduino Ultrasonic Sonar/Radar Monitor Project</a></li>
+        <li><a href="#">RD-31: Motion Controlled Pick & Place Obstacle Avoider Robot</a></li>
+        <li><a href="#">RD-32: Women Safety Night Patrolling Robot</a></li>
+        <li><a href="#">RD-33: Programmable Omni Direction Robotic Arm Vehicle</a></li>
+        <li><a href="#">RD-34: Off Road Adventure Robot with Action Camera</a></li>
+        <li><a href="#">RD-35: Waterproof Action Camera Drone</a></li>
+        <li><a href="#">RD-36: Solar Panel Cleaning Robot</a></li>
+        <li><a href="#">RD-37: IOT Water Pollution Monitor RC Boat</a></li>
+        <li><a href="#">RD-38: LIDAR Micro Done with Proximity Sensing</a></li>
+        <li><a href="#">RD-39: RC Underwater Exploration Drone</a></li>
+        <li><a href="#">RD-40: Wall Climbing Glass Cleaner Robot</a></li>
+        <li><a href="#">RD-41: Sustainable Fishing Drone Without Bycatch</a></li>
+        <li><a href="#">RD-42: Self-Charging Solar Powered Drone</a></li>
+        <li><a href="#">RD-43: Pesticide Sprayer & COVID Sanitization Drone</a></li>
+        <li><a href="#">RD-44: Thermal Vision RC Robotic Tank</a></li>
+        <li><a href="#">RD-45: Programmable Robotic Arm Using Arduino</a></li>
+        <li><a href="#">RD-46: Voice controlled wheelchair for physically disabled</a></li>
+        <li><a href="#">RD-47: IOT Virtual Doctor Robot</a></li>
+        <li><a href="#">RD-48: Medical Supplies Delivery Drone</a></li>
+        <li><a href="#">RD-49: IOT Weather Station Airship</a></li>
+        <li><a href="#">RD-50: Fishing Drone</a></li>
+        <li><a href="#">RD-51: Solar Floor Cleaner Robot</a></li>
+        <li><a href="#">RD-52: IOT Dog Daycare Robot</a></li>
+        <li><a href="#">RD-53: Android Micro Drone with Obstacle Detector</a></li>
+        <li><a href="#">RD-54: Indoor Racing Drone with Action Camera</a></li>
+        <li><a href="#">RD-55: DIY Tricopter Selfie Drone</a></li>
+        <li><a href="#">RD-56: 360° Aerial Surveillance UAV With IOT Camera</a></li>
+        <li><a href="#">RD-57: 360° Filmmaking Drone For 4K HD Video</a></li>
+        <li><a href="#">RD-58: Fire Extinguisher & Fire Fighting Drone</a></li>
+        <li><a href="#">RD-59: Thermal Screening Drone</a></li>
+        <li><a href="#">RD-60: IOT Social Distancing & Monitoring Robot For Queue</a></li>
+        <li><a href="#">RD-61: Autonomous Theft Proof Delivery Robot For Food & Ecommerce</a></li>
+        <li><a href="#">RD-62: Social Distancing & Mask Monitor Drone</a></li>
+        <li><a href="#">RD-63: DIY Ventilator using Arduino For Covid Pandemic</a></li>
+        <li><a href="#">RD-64: Auto Temperature Detector for Entrance For Covid Safety</a></li>
+        <li><a href="#">RD-65: Water Landing and Take-off Drone</a></li>
+        <li><a href="#">RD-66: 2WD Vehicle Drone Air + Land Surveillance</a></li>
+        <li><a href="#">RD-67: Public Property Violation and Anti Littering Drone</a></li>
+        <li><a href="#">RD-68: Raspberry Pi based Android Controlled Surveillance Robot</a></li>
+        <li><a href="#">RD-69: Farm Protector Drone for using Arduino</a></li>
+        <li><a href="#">RD-70: Design and Fabrication of External Pipe Climbing Robot</a></li>
+        <li><a href="#">RD-71: Anti-Riot Drone with Tear Gas</a></li>
+        <li><a href="#">RD-72: Robotic Solar Lawn Mower with Theft Detection</a></li>
+        <li><a href="#">RD-73: Automated Vehicle Umbrella Tent for Hailstorm Protection</a></li>
+        <li><a href="#">RD-74: LIDAR based Autonomous Vehicle with GPS Tracking</a></li>
+        <li><a href="#">RD-75: Unlimited Battery E bike using Solar & Wind Power</a></li>
+        <li><a href="#">RD-76: Solar Powered Water Trash Collector</a></li>
+        <li><a href="#">RD-77: Water Pollution Monitoring RC Boat</a></li>
+        <li><a href="#">RD-78: Pollution Monitoring & Source Tracker Drone</a></li>
+        <li><a href="#">RD-79: Intelligent Surveillance and Night Patrolling Drone</a></li>
+        <li><a href="#">RD-80: Quadriplegics Wheelchair Control by Head Motion using Accelerometer</a></li>
+        <li><a href="#">RD-81: Design and Fabrication of Vertically Wall Climbing Glass Cleaning Robot</a></li>
+        <li><a href="#">RD-82: Advanced Automatic Self-Car Parking using Arduino Project</a></li>
+        <li><a href="#">RD-83: Multicontroller based Wheelchair Safety using Android, Touch, Speech & Gesture Control</a></li>
+        <li><a href="#">RD-84: Accident Avoiding System with Crash Detection and GPS Notification</a></li>
+        <li><a href="#">RD-85: Wireless Humanoid Bionic Arm on Robotic Vehicle</a></li>
+        <li><a href="#">RD-86: DTMF & RF Dual Controller Based Robot</a></li>
+        <li><a href="#">RD-87: Fire Fighter Robot with Fire Resistant Body</a></li>
+        <li><a href="#">RD-88: Smart Floor Cleaner Robot Using Android</a></li>
+        <li><a href="#">RD-89: Motion Based Maze Solver Using Android</a></li>
+        <li><a href="#">RD-90: Multi Robot Coordination For Swarm Robotics</a></li>
+        <li><a href="#">RD-91: Automatic Whiteboard Eraser Robot</a></li>
+        <li><a href="#">RD-92: Automatic Vacuum Cleaner Robot Project</a></li>
+        <li><a href="#">RD-93: RF Controlled Beach Cleaner Robotic Vehicle</a></li>
+        <li><a href="#">RD-94: Self Balancing Robot Project</a></li>
+        <li><a href="#">RD-95: Joystick Controlled Steering Mechanism Vehicle</a></li>
+        <li><a href="#">RD-96: High Performance Hovercraft With Power Turning</a></li>
+        <li><a href="#">RD-97: Accurate Speed Control Of Electric Car Using ARM</a></li>
+        <li><a href="#">RD-98: Rf Controlled Spy Robot With Night Vision Camera</a></li>
+        <li><a href="#">RD-99: Hovercraft Controlled By Android</a></li>
+        <li><a href="#">RD-100: Collision Detection Robotic Vehicle Using ARM</a></li>
+        <li><a href="#">RD-101: Fully Automated Solar Grass Cutter Robot</a></li>
+        <li><a href="#">RD-102: Remote Controlled Pick & Place Robotic Vehicle</a></li>
+        <li><a href="#">RD-103: MC Based Line Follower Robot</a></li>
+        <li><a href="#">RD-104: Agricultural Robot Project</a></li>
+        <li><a href="#">RD-105: Fire Fighter Robot Project</a></li>
+        <li><a href="#">RD-106: RF Controlled Robotic Vehicle</a></li>
+        <li><a href="#">RD-107: RF Controlled Robotic Vehicle With Metal Detection Project</a></li>
+        <li><a href="#">RD-108: Obstacle Avoider Robotic Vehicle</a></li>
+        <li><a href="#">RD-109: Voice Controlled Robotic Vehicle</a></li>
+        <li><a href="#">RD-110: Speech Detector Robotic Vehicle Control</a></li>
+        <li><a href="#">RD-111: Robotic Arm Vehicle Controlled By Touch Screen Display</a></li>
+        <li><a href="#">RD-112: TV Remote Controlled Robotic Vehicle Project</a></li>
+        <li><a href="#">RD-113: Robot Controlled By Android Application</a></li>
+        <li><a href="#">RD-114: Android Controlled Fire Fighter Robot</a></li>
+        <li><a href="#">RD-115: Android Controlled Spy Robot With Night Vision Camera</a></li>
+        <li><a href="#">RD-116: Android Controlled Pick And Place Robotic Arm Vehicle Project</a></li>
+        <li><a href="#">RD-117: Android Controlled Wildlife Observation Robot</a></li>
+        <li><a href="#">RD-118: Wireless Surveillance Robot Controlled by PC</a></li>
+        <li><a href="#">RD-119: RF Based Night Vision Spy Robot Using PIC</a></li>
+        <li><a href="#">RD-120: Advanced Military Spying & Bomb Disposal Robot</a></li>
+        <li><a href="#">RD-121: Wildlife Observation Robot Using Rf</a></li>
+        <li><a href="#">RD-122: Shuttling Metro Train Between Stations Project</a></li>
+        <li><a href="#">RD-123: DC Motor Speed Control By Android</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>

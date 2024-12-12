@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+  <title>Network Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 2px solid #ddd;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 50px;
+      background-color: #f9f9f9;
+      right: 20px;
+      top: 170px;
+      width: 35%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .main-content ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .main-content ol li {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content ol li a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .sidebar iframe {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .sidebar h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00796b;
+      text-decoration: none;
+      margin: 8px 0;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        flex: 1;
+        border-right: none;
+        padding: 15px;
+      }
+
+      .sidebar {
+        flex: 1;
+        padding: 15px;
+        width: 100%;
+      }
+
+      iframe {
+        height: 250px; /* Adjust for tablets */
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .main-content ol li {
+        font-size: 0.95em;
+      }
+    }
+    .whatsapp-container {
+      position: fixed; /* Keep the button fixed on the screen */
+      bottom: 53px;
+      right: 55px; /* Close to the right edge of the page */
+      transform: translateY(-50%); /* Adjust for perfect vertical centering */
+      z-index: 1000; /* Ensure it's on top of other content */
+    }
+
+/* Button Styling */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    width: 50px; /* Small button size */
+    height: 50px; /* Equal width and height for circular shape */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: fixed;
+
+}
+
+/* Hover Effects */
+.whatsapp-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.whatsapp-button img {
+    width: 30px; 
+    height: 30px;
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>List of 101 Network Security Projects</h1>
+      <br>
+      <br>
+      <ol>
+        <li><a href="#">NS - 1: Secure Persona Prediction and Data Leakage Prevention System using Python</a></li>
+        <li><a href="#">NS - 2: Organic Food Traceability System using Blockchain</a></li>
+        <li><a href="#">NS - 3: Pharma Supply Chain System using Smart Contracts</a></li>
+        <li><a href="#">NS - 4: File Transfer System using Elliptic Curve Cryptography</a></li>
+        <li><a href="#">NS - 5: Anti-Money Laundering System using Blockchain</a></li>
+        <li><a href="#">NS - 6: Blockchain-based Transaction and Settlement System</a></li>
+        <li><a href="#">NS - 7: Blockchain based Cloud File Sharing System</a></li>
+        <li><a href="#">NS - 8: Blockchain based Cross Border Payment System</a></li>
+        <li><a href="#">NS - 9: Blockchain based Merchant Payment System</a></li>
+        <li><a href="#">NS - 10: Organization Finance Tracking System using Blockchain</a></li>
+        <li><a href="#">NS - 11: Blockchain based Personal Identity Security System</a></li>
+        <li><a href="#">NS - 12: Signature verification System using Python</a></li>
+        <li><a href="#">NS - 13: Secure File Access System Android App</a></li>
+        <li><a href="#">NS - 14: Property Registration Management System using Blockchain</a></li>
+        <li><a href="#">NS - 15: Patient Data Management System using Blockchain</a></li>
+        <li><a href="#">NS - 16: Electronic Voting System using Blockchain</a></li>
+        <li><a href="#">NS - 17: Loyalty Points Exchange System using Blockchain</a></li>
+        <li><a href="#">NS - 18: NGO Management System using Blockchain</a></li>
+        <li><a href="#">NS - 19: Python Image Forgery Detection using MD5 OpenCV</a></li>
+        <li><a href="#">NS - 20: Three Level Image Password Authentication</a></li>
+        <li><a href="#">NS - 21: Safe Folder App</a></li>
+        <li><a href="#">NS - 22: Text Steganography Project</li>
+        <li><a href="#">NS - 23: Graphical Password Authentication System using Intuitive Approach</a></li>
+        <li><a href="#">NS - 24: Online Transaction Fraud Detection using Backlogging on E-Commerce Website</a></li>
+        <li><a href="#">NS - 25: Pocket Certificates using Double Encryption</a></li>
+        <li><a href="#">NS - 26: Sql Injection Prevention System Php</a></li>
+        <li><a href="#">NS - 27: Encryption & Decryption Using Deffie Hellman Algorithm</a></li>
+        <li><a href="#">NS - 28: Secure Backup Software System</a></li>
+        <li><a href="#">NS - 29: Secure E Learning Using Data Mining Techniques</a></li>
+        <li><a href="#">NS - 30: Android Video Encryption & Sharing</a></li>
+        <li><a href="#">NS - 31: Secure File Sharing Using Access Control</a></li>
+        <li><a href="#">NS - 32: Image Authentication Based On Watermarking Approach</a></li>
+        <li><a href="#">NS - 33: Digital Watermarking To Hide Text Messages</a></li>
+        <li><a href="#">NS - 34: Matrix Based Shoulder Surfing Security System</a></li>
+        <li><a href="#">NS - 35: Improved Session Password Based Security System</a></li>
+        <li><a href="#">NS - 36: Android Text Encryption Using Various Algorithms</a></li>
+        <li><a href="#">NS - 37: RFID Based Smart EVM For Reducing Electoral Frauds</a></li>
+        <li><a href="#">NS - 38: Secure Online Auction System</a></li>
+        <li><a href="#">NS - 39: School Security System (SSS) using RFID</a></li>
+        <li><a href="#">NS - 40: E Authentication System Using QR Code & OTP</a></li>
+        <li><a href="#">NS - 41: Secure Text Transfer Using Diffie Hellman Key Exchange Based on Cloud</a></li>
+        <li><a href="#">NS - 42: Android Based Encrypted SMS System</a></li>
+        <li><a href="#">NS - 43: Detecting Phishing Websites Using Machine Learning</a></li>
+        <li><a href="#">NS - 44: Secure Electronic Fund Transfer Over Internet Using DES</a></li>
+        <li><a href="#">NS - 45: Preventing Phishing Attack On Voting System Using Visual Cryptography</a></li>
+        <li><a href="#">NS - 46: Card Payment Security Using RSA</a></li>
+        <li><a href="#">NS - 47: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 48: ATM Detail Security Using Image Steganography</a></li>
+        <li><a href="#">NS - 49: Image Steganography Using Kmeans & Encryption</a></li>
+        <li><a href="#">NS - 50: Implementing Triple DES With OTP</a></li>
+        <li><a href="#">NS - 51: Fingerprint Authenticated Secure Android Notes</a></li>
+        <li><a href="#">NS - 52: Customized AES using Pad and Chaff Technique And Diffie Hellman Key Exchange</a></li>
+        <li><a href="#">NS - 53: Detecting Data Leaks via Sql Injection Prevention on an E-Commerce</a></li>
+        <li><a href="#">NS - 54: Cloud Based Improved File Handling and Duplication Removal Using MD5</a></li>
+        <li><a href="#">NS - 55: Cloud Based Student Information Chatbot Project</a></li>
+        <li><a href="#">NS - 56: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 57: Secure File Storage On Cloud Using Hybrid Cryptography</a></li>
+        <li><a href="#">NS - 58: Financial Status Analysis Using Credit Score Rating</a></li>
+        <li><a href="#">NS - 59: Hybrid Payment Security Model For E Commerce</a></li>
+        <li><a href="#">NS - 60: Fingerprint Authenticated Secure Android Notes</a></li>
+        <li><a href="#">NS - 61: Data Duplication Removal Using File Checksum</a></li>
+        <li><a href="#">NS - 62: High Security Encryption Using AES & Visual Cryptography</a></li>
+        <li><a href="#">NS - 63: A New Hybrid Technique For Data Encryption</a></li>
+        <li><a href="#">NS - 64: Extended AES with Custom Configurable Encryption</a></li>
+        <li><a href="#">NS - 65: Image Encryption Using AES Algorithm</a></li>
+        <li><a href="#">NS - 66: Image Encryption Using Triple DES</a></li>
+        <li><a href="#">NS - 67: Graphical Password To Avoid Shoulder Surfing</a></li>
+        <li><a href="#">NS - 68: Secure Data Transfer Over Internet Using Image Steganography</a></li>
+        <li><a href="#">NS - 69: Secure Electronic Fund Transfer Over Internet Using DES</a></li>
+        <li><a href="#">NS - 70: Smart Android Graphical Password Strategy</a></li>
+        <li><a href="#">NS - 71: Image Encryption For Secure Internet Transfer</a></li>
+        <li><a href="#">NS - 72: Image Encryption For Secure Internet Transfer</a></li>
+        <li><a href="#">NS - 73: Secure Remote Communication Using DES Algorithm</a></li>
+        <li><a href="#">NS - 74: Secure ATM Using Card Scanning Plus OTP</a></li>
+        <li><a href="#">NS - 75: Secure Lab Access Using Card Scanner Plus Face Recognition</a></li>
+        <li><a href="#">NS - 76: Active Chat Monitoring and Suspicious Chat Detection over Internet</a></li>
+        <li><a href="#">NS - 77: Credit Card Fraud Detection</a></li>
+        <li><a href="#">NS - 78: Remote User Recognition And Access Provision</a></li>
+        <li><a href="#">NS - 79: Collective Face Detection Project</a></li>
+        <li><a href="#">NS - 80: College automation project</a></li>
+        <li><a href="#">NS - 81: Automated Attendance System</a></li>
+        <li><a href="#">NS - 82: Mobile Attendance System Project</a></li>
+        <li><a href="#">NS - 83: Improved Data Leakage Detection</a></li>
+        <li><a href="#">NS - 84: Criminal Investigation Tracker with Suspect Prediction</a></li>
+        <li><a href="#">NS - 85: Facial Expression Recognition</a></li>
+        <li><a href="#">NS - 86: Graphical Password By Image Segmentation</a></li>
+        <li><a href="#">NS - 87: Android Anti-Virus Application</a></li>
+        <li><a href="#">NS - 88: Three Level Password Authentication System</a></li>
+        <li><a href="#">NS - 89: Attack Source Tracing Project</a></li>
+        <li><a href="#">NS - 90: Graphical Password Strategy</a></li>
+        <li><a href="#">NS - 91: Software Piracy Protection Project</a></li>
+        <li><a href="#">NS - 92: file encryption using fibonacci series</a></li>
+        <li><a href="#">NS - 93: Hybrid AES DES encryption algorithm(any combination of algorithms is available)</a></li>
+        <li><a href="#">NS - 94: Internet Border Patrol</a></li>
+        <li><a href="#">NS - 95: Detecting Data Leaks</a></li>
+        <li><a href="#">NS - 96: Camera Motion Sensing Project</a></li>
+        <li><a href="#">NS - 97: Mobile Self Encryption</a></li>
+        <li><a href="#">NS - 98: Detecting Data Leaks</a></li>
+        <li><a href="#">NS  99: Sql Injection Prevention Project</a></li>
+        <li><a href="#">NS - 100: Improved Honeypot Project</a></li>
+        <li><a href="#">NS - 101: Video Surveillance Project</a></li>
+        <!-- Add more project links here -->
+      </ol>
+    </div>
+
+    <!-- Sidebar for Videos -->
+    <div class="sidebar">
+      <h3>Watch Videos</h3>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h3>Latest Projects</h3>
+      <a href="#">Smart Irrigation System</a>
+      <a href="#">Home Automation System</a>
+      <a href="#">Remote Health Monitoring</a>
+      <a href="#">Vehicle Tracking System</a>
+      <a href="#">AI-Powered Smart Mirror</a>
+      <a href="#">IoT-Enabled Smart Dustbin</a>
+      <a href="#">Edge AI for Object Recognition</a>
+      <a href="#">Gesture-Controlled Smart Home</a>
+      <a href="#">IoT Smart Farming Solution</a>
+      <br>
+      <br>
+      <br>
+      <h3>Domains</h3>
+      <a href="#">Internet of Things</a>
+      <a href="#">Artificial Intelligence</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Embedded Systems</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Quantum Computing</a>
+      <br>
+      <br>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/UgF29StIDt4?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/0Fe2Lpk91R0?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--whatsapp API-->
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=916363760275&forceIntent=true&load=loadInIOSExternalSafari" target="_blank" class="whatsapp-button">
+        <img src="/static/images/whatsapp-icon.png">
+
+    </a>
+</div>
+
+  <div id="footer-container"></div>
+  <script src="/code/script.js"></script>
+</body>
+</html>
