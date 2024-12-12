@@ -582,7 +582,7 @@ hr{
     height: 30px;
     display: block;
 }
-* Instagram Container */
+/* Instagram Container */
 .instagram-container {
     position: fixed; /* Keep the button fixed on the screen */
     bottom: 120px; /* Position slightly above the WhatsApp button */
