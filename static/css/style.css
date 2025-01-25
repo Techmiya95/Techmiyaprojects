@@ -103,6 +103,43 @@ nav a img {
     font-size: 14px;
     color: #fff;
 }
+
+.text-box a {
+    text-decoration: none;
+}
+
+.text-box button {
+    background-color: #00fed8;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    animation: float 2s infinite ease-in-out;
+}
+
+.text-box button:hover {
+    background-color: #00f351;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 87, 51, 0.5);
+}
+
+/* Animation for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;

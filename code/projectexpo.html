@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <title>Project EXPO Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 8px;
+        }
+        .instructions h3 {
+            color: #0d47a1;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 30s infinite;
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .register {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register a {
+            text-decoration: none;
+            color: white;
+            background: #0d47a1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .register a:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>All India Hackathon 2025</h1>
+        <p>Get ready to showcase your innovation, creativity, and problem-solving skills in the All India Hackathon 2025, hosted by Techmiya Solutions in collaboration with Dayananda Sagar College of Engineering, Kumaraswamy Layout, Bengauru. This event brings together the brightest minds from across the country to collaborate, compete, and create ground-breaking solutions.</p>
+        
+        <div class="slider">
+            <div class="slides">
+                <img src="/static/images/expo1.jpg" alt="Hackathon Image 1" width=200 height=400>
+                <img src="/static/images/expo2.jpg" alt="Hackathon Image 2" width=200 height=400>
+                <img src="/static/images/expo3.jpg" alt="Hackathon Image 3" width=200 height=400>
+                <img src="/static/images/expo4.jpg" alt="Hackathon Image 3" width=200 height=400>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Points to Remember:</h3>
+            <ul>
+                <li>A Group can have a minimum of 2 and a maximum of 4 students.</li>
+                <li>A Group should contain students from the same department and college.</li>
+                <li>A Group can have students from different semesters.</li>
+                <li>File size of the Synopsis should be less than 10 MB.</li>
+            </ul>
+            <p><strong>Last Date for Registration:</strong> February 15th, 2025</p>
+        </div>
+
+        <div class="register">
+            <a href="https://forms.gle/3MEpq79Vji9E65Tx5" target="_blank">Register Now</a>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script src="/code/script.js"></script>
+</body>
+</html>
