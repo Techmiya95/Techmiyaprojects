@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Games Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #f9d342;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    .flyer-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .flyer {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .popper {
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .popper-left {
+      left: -70px;
+      transform: translateY(-50%) rotate(-30deg);
+    }
+
+    .popper-right {
+      right: -70px;
+      transform: translateY(-50%) rotate(30deg);
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #f9d342;
+      animation: pop 1s ease-out infinite;
+      opacity: 0;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.2) translateY(-80px) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    .games-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      padding: 10px;
+    }
+
+    .games-container a {
+      text-decoration: none;
+    }
+
+    .game-button {
+      width: 100%;
+      background: #f9d342;
+      color: #222;
+      border: none;
+      border-radius: 12px;
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-button:hover {
+      background: #f4b400;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #ccc;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      .games-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .popper-left {
+        left: -40px;
+      }
+
+      .popper-right {
+        right: -40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .games-container {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .game-button {
+        font-size: 1rem;
+        padding: 12px 15px;
+      }
+
+      .popper-left,
+      .popper-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Techmiya Games!!!</h1>
+    <p>Click a game to begin the fun</p>
+  </header>
+
+  <div class="flyer-wrapper">
+    <img class="popper popper-left" src="https://cdn.dribbble.com/users/2983604/screenshots/8140241/party_popper.gif" alt="Popper">
+    <img class="flyer" src="./img/flyer.jpeg" alt="Game Flyer">
+    <img class="popper popper-right" src="https://cdn.dribbble.com/users/2983604/screenshots/8140241/party_popper.gif" alt="Popper">
+  </div>
+
+  <div class="games-container">
+    <!-- Game Buttons -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTRCpbDc0yv7E8_ILyst2ASks2x_LGx9NSn9rd73YHQ96BGw/viewform?usp=sharing">
+      <button class="game-button">Chess Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEDI-qd-PEaBjn4PBSzDuf4ZGS8rhiwYmSfRodmpUFnXCoMA/viewform?usp=sharing">
+      <button class="game-button">Jinga Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3OnDKVbRJuYtdFsthv27bC6yMKRVnUd0nD27j_3OXEpuM_g/viewform?usp=sharing">
+      <button class="game-button">Quiz Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2rXrPD-qEiQmBTLvht_cgordDbtUmPfskxKZPCBfydblGAQ/viewform?usp=sharing">
+      <button class="game-button">Riddles Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeYfNGx05Nh9RSmFepohHz9PaR0smq2HBSepDdvuOCo09h1w/viewform?usp=sharing">
+      <button class="game-button">Pictionary Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlX1Nt_-qrQUiY4WdPq--2rR9Rt3h34rafbqVqarBOWCrNNg/viewform?usp=sharing">
+      <button class="game-button">Rubik's Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeETwAo2q65DkXFNMMYJJIE7K3HYH0kf2sPFrpuTNEBjZ3jZw/viewform?usp=sharing">
+      <button class="game-button">Sudoku Tournament</button>
+    </a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScG7g85Issm5zNNbYoKSDc50mMqUnOmxyeMxCoAA8OcecfZFQ/viewform?usp=sharing">
+      <button class="game-button">Puzzles Tournament</button>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Techmiya Games. All rights reserved.
