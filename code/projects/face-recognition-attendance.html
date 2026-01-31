@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System - Techmiya Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .project-container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-image {
+            width: 100%;
+            display: block;
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+        }
+
+        .brand-logo {
+            width: 90px;
+            height: auto;
+            background: white;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner-text {
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .banner-text h2 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .banner-text p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #00d4ff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #224466;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .abstract {
+            font-style: italic;
+            background: #eef7ff;
+            padding: 20px;
+            border-left: 5px solid #00d4ff;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="project-container">
+        <h1>Face Recognition Attendance System</h1>
+
+        <div class="banner-wrapper">
+            <img src="/static/images/face_attendance.png" alt="Face Recognition Attendance" class="banner-image">
+            <div class="banner-overlay">
+                <img src="/static/images/brand-logo.jpg" alt="Techmiya Logo" class="brand-logo">
+                <div class="banner-text">
+                    <h2>Face Recognition Attendance System</h2>
+                    <p>Powered by Techmiya Projects</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="abstract">
+            <strong>Abstract:</strong> This project develops an automated attendance system using facial recognition
+            technology. By leveraging OpenCV and deep learning models, the system identifies individuals from a live
+            camera feed and logs their attendance in a database, eliminating manual record-keeping and preventing proxy
+            attendance.
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Traditional attendance systems using paper or ID cards are prone to errors and manipulation. The <span
+                class="highlight">Face Recognition Attendance System</span> offers a modern solution that is both secure
+            and efficient. Using a camera-enabled device, the system captures faces, extracts unique features, and
+            matches them against registered profiles to mark attendance in real-time.</p>
+
+        <h2>Professional Title</h2>
+        <p><strong>Automated Time and Attendance Tracking using Deep Learning-based Facial Recognition</strong></p>
+
+        <h2>Advantages</h2>
+        <ul>
+            <li><strong>High Accuracy:</strong> Minimizes human error in logging and reporting.</li>
+            <li><strong>Touchless & Hygienic:</strong> Eliminates the need for physical contact with biometric devices.
+            </li>
+            <li><strong>Prevents Proxies:</strong> Ensures that only the authorized individual can mark their
+                attendance.</li>
+            <li><strong>Automated Reports:</strong> Generates daily, weekly, or monthly attendance reports instantly.
+            </li>
+        </ul>
+
+        <h2>Disadvantages</h2>
+        <ul>
+            <li><strong>Lighting Dependency:</strong> Performance can vary in low-light or fluctuating lighting
+                conditions.</li>
+            <li><strong>Hardware Requirements:</strong> Requires a decent quality camera and processing power for
+                real-time analysis.</li>
+            <li><strong>Privacy Concerns:</strong> Requires strict data security measures to protect facial biometric
+                data.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The Face Recognition Attendance System is a powerful tool for organizations seeking to modernize their
+            administrative tasks. It provides a seamless, secure, and transparent way to manage person-tracking. Future
+            work could include multi-face recognition for large classrooms or integrating with existing HRMS software.
+        </p>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="/code/script.js"></script>
+</body>
+
+</html>

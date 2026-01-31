@@ -1,3 +1,6 @@
+/* Gen Z Aesthetic Footer Styling */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,212 +8,239 @@
 }
 
 footer {
-  background-color: #080808;
+  background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.05), transparent),
+    linear-gradient(180deg, #0a192f 0%, #050c18 100%);
+  padding: 80px 0 40px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
 }
 
 .footercontainer {
-  width: 100%;
-  padding: 10px 20px;
-}
-footer h3 {
-  font-size: 1.5em; /* Adjust heading font size */
-  color: #ffffff; /* Set text color */
-  text-align: center; /* Center-align text */
-  margin-bottom: 15px; /* Space below the heading */
-  font-weight: bold; /* Make the heading bold */
-  opacity: 0.8; /* Slight transparency for a softer look */
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 1;
 }
 
-.socialIcons {
+.row {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.socialIcons a {
-  text-decoration: none;
-  padding: 10px;
-}
-
-.socialIcons a i {
-  font-size: 1.8em;
-  color: #fff;
-  opacity: 0.9;
-  transition: color 0.3s, transform 0.3s; 
-}
-
-.socialIcons a:hover i {
-  color: rgb(207, 92, 16);
-  transform: scale(1.1);
-}
-
-.slogan {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  text-align: center;
-  padding-top: 0;
-  
-  margin: 10px auto;
-}
-
-.slogan img {
-  max-width: 150px;
-  width: 100%; 
-  height: auto;
-  margin-left: 5cm;
-}
-
-.payments {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding-top: 20px;
-  width: 100%;
-  text-align: center;
-  margin-left: 2cm;
-}
-
-.payments a img {
-  width: 40px;
-  height: auto;
-}
-
-.footernav {
-  margin: 20px 0;
-}
-
-.footernav ul {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 50px;
+}
+
+.col {
+  flex: 1;
+  min-width: 300px;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+footer h3::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #00d4ff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.footer-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Glass Card Links */
+.footernav ul {
+  list-style: none;
+  padding: 0;
 }
 
 .footernav ul li {
-  font-size: 1em;
-  margin: 10px 5px;
-  width: 100%;
-  text-align: center;
-  
+  margin-bottom: 12px;
 }
 
 .footernav ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-size: 1.2em;
-  opacity: 0.7;
-  transition: 0.5s;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-block;
 }
 
 .footernav ul li a:hover {
-  opacity: 0.5;
+  color: #00d4ff;
+  transform: translateX(8px);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
+/* Branded Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.socialIcons a {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  background: #00d4ff;
+  border-color: #00d4ff;
+  color: #0a192f;
+  transform: translateY(-8px) rotate(8deg);
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Center Logo Section */
+.slogan {
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.2));
+}
+
+.slogan img {
+  max-width: 180px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.slogan:hover img {
+  transform: scale(1.05);
+}
+
+/* Payment Icons */
+.payments {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.payments:hover {
+  opacity: 1;
+}
+
+.payments img {
+  height: 25px;
+  width: auto;
+  filter: grayscale(1) invert(1) brightness(2);
+  transition: all 0.3s ease;
+}
+
+.payments a:hover img {
+  filter: none;
+  transform: scale(1.2);
+}
+
+/* Address Styling */
+.add {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.add p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.add p strong {
+  color: #00d4ff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Footer Bottom Bar */
 .footerBottom {
-  background-color: #080808;
-  padding: 15px;
+  background: #050c18;
+  padding: 25px;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .footerBottom p {
-  color: white;
-  font-size: 0.9em;
-}
-
-.add {
-  text-align: center;
-  margin-left: 4cm;
-  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
 }
 
 .designer {
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
+  color: #00d4ff;
+  font-weight: 500;
 }
 
-
-/* Media Query for Mobile Devices (500px and below) */
-@media (max-width: 480px) {
-  .footercontainer {
-    max-width: 1000px; /* Further reduce footer width */
-    margin: 0 auto; /* Center content */
-    padding: 0 10px; /* Minimize padding */
-    display: flex;
-  }
-
-  .socialIcons {
-    gap: 1px; /* Very narrow gap */
-    margin-top: -15px; /* Adjusted top margin to reduce space */
-
-  }
-  .socialIcons a i {
-    font-size: 1em; /* Slightly smaller icon size */
-  }
-
-  .footernav ul {
-    gap: 0px; /* Smaller gap between list items */
-    padding: 0; /* Remove any extra padding */
+/* Responsive Overhaul */
+@media (max-width: 992px) {
+  .col {
+    min-width: 100%;
+    margin-bottom: 40px;
   }
 
   footer h3 {
-    font-size: 1em; /* Smaller heading size */
-    margin-bottom: 10px; /* Reduce bottom margin */
+    justify-content: center;
   }
 
-  .slogan {
-    position: absolute;
-    top: 5px; /* Further push to top */
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 0;
-    padding: 0; /* Remove padding */
-
-  }
-
-  .slogan img {
-    max-width: 90px; /* Keep a slightly larger logo for visibility */
-    height: auto;
-    margin-right: 6cm;
-  }
-
-  .footernav ul li a {
-    font-size: 0.6em; /* Smaller font size for list items */
-    padding: 1px 0;
-  }
-  .footernav ul li {
-    margin-bottom: -3px; /* Reduce space between list items */
-    line-height: 0.8;
-  }
-
-  .payments {
-    padding-top: 0px;
-    margin-left: 0.2cm; /* Push payments slightly more to the left */
-    margin-top: -50px; /* Further move up */
-  }
-  .payments a img {
-    width: 20px; /* Smallest size for payment icons */
-  }
-
-  .add {
+  .footer-content,
+  .footernav {
     text-align: center;
-    margin-left: 0;
-    font-size: 0.75em; /* Smaller font size */
   }
 
-  .footerBottom p {
-    font-size: 0.6em; /* Smallest font size for footer text */
-    padding: 0 5px; /* Add slight padding if needed */
-  }
-  .about-us{
+  footer h3::before {
     display: none;
   }
 }
 
+@media (max-width: 480px) {
+  footer {
+    padding: 60px 0 30px;
+  }
+
+  .footercontainer {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Detection System - Techmiya Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .project-container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-image {
+            width: 100%;
+            display: block;
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+        }
+
+        .brand-logo {
+            width: 90px;
+            height: auto;
+            background: white;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner-text {
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .banner-text h2 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .banner-text p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #00d4ff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #224466;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .abstract {
+            font-style: italic;
+            background: #eef7ff;
+            padding: 20px;
+            border-left: 5px solid #00d4ff;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="project-container">
+        <h1>Skin Disease Detection System</h1>
+
+        <div class="banner-wrapper">
+            <img src="/static/images/skin_disease.png" alt="Skin Disease Detection" class="banner-image">
+            <div class="banner-overlay">
+                <img src="/static/images/brand-logo.jpg" alt="Techmiya Logo" class="brand-logo">
+                <div class="banner-text">
+                    <h2>Skin Disease Detection System</h2>
+                    <p>Powered by Techmiya Projects</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="abstract">
+            <strong>Abstract:</strong> Early detection of skin diseases is crucial for successful treatment. This
+            project utilizes Convolutional Neural Networks (CNN) to analyze skin images and classify various conditions
+            like melanoma, psoriasis, and dermatitis. The system provides users with a quick diagnostic suggestion based
+            on image processing.
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Skin disorders are widespread, but many individuals delay seeking medical help due to accessibility or cost
+            issues. The <span class="highlight">Skin Disease Detection System</span> aims to provide an accessible tool
+            for early screening. Users can upload images of affected skin areas, which the system then processes through
+            a deep learning model to identify potential diseases.</p>
+
+        <h2>Professional Title</h2>
+        <p><strong>Dermatological Classification using Convolutional Neural Networks (CNN)</strong></p>
+
+        <h2>Advantages</h2>
+        <ul>
+            <li><strong>Early Screening:</strong> Helps in identifying potential issues before they become severe.</li>
+            <li><strong>User-Friendly:</strong> Simple interface for uploading images and getting results.</li>
+            <li><strong>Supports Doctors:</strong> Acts as a secondary tool to assist dermatologists in diagnosis.</li>
+            <li><strong>Data-Driven:</strong> Improves accuracy as more diverse image data is used for training.</li>
+        </ul>
+
+        <h2>Disadvantages</h2>
+        <ul>
+            <li><strong>Not a Final Diagnosis:</strong> Results are based on visual analysis only and must be verified
+                by a specialist.</li>
+            <li><strong>Image Quality Issues:</strong> Poor quality or blurry images can lead to incorrect
+                classifications.</li>
+            <li><strong>Bias Risk:</strong> Model accuracy may vary across different skin tones if training data is not
+                diverse.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The Skin Disease Detection System showcases the potential of AI in medical diagnostics. While it is a
+            screening tool, its ability to provide instant feedback can save lives through early intervention. Future
+            developments could include a mobile app for better accessibility in rural areas.</p>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="/code/script.js"></script>
+</body>
+
+</html>

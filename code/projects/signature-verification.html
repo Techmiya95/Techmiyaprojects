@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification System - Techmiya Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .project-container {
+            max-width: 1000px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-image {
+            width: 100%;
+            display: block;
+            max-height: 450px;
+            object-fit: cover;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+        }
+
+        .brand-logo {
+            width: 90px;
+            height: auto;
+            background: white;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner-text {
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .banner-text h2 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .banner-text p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #00d4ff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #224466;
+            margin-top: 30px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .abstract {
+            font-style: italic;
+            background: #eef7ff;
+            padding: 20px;
+            border-left: 5px solid #00d4ff;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="project-container">
+        <h1>Signature Verification System</h1>
+
+        <div class="banner-wrapper">
+            <img src="/static/images/signature_verification.png" alt="Signature Verification" class="banner-image">
+            <div class="banner-overlay">
+                <img src="/static/images/brand-logo.jpg" alt="Techmiya Logo" class="brand-logo">
+                <div class="banner-text">
+                    <h2>Signature Verification System</h2>
+                    <p>Powered by Techmiya Projects</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="abstract">
+            <strong>Abstract:</strong> Forgery in documents is a major problem in the financial and legal sectors. This
+            project implements a Signature Verification System using image processing and machine learning to compare a
+            queried signature against a reference to determine its authenticity.
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Signatures are still a primary method of identity verification. The <span class="highlight">Signature
+                Verification System</span> uses computer vision to analyze structural features, pressure points, and
+            stroke patterns in a signature image. It helps in detecting forgeries that are often difficult for the naked
+            eye to identify.</p>
+
+        <h2>Professional Title</h2>
+        <p><strong>Authenticity Verification of Handwritten Signatures using Siamese Networks</strong></p>
+
+        <h2>Advantages</h2>
+        <ul>
+            <li><strong>Security Enhancement:</strong> Prevents fraudulent activities in banks and legal institutions.
+            </li>
+            <li><strong>Automated Processing:</strong> Speeds up the verification of large volumes of documents.</li>
+            <li><strong>Objective Analysis:</strong> Removes human bias from the verification process.</li>
+            <li><strong>Customizable:</strong> Can be trained for specific individuals for high-security applications.
+            </li>
+        </ul>
+
+        <h2>Disadvantages</h2>
+        <ul>
+            <li><strong>Natural Variation:</strong> Genuine signatures can change slightly over time or depending on the
+                person's state.</li>
+            <li><strong>Limited to Static Analysis:</strong> In this version, the system analyzes the image rather than
+                the dynamic motion of signing.</li>
+            <li><strong>Dataset Dependency:</strong> Requires multiple samples per person for high accuracy.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The Signature Verification System offers a robust technological solution to document safety. By integrating
+            AI-based analysis, organizations can significantly reduce the risk of forgery. Ongoing research focuses on
+            incorporating dynamic signature features captured through digital tablets.</p>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="/code/script.js"></script>
+</body>
+
+</html>
